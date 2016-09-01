@@ -1,0 +1,54 @@
+H1 {
+	text-align: center;
+}
+#cajaContenido {
+	min-width: 400px;
+	max-width: 1000px;
+	background-color: black;
+	border: 2px orange solid;
+	margin: auto;
+	padding: 10px;
+
+}
+.boton {
+	align-content: center;
+	vertical-align: middle;
+	background-color: dodgerblue;
+	width: 70%;
+	border: 3px black solid;
+	border-radius: 20px;
+	margin: auto;
+}
+.boton A {
+	align-content: center;
+	text-align: center;
+	vertical-align: middle;
+	color: black;
+	text-align: center;
+}
+.boton A:hover {
+	color: yellow;
+}
+.boton A:link {
+	color: olivedrab;
+}
+.boton H2 {
+	align-content: center;
+	vertical-align: middle;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	color: black;
+	background-color:yellow;
+	margin: 4px;
+	border: 2px black groove;
+	border-radius: 8px;
+}
+.boton H2:hover {
+	color: yellow;
+	background-color:black;
+}
+
+#CajaFooter {
+
+}
