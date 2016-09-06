@@ -52,7 +52,25 @@ H1 {
 .cajaWebsCreadas {
 
 }
-
+.cajaWebsCreadas H2 {
+	color: white;
+	text-align: center;
+}
+.webCreada {
+	width: 30%;
+	background-color: slategray;
+	height: 300px;
+	border-radius: 8px;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	vertical-align: middle;
+}
 #CajaFooter {
-
+	margin: auto;
+	width: 100%;
+	height: 120px;
+	background-color: orange;
+	border: 2px black groove;
 }
