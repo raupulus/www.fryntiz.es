@@ -50,14 +50,15 @@ H1 {
 }
 
 .cajaWebsCreadas {
-
-}
-.cajaWebsCreadas H2 {
-	color: white;
+	display: flex;
+	align-content: center;
+	align-items: center;
 	text-align: center;
+	vertical-align: middle;
+	align-self: center;
 }
 .webCreada {
-	width: 30%;
+	margin: 1px 3px;
 	background-color: slategray;
 	height: 300px;
 	border-radius: 8px;
@@ -66,6 +67,7 @@ H1 {
 	align-self: center;
 	text-align: center;
 	vertical-align: middle;
+	flex: 1;
 }
 #CajaFooter {
 	margin: auto;
