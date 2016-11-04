@@ -11,3 +11,8 @@ function generadorBinario() {
 		--cantidadBucle;
 	}
 }
+
+function limpiarBinario() {
+	document.getElementById("binario").innerHTML = "";
+	generadorBinario();
+}
