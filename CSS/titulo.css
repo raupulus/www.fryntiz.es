@@ -16,3 +16,14 @@
 	background: #2c1b3f;
 	text-align: center;
 }
+
+.miniLogo {
+	margin: auto;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	width: 120px;
+	height: 120px;
+	background-image: url("../images/miniLogo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
