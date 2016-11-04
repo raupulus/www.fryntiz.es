@@ -12,7 +12,7 @@
 		<SCRIPT src="JS/scripts.js"></SCRIPT>
 	</HEAD>
 
-	<BODY>
+	<BODY OnLoad="generadorBinario()">
 		<DIV>
 			<?php
 				require "titulo.php";
