@@ -3,10 +3,16 @@
 </DIV>
 
 <DIV id="titulo">
-	<H1>Título</H1>
+	<H1>Fryntiz - Desarrollador WEB</H1>
 </DIV>
 
-<DIV class="miniLogo">
+<DIV class="cajaMiniLogo">
+	<DIV class="miniLogo">
 
+	</DIV>
 </DIV>
 
+
+<DIV id="subtitulo">
+
+</DIV>
