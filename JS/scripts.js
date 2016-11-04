@@ -1,12 +1,13 @@
 function generadorBinario() {
-	var cero = 0;
-	var uno = 1;
-	var cantidadBucle = 250;
-	var bucleActual = 1;
-
-	while( bucleActual < cantidadBucle ){
-		document.getElementById("binario").innerHTML = document.getElementById("binario").innerHTML + cero;
-		++bucleActual;
+	var cantidadBucle = 230;
+	while( 1 < cantidadBucle ){
+		var aleatorio = "";
+		if (Math.random() > 0.5) {
+			aleatorio = 1;
+		} else {
+			aleatorio = 0;
+		}
+		document.getElementById("binario").innerHTML = document.getElementById("binario").innerHTML + aleatorio;
+		--cantidadBucle;
 	}
-
 }
