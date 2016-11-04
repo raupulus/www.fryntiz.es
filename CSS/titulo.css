@@ -20,21 +20,6 @@
 	border-bottom: 5px solid black;
 }
 
-.cajaMiniLogo {
-	position: absolute;
-	width: 100%;
-	z-index: 100;
-}
-.miniLogo {
-	margin: auto;
-	margin-top: -35px;
-	width: 90px;
-	height: 90px;
-	background-image: url("../images/miniLogo.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
 #subtitulo {
 	margin: auto;
 	margin-top: 20px;
@@ -44,4 +29,17 @@
 	background: #2c1b3f;
 	border: 5px solid black;
 	border-radius: 100px;
+}
+
+#presentacion {
+	margin-top: 20px;
+	text-align: center;
+	font-family: urwBookmanL;
+	font-weight: bolder;
+	font-size: 1.2em;
+	text-shadow:
+	1px 1px 1px black,
+	1px -1px 1px black,
+	-1px 1px 1px black,
+	-1px -1px 1px black;
 }
