@@ -6,3 +6,7 @@
 	<H1>Título</H1>
 </DIV>
 
+<DIV class="miniLogo">
+
+</DIV>
+
