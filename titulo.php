@@ -1,4 +1,4 @@
-<DIV id="binario">
+<DIV id="binario" onClick="limpiarBinario()">
 
 </DIV>
 
