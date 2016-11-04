@@ -1,8 +1,39 @@
+/*--------------------------------
+FUENTES
+---------------------------------*/
+@font-face {font-family:robotoSlab;
+src: url(../fonts/robotoSlab.ttf) format("opentype");}
+
+@font-face {font-family:urwBookmanL;
+src: url(../fonts/urwBookmanL.ttf) format("opentype");}
+
+@font-face {font-family:utopia;
+src: url(../fonts/utopia.ttf) format("opentype");}
+
+@font-face {font-family:vindictive;
+src: url(../fonts/vindictive.ttf) format("opentype");}
+
+@font-face {font-family:vollkorn;
+src: url(../fonts/vollkorn.ttf) format("opentype");}
+/*--------------------------------
+---------------------------------*/
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-.logo {
-
+.cajaMiniLogo {
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+.miniLogo {
+	margin: auto;
+	margin-top: -35px;
+	width: 90px;
+	height: 90px;
+	background-image: url("../images/miniLogo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
 }
