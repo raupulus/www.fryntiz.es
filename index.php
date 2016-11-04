@@ -13,12 +13,14 @@
 
 	<BODY>
 		<DIV>
-
+			<?php
+				require "titulo.php";
+			?>
 		</DIV>
 
 		<FOOTER id="CajaFooter">
 			<ADDRESS>
-				Fryntiz - tecnico@fryntiz.es
+				Fryntiz - <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico de Fryntiz">tecnico@fryntiz.es</A>
 			</ADDRESS>
 		</FOOTER>
 	</BODY>
