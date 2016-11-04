@@ -8,6 +8,7 @@
 		<META name="author" content="Raúl Caro Pastorino"/>
 		<LINK rel="shortcut icon" href="./images/favicon.png"/>
 		<LINK rel="stylesheet" href="./CSS/styles.css"/>
+		<LINK rel="stylesheet" href="./CSS/titulo.css"/>
 		<SCRIPT src="JS/scripts.js"></SCRIPT>
 	</HEAD>
 
