@@ -3,3 +3,13 @@
 		<P>VER CURRICULUM</P>
 	</DIV>
 </A>
+
+<SECTION>
+	<ARTICLE>
+	<H2>PROYECTOS DONDE COLABORO</H2>
+	<DIV class="cajaMiniLogo"><DIV class="miniLogo"></DIV></DIV>
+	<DIV class="cajaContenido">
+
+	</DIV>
+	</ARTICLE>
+</SECTION>
