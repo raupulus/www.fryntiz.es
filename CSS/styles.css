@@ -45,7 +45,7 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
 }
 .miniLogo {
 	margin: auto;
-	margin-top: -35px;
+	margin-top: -25px;
 	width: 90px;
 	height: 90px;
 	background-image: url("../images/miniLogo.png");
