@@ -17,6 +17,8 @@
 
 </DIV>
 
+<HR class="separador" />
+
 <DIV id="presentacion">
 	<SPAN style="color:#688cc7;">WEb oficial de</SPAN> <SPAN style="color:#1d53c7;">Fryntiz</SPAN>
 	<BR/>
@@ -28,3 +30,5 @@
 	<BR/>
 	<SPAN style="color:#f98500;">Técnico</SPAN> <SPAN style="color:#688cc7;">en Redes</SPAN>
 </DIV>
+
+<HR class="separador"/>
