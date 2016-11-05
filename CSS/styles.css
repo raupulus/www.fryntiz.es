@@ -23,6 +23,21 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
 	padding: 0;
 }
 
+.A_sinDecorar {
+	text-decoration: none;
+	color: #2c1b3f;
+}
+
+.separador {
+	margin: 20px auto;
+	height: 6px;
+	min-width: 300px;
+	max-width: 800px;
+	background-color: #75939a;
+	border: none;
+	border-radius: 5px;
+}
+
 .cajaMiniLogo {
 	position: absolute;
 	width: 100%;
