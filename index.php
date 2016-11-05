@@ -17,6 +17,7 @@
 		<DIV>
 			<?php
 				require "titulo.php";
+				require "contenido.php";
 			?>
 		</DIV>
 
