@@ -10,6 +10,7 @@
 		<LINK rel="stylesheet" href="./CSS/styles.css"/>
 		<LINK rel="stylesheet" href="./CSS/titulo.css"/>
 		<LINK rel="stylesheet" href="./CSS/contenido.css"/>
+		<LINK rel="stylesheet" href="./CSS/footer.css"/>
 		<SCRIPT src="JS/scripts.js"></SCRIPT>
 	</HEAD>
 
@@ -18,6 +19,7 @@
 			<?php
 				require "titulo.php";
 				require "contenido.php";
+				require "footer.php";
 			?>
 		</DIV>
 
