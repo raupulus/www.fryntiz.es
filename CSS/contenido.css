@@ -75,12 +75,13 @@ SECTION ARTICLE H2 {
 	margin-top: 10px;
 	padding-top: 3px;
 	width: 230px;
-	height: 200px;
+	min-height: 200px;
 	background-image: url("../images/fondoDetalles.png");
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 .detallesEntrada HR {
-	margin: 5px auto;
+	margin: 0 auto;
 	width: 90%;
 	height: 6px;
 	background-color: black;
@@ -95,8 +96,7 @@ SECTION ARTICLE H2 {
 }
 .detallesEntrada P {
 	padding: 0 12px;
-	margin-top: 2px;
 	text-align: left;
 	font-family: utopia;
-	line-height: 1.3em;
+	line-height: 1.2em;
 }
