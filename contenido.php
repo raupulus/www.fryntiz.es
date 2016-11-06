@@ -4,6 +4,11 @@
 	</DIV>
 </A>
 
+<!--
+-------------------------------
+Proyectos
+-------------------------------
+-->
 <SECTION>
 	<ARTICLE>
 	<H2>PROYECTOS DONDE COLABORO</H2>
@@ -26,26 +31,64 @@
 
 		<DIV class="cajaEntrada">
 			<DIV class="imagenEntrada">
-				<IMG src="./images/desdechipiona.png" alt="Desde Chipiona"/>
+				<A href="http://www.desdechipiona.es" title="Desde Chipiona" target="_blank"><IMG src="./images/desdechipiona.png" alt="Desde Chipiona"/></A>
 			</DIV>
 
 			<DIV class="detallesEntrada">
-
+				<H3>Desde Chipiona</H3>
+				<HR/>
+				<A href="http://www.desdechipiona.es" title="Desde Chipiona" class="enlaceEntrada">www.desdechipiona.es</A>
+				<P>
+					Proyecto de sitio WEB con información y Galería de imágenes sobre Chipiona
+				</P>
 			</DIV>
 		</DIV>
 
 		<DIV class="cajaEntrada">
 			<DIV class="imagenEntrada">
-				<IMG src="./images/nzcreaciones.png" alt="NZ Creaciones"/>
+				<A href="http://www.nzweb.org" title="NZ Creaciones" target="_blank"><IMG src="./images/nzcreaciones.png" alt="NZ Creaciones"/></A>
 			</DIV>
 
 			<DIV class="detallesEntrada">
-
+				<H3>NZ Creaciones</H3>
+				<HR/>
+				<A href="http://www.nzcreaciones.es" title="NZ Creaciones" class="enlaceEntrada">www.nzcreaciones.es</A>
+				<P>
+					Proyecto que engloba otros proyectos de animación gráfica, entretenimiento, risas y ocio.
+				</P>
 			</DIV>
 		</DIV>
-
-
-
 	</DIV>
 	</ARTICLE>
 </SECTION>
+
+<!--
+-------------------------------
+Sitios WEB Creados
+-------------------------------
+-->
+
+<!--
+<SECTION>
+	<ARTICLE>
+	<H2>SITIOS WEB CREADOS</H2>
+	<DIV class="cajaMiniLogo"><DIV class="miniLogo"></DIV></DIV>
+	<DIV class="cajaContenido">
+		<DIV class="cajaEntrada">
+			<DIV class="imagenEntrada">
+				<A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa"/></A>
+			</DIV>
+
+			<DIV class="detallesEntrada">
+				<H3>Nombre Empresa</H3>
+				<HR/>
+				<A href="#" title="Nombre Empresa" class="enlaceEntrada">www.empresa.es</A>
+				<P>
+					Descripción de la Empresa y trabajo realizado en el sitio web
+				</P>
+			</DIV>
+		</DIV>
+	</DIV>
+	</ARTICLE>
+</SECTION>
+-->
