@@ -22,7 +22,11 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
 	margin: 0;
 	padding: 0;
 }
-
+H1 {
+	text-align: center;
+	font-size: 1em;
+	color: #2c1b3f;
+}
 H3 {
 	font-size: 1.4em;
 	font-family: vollkorn;
