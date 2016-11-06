@@ -25,10 +25,9 @@
 	margin-top: 40px;
 	min-width: 300px;
 	max-width: 800px;
-	height: 600px;
-	background: #2c1b3f;
-	border: 5px solid black;
-	border-radius: 100px;
+}
+#subtitulo IMG {
+	width: 100%;
 }
 
 #presentacion {
