@@ -1,0 +1,13 @@
+#cajaFooter {
+	width: 100%;
+	height: 300px;
+	background-color: yellow;
+}
+#barraDecoracion {
+	position: absolute;
+	margin-top: 100px;
+	width: 100%;
+	height: 100px;
+	background-color: dodgerblue;
+	z-index: 10
+}
