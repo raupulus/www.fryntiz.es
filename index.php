@@ -19,12 +19,11 @@
 			<?php
 				require "titulo.php";
 				require "contenido.php";
-				require "footer.php";
 			?>
 		</DIV>
 
-		<FOOTER id="CajaFooter">
-
-		</FOOTER>
+			<?php
+				require "footer.php";
+			?>
 	</BODY>
 </HTML>
