@@ -23,6 +23,11 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
 	padding: 0;
 }
 
+H3 {
+	font-size: 1.4em;
+	font-family: vollkorn;
+}
+
 .A_sinDecorar {
 	text-decoration: none;
 	color: #2c1b3f;
