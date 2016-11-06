@@ -1,3 +1,5 @@
+var ContadorSubtitulo = 0;
+
 function generadorBinario() {
 	var cantidadBucle = 230;
 	while( 1 < cantidadBucle ){
@@ -15,4 +17,14 @@ function generadorBinario() {
 function limpiarBinario() {
 	document.getElementById("binario").innerHTML = "";
 	generadorBinario();
+}
+
+function cambiarSubtitulo() {
+	if (ContadorSubtitulo == 0) {
+		document.getElementById("IMGsubtitulo").src = "./images/PortadaB.png";
+		return ++ContadorSubtitulo;
+	}else if (ContadorSubtitulo == 1) {
+		document.getElementById("IMGsubtitulo").src = "./images/Portada.png";
+		return --ContadorSubtitulo;
+	}
 }
