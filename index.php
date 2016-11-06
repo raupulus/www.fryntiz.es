@@ -24,9 +24,7 @@
 		</DIV>
 
 		<FOOTER id="CajaFooter">
-			<ADDRESS>
-				Fryntiz - <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico de Fryntiz">tecnico@fryntiz.es</A>
-			</ADDRESS>
+
 		</FOOTER>
 	</BODY>
 </HTML>
