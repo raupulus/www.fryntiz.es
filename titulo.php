@@ -17,8 +17,8 @@
 </DIV>
 
 
-<DIV id="subtitulo">
-	<IMG src="./images/Portada.png" alt="Portada WEB Fryntiz"/>
+<DIV id="subtitulo" onClick="cambiarSubtitulo()">
+	<IMG id="IMGsubtitulo" src="./images/Portada.png" alt="Portada WEB Fryntiz"/>
 </DIV>
 
 <HR class="separador" />
