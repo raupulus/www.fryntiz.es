@@ -24,7 +24,7 @@ Proyectos
 				<HR/>
 				<A href="http://www.laguialinux.es" title="La Guía Linux" class="enlaceEntrada">www.laguialinux.es</A>
 				<P>
-					Sitio WEB con Guías y vídeotutoriales sobre informática, especialmente sobre el Sistema Operativo Linux y el software libre.
+					Sitio WEB con Guías y vídeotutoriales sobre informática, especialmente sobre Linux.
 				</P>
 			</DIV>
 		</DIV>
