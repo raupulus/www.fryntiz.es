@@ -1,9 +1,13 @@
-<DIV id="binario" onClick="limpiarBinario()">
-
-</DIV>
+<H1>Fryntiz Desarrollador WEB, sitio Oficial</H1>
+<DIV id="binario" onClick="limpiarBinario()"></DIV>
 
 <DIV id="titulo">
-	<H1>Fryntiz - Desarrollador WEB</H1>
+	<A href="http://www.fryntiz.es" title="Web Oficial de Fryntiz">
+		<IMG src="./images/Fryntiz.png" alt="Imagen Fryntiz"/>
+	</A>
+	<A href="http://www.fryntiz.es" title="Web Oficial de Fryntiz">
+		<IMG src="./images/DesarrolladorWEB.png" alt="Imagen Desarrollador WEB"/>
+	</A>
 </DIV>
 
 <DIV class="cajaMiniLogo">
@@ -14,7 +18,7 @@
 
 
 <DIV id="subtitulo">
-
+	<IMG src="./images/Portada.png" alt="Portada WEB Fryntiz"/>
 </DIV>
 
 <HR class="separador" />
