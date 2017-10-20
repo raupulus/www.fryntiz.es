@@ -11,7 +11,7 @@
 -->
 <SECTION>
     <ARTICLE>
-    <H2>Colaboraciones Proyectos WEB</H2>
+    <H2>PROYECTOS DONDE COLABORO</H2>
     <DIV class="cajaMiniLogo"><DIV class="miniLogo"></DIV></DIV>
     <DIV class="cajaContenido">
         <DIV class="cajaEntrada">
@@ -69,7 +69,7 @@
                 <HR/>
                 <A href="https://lignux.com/" title="Asociación Lignux" class="enlaceEntrada" target="_blank">https://lignux.com/</A>
                 <P>
-                    Descripción de la Empresa y trabajo realizado en el sitio web
+                    Colaboraciones puntuales creando entradas para este proyecto y ayudando en el mantenimiento.
                 </P>
             </DIV>
         </DIV>
@@ -122,7 +122,7 @@
     <DIV class="cajaContenido">
         <DIV class="cajaEntrada">
             <DIV class="imagenEntrada">
-                <A href="https://github.com/fryntiz/bot_twitter" title="Bot Twitter" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Bot Twitter" title="Nombre Empresa" /></A>
+                <A href="https://github.com/fryntiz/bot_twitter" title="Bot Twitter" target="_blank"><IMG src="./images/bot_twitter.png" alt="Bot Twitter" title="Nombre Empresa" /></A>
             </DIV>
 
             <DIV class="detallesEntrada">
@@ -137,60 +137,60 @@
 
         <DIV class="cajaEntrada">
             <DIV class="imagenEntrada">
-                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+                <A href="https://github.com/fryntiz/preparar_entorno" title="Script Debian" target="_blank"><IMG src="./images/script_debian.png" alt="Script Debian" title="Script Debian" /></A>
             </DIV>
 
             <DIV class="detallesEntrada">
                 <H3>Script Debian</H3>
                 <HR/>
-                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <A href="https://github.com/fryntiz/preparar_entorno" title="Script Debian" class="enlaceEntrada" target="_blank">https://github.com</A>
                 <P>
-                    Descripción de la Empresa y trabajo realizado en el sitio web
+                    Conjuntos de scripts para adaptar un sistema operativo Debian a mi gusto para desarrollo web
                 </P>
             </DIV>
         </DIV>
 
         <DIV class="cajaEntrada">
             <DIV class="imagenEntrada">
-                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+                <A href="https://github.com/fryntiz/fondos_debian" title="Diseño en Debian" target="_blank"><IMG src="./images/disenio_debian.png" alt="Diseño en Debian" title="Diseño en Debian" /></A>
             </DIV>
 
             <DIV class="detallesEntrada">
                 <H3>Diseño en Debian</H3>
                 <HR/>
-                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <A href="https://github.com/fryntiz/fondos_debian" title="Diseño en Debian" class="enlaceEntrada" target="_blank">https://github.com</A>
                 <P>
-                    Descripción de la Empresa y trabajo realizado en el sitio web
+                    Mis diseños de fondos para el Escritorio, GRUB, Playmouth, GDM... sobre Debian
                 </P>
             </DIV>
         </DIV>
 
         <DIV class="cajaEntrada">
             <DIV class="imagenEntrada">
-                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+                <A href="https://github.com/fryntiz/Mini-Aplicaciones-Web" title="Mini Apps WEB" target="_blank"><IMG src="./images/miniapps.png" alt="Mini Apps WEB" title="Mini Apps WEB" /></A>
             </DIV>
 
             <DIV class="detallesEntrada">
                 <H3>Mini Apps WEB</H3>
                 <HR/>
-                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <A href="https://github.com/fryntiz/Mini-Aplicaciones-Web" title="Mini Apps WEB" class="enlaceEntrada" target="_blank">https://github.com</A>
                 <P>
-                    Descripción de la Empresa y trabajo realizado en el sitio web
+                    Pequeñas aplicaciones web que he realizado para integrarlas en otros proyectos
                 </P>
             </DIV>
         </DIV>
 
         <DIV class="cajaEntrada">
             <DIV class="imagenEntrada">
-                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+                <A href="https://github.com/fryntiz/SuperScriptBash" title="SuperBashScript" target="_blank"><IMG src="./images/superbashscript.png" alt="SuperBashScript" title="SuperBashScript" /></A>
             </DIV>
 
             <DIV class="detallesEntrada">
                 <H3>SuperBashScript</H3>
                 <HR/>
-                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <A href="https://github.com/fryntiz/SuperScriptBash" title="SuperBashScript" class="enlaceEntrada" target="_blank">https://github.com</A>
                 <P>
-                    Script para ayudar con la administración, tareas de mantenimiento y acceso rápido a programas de terminal en Linux.
+                    Script para ayudar con administración, mantenimiento y acceso a programas Shell Linux.
                 </P>
             </DIV>
         </DIV>
