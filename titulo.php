@@ -1,23 +1,18 @@
-<H1>Fryntiz Desarrollador WEB, sitio Oficial</H1>
+<NAV id="navegacion">
+
+</NAV>
+
 <DIV id="binario" onClick="limpiarBinario()"></DIV>
 
-<DIV id="titulo">
-    <A href="http://www.fryntiz.es" title="Web Oficial de Fryntiz">
-        <IMG src="./images/Fryntiz.png" alt="Imagen Fryntiz"/>
-    </A>
-    <A href="http://www.fryntiz.es" title="Web Oficial de Fryntiz">
-        <IMG src="./images/DesarrolladorWEB.png" alt="Imagen Desarrollador WEB"/>
-    </A>
-</DIV>
+<H1 id="titulo">Raúl Caro Pastorino</H1>
 
-<DIV class="cajaMiniLogo">
-    <DIV class="miniLogo">
+<HR/>
 
-    </DIV>
-</DIV>
+<H2 id="subtitulo">Desarrollador WEB</H2>
 
+<HR/>
 
-<DIV id="subtitulo" onClick="cambiarPortada();">
+<DIV id="portada" onClick="cambiarPortada();">
     <IMG id="IMGsubtitulo" src="./images/Portada.png" alt="Portada WEB Fryntiz"/>
 </DIV>
 
