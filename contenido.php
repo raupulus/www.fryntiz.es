@@ -107,3 +107,93 @@
     </ARTICLE>
 </SECTION>
 -->
+
+
+<!--
+-------------------------------
+      Otros Proyectos
+-------------------------------
+-->
+
+<SECTION>
+    <ARTICLE>
+    <H2>OTROS PROYECTOS</H2>
+    <DIV class="cajaMiniLogo"><DIV class="miniLogo"></DIV></DIV>
+    <DIV class="cajaContenido">
+        <DIV class="cajaEntrada">
+            <DIV class="imagenEntrada">
+                <A href="https://github.com/fryntiz/bot_twitter" title="Bot Twitter" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Bot Twitter" title="Nombre Empresa" /></A>
+            </DIV>
+
+            <DIV class="detallesEntrada">
+                <H3>Bot Twitter</H3>
+                <HR/>
+                <A href="https://github.com/fryntiz/bot_twitter" title="Bot Twitter" class="enlaceEntrada" target="_blank">https://github.com</A>
+                <P>
+                    Bot para interactuar en las redes sociales de forma independiente para publicar, retwittear, fav...
+                </P>
+            </DIV>
+        </DIV>
+
+        <DIV class="cajaEntrada">
+            <DIV class="imagenEntrada">
+                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+            </DIV>
+
+            <DIV class="detallesEntrada">
+                <H3>Script Debian</H3>
+                <HR/>
+                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <P>
+                    Descripción de la Empresa y trabajo realizado en el sitio web
+                </P>
+            </DIV>
+        </DIV>
+
+        <DIV class="cajaEntrada">
+            <DIV class="imagenEntrada">
+                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+            </DIV>
+
+            <DIV class="detallesEntrada">
+                <H3>Diseño en Debian</H3>
+                <HR/>
+                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <P>
+                    Descripción de la Empresa y trabajo realizado en el sitio web
+                </P>
+            </DIV>
+        </DIV>
+
+        <DIV class="cajaEntrada">
+            <DIV class="imagenEntrada">
+                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+            </DIV>
+
+            <DIV class="detallesEntrada">
+                <H3>Mini Apps WEB</H3>
+                <HR/>
+                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <P>
+                    Descripción de la Empresa y trabajo realizado en el sitio web
+                </P>
+            </DIV>
+        </DIV>
+
+        <DIV class="cajaEntrada">
+            <DIV class="imagenEntrada">
+                <A href="#" title="Nombre Empresa" target="_blank"><IMG src="./images/PlantillaImágenes.png" alt="Nombre Empresa" title="Nombre Empresa" /></A>
+            </DIV>
+
+            <DIV class="detallesEntrada">
+                <H3>SuperBashScript</H3>
+                <HR/>
+                <A href="#" title="Nombre Empresa" class="enlaceEntrada" target="_blank">www.empresa.es</A>
+                <P>
+                    Script para ayudar con la administración, tareas de mantenimiento y acceso rápido a programas de terminal en Linux.
+                </P>
+            </DIV>
+        </DIV>
+    </DIV>
+    </ARTICLE>
+</SECTION>
