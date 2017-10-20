@@ -19,52 +19,53 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
 ---------------------------------*/
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 H1 {
-	text-align: center;
-	font-size: 1em;
-	color: #2c1b3f;
+
+}
+H1 {
+
 }
 H3 {
-	font-size: 1.4em;
-	font-family: vollkorn;
+    font-size: 1.4em;
+    font-family: vollkorn;
 }
 
 .A_sinDecorar {
-	text-decoration: none;
-	color: #2c1b3f;
+    text-decoration: none;
+    color: #2c1b3f;
 }
 
 .separador {
-	margin: 20px auto;
-	height: 6px;
-	min-width: 300px;
-	max-width: 800px;
-	background-color: #75939a;
-	border: none;
-	border-radius: 5px;
+    margin: 20px auto;
+    height: 6px;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: #75939a;
+    border: none;
+    border-radius: 5px;
 }
 
 .cajaMiniLogo {
-	position: absolute;
-	width: 100%;
-	z-index: 100;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
 }
 .miniLogo {
-	margin: auto;
-	margin-top: -25px;
-	width: 90px;
-	height: 90px;
-	background-image: url("../images/miniLogo.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	transition: 1s;
+    margin: auto;
+    margin-top: -25px;
+    width: 90px;
+    height: 90px;
+    background-image: url("../images/miniLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 1s;
 }
 .miniLogo:hover {
-	margin-top: -40px;
-	width: 120px;
-	height: 120px;
-	transition: 2s;
+    margin-top: -40px;
+    width: 120px;
+    height: 120px;
+    transition: 2s;
 }
