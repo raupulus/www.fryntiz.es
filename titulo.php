@@ -17,7 +17,7 @@
 </DIV>
 
 
-<DIV id="subtitulo" onClick="cambiarSubtitulo()">
+<DIV id="subtitulo" onClick="cambiarPortada();">
     <IMG id="IMGsubtitulo" src="./images/Portada.png" alt="Portada WEB Fryntiz"/>
 </DIV>
 

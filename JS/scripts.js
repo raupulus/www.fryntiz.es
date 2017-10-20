@@ -19,7 +19,7 @@ function limpiarBinario() {
     generadorBinario();
 }
 
-function cambiarSubtitulo() {
+function cambiarPortada() {
     if (ContadorSubtitulo == 0) {
         document.getElementById("IMGsubtitulo").src = "./images/PortadaB.png";
         return ++ContadorSubtitulo;
