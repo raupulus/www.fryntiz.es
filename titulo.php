@@ -1,8 +1,12 @@
 <NAV id="navegacion">
-
+    <UL>
+        <A href="#" title=""><LI>Trabajos</LI></A>
+        <A href="#" title=""><LI>Colaboraciones</LI></A>
+        <A href="#" title=""><LI>Curriculum</LI></A>
+    </UL>
 </NAV>
 
-<DIV id="binario" onClick="limpiarBinario()"></DIV>
+
 
 <H1 id="titulo">Raúl Caro Pastorino</H1>
 
