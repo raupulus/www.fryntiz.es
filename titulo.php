@@ -1,12 +1,11 @@
 <NAV id="navegacion">
+    <IMG src="./images/miniLogo.png" alt="Logo Fryntiz" title="Logo Fryntiz" />
     <UL>
         <A href="#" title=""><LI>Trabajos</LI></A>
         <A href="#" title=""><LI>Colaboraciones</LI></A>
         <A href="#" title=""><LI>Curriculum</LI></A>
     </UL>
 </NAV>
-
-
 
 <H1 id="titulo">Raúl Caro Pastorino</H1>
 
