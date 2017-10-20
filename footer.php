@@ -5,12 +5,12 @@
 
     <DIV id="centrarFooter">
         <FOOTER id="footer">
-            <DIV class="seccionFooter"><A href="http://www.fryntiz.es" title="Web Oficial de Fryntiz">www.fryntiz.es</A></DIV>
+            <DIV class="seccionFooter"><A href="https://github.com/fryntiz" title="Repositorios para el desarrollo de Raúl Caro Pastorino, Fryntiz">https://github.com/fryntiz</A></DIV>
             <ADDRESS class="seccionFooter">
-                Fryntiz - <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico de Fryntiz">tecnico@fryntiz.es</A>
+                Correo → <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico de Fryntiz">tecnico@fryntiz.es</A>
             </ADDRESS>
             <DIV class="seccionFooter">
-                Raúl Caro Pastorino - 2016
+                (<?php echo date(Y); ?>) Sitio web bajo GPLv3
             </DIV>
         </FOOTER>
     </DIV>
