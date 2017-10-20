@@ -1,3 +1,34 @@
+#navegacion {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: -2px;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+
+#navegacion UL {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#navegacion UL LI {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 3px;
+    color: #cafcfc;
+    border-left: 1px solid #87a8a8;
+    border-right: 1px solid #87a8a8;
+}
+
+#navegacion UL LI:hover {
+    background-color: #435454;
+    color: white;
+}
+
 #binario {
     margin-top: 3px;
     margin-bottom: 3px;
@@ -20,12 +51,6 @@
 #subtitulo {
     text-align: center;
     color: #435454;
-}
-
-#navegacion {
-    width: 100%;
-    height: 140px;
-    background-color: #87a8a8;
 }
 
 #portada {
