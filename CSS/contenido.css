@@ -12,10 +12,10 @@ SECTION ARTICLE H2 {
     background-color: #2c1b3f;
     border-radius: 50px;
     text-shadow:
-    1px 1px 1px #10d1ff,
-    1px -1px 1px #10d1ff,
-    -1px 1px 1px #10d1ff,
-    -1px -1px 1px #10d1ff;
+    1px 1px 1px #435454,
+    1px -1px 1px #435454,
+    -1px 1px 1px #435454,
+    -1px -1px 1px #435454;
 }
 .cajaContenido {
     margin: auto;
