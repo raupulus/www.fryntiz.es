@@ -29,6 +29,11 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
     margin: 0;
     padding: 0;
 }
+
+BODY {
+    background-image: url("../images/patron.jpg")
+}
+
 H1 {
 
 }
