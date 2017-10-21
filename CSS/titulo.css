@@ -34,13 +34,19 @@
     padding: 10px 2px;
     margin: 0;
     color: #cafcfc;
-    border-left: 1px solid #87a8a8;
-    border-right: 1px solid #87a8a8;
 }
 
 #navegacion UL LI:hover {
     background-color: #435454;
     color: white;
+}
+
+#navegacion UL HR {
+    display: inline-block;
+    width: 2px;
+    height: 13px;
+    background-color: #435454;
+    border: none;
 }
 
 #binario {

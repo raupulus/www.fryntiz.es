@@ -2,7 +2,9 @@
     <IMG src="./images/miniLogo.png" alt="Logo Fryntiz" title="Logo Fryntiz" />
     <UL>
         <A href="#" title="" target="_blank"><LI>Trabajos</LI></A>
+        <HR/>
         <A href="#" title="" target="_blank"><LI>Colaboraciones</LI></A>
+        <HR/>
         <A href="http://www.curriculum.fryntiz.es" title="Curriculum Vitae de Raúl Caro Pastorino" target="_blank"><LI>Curriculum</LI></A>
     </UL>
 </NAV>
