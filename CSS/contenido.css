@@ -1,102 +1,79 @@
-#verCurriculum {
-	display: table;
-	margin: auto;
-	margin-top: 20px;
-	min-width: 300px;
-	border-radius: 300px;
-	border: 5px solid red;
-	background-color: #ffff00;
-	box-shadow: 8px 8px 18px black;
-}
-#verCurriculum:hover {
-	cursor: pointer;
-	color: #2c1b3f;
-	background-color: #d8D000;
-	border: 5px groove #8e0000;
-	box-shadow: -8px -8px 18px black;
-}
-#verCurriculum P {
-	display: table-cell;
-	padding: 15px;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 3em;
-	font-family: vollkorn;
-	text-shadow:
-	1px 1px 1px #ff0000,
-	1px -1px 1px #ff0000,
-	-1px 1px 1px #ff0000,
-	-1px -1px 1px #ff0000;
-}
 SECTION ARTICLE H2 {
-	margin: auto;
-	padding: 10px;
-	margin-top: 30px;
-	min-width: 300px;
-	max-width: 800px;
-	min-height: 50px;
-	color: white;
-	text-align: center;
-	font-size: 2.4em;
-	font-family: robotoSlab;
-	background-color: #2c1b3f;
-	border-radius: 50px;
-	text-shadow:
-	1px 1px 1px #10d1ff,
-	1px -1px 1px #10d1ff,
-	-1px 1px 1px #10d1ff,
-	-1px -1px 1px #10d1ff;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 50px;
+    color: #87a8a8;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: robotoSlab;
+    background-color: #435454;
+    border-radius: 10px;
+    text-shadow:
+    1px 1px 1px #cafcfc,
+    1px -1px 1px #cafcfc,
+    -1px 1px 1px #cafcfc,
+    -1px -1px 1px #cafcfc;
 }
+
 .cajaContenido {
-	margin: auto;
-	margin-top: 40px;
-	min-width: 300px;
-	max-width: 800px;
-	min-height: 460px;
-	text-align: center;
-	background-color: #2c1b3f;
-	border-radius: 60px;
+    margin: auto;
+    margin-top: 40px;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 460px;
+    text-align: center;
+    background-color: #435454;
+    border-radius: 40px;
 }
+
 .cajaEntrada {
-	display: inline-block;
-	vertical-align: top;
-	margin: auto;
-	padding-top: 20px;
-	width: 250px;
-	height: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    padding-top: 20px;
+    width: 250px;
+    height: 420px;
 }
+
 .imagenEntrada {
-	margin: auto;
-	width: 230px;
-	height: 200px;
+    margin: auto;
+    width: 230px;
+    height: 200px;
 }
+
 .detallesEntrada {
-	margin: auto;
-	margin-top: 10px;
-	padding-top: 3px;
-	width: 230px;
-	min-height: 200px;
-	background-image: url("../images/fondoDetalles.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 3px;
+    width: 230px;
+    min-height: 200px;
+    background-image: url("../images/fondoDetalles.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
+
 .detallesEntrada HR {
-	margin: 0 auto;
-	width: 90%;
-	height: 6px;
-	background-color: black;
-	border: none;
-	border-radius: 10px;
+    margin: 0 auto;
+    width: 90%;
+    height: 6px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
 }
+
 .enlaceEntrada {
-	color: red;
-	text-decoration: none;
-	font-size: 1.2em;
-	font-family: vollkorn;
+    color: red;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: vollkorn;
 }
+
 .detallesEntrada P {
-	padding: 0 12px;
-	text-align: left;
-	font-family: utopia;
-	line-height: 1.2em;
-}
+    padding: 0 12px;
+    text-align: left;
+    font-family: utopia;
+    line-height: 1.2em;
+    }
