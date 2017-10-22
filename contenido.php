@@ -5,7 +5,7 @@
 -->
 <SECTION>
     <ARTICLE>
-    <H2>PROYECTOS DONDE COLABORO</H2>
+    <H2 id="colaboraciones">PROYECTOS DONDE COLABORO</H2>
     <DIV class="cajaMiniLogo"><DIV class="miniLogo"></DIV></DIV>
     <DIV class="cajaContenido">
         <DIV class="cajaEntrada">
@@ -84,7 +84,7 @@
 <!--
 <SECTION>
     <ARTICLE>
-    <H2>SITIOS WEB CREADOS</H2>
+    <H2 id="trabajos">SITIOS WEB CREADOS</H2>
     <DIV class="cajaMiniLogo"><DIV class="miniLogo"></DIV></DIV>
     <DIV class="cajaContenido">
         <DIV class="cajaEntrada">
