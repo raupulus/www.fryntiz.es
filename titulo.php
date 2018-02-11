@@ -1,38 +1,43 @@
-<NAV id="navegacion">
-    <IMG src="./images/miniLogo.png" alt="Logo Fryntiz" title="Logo Fryntiz" />
-    <UL>
-        <A href="#trabajos" title="Trabajos"><LI>Trabajos</LI></A>
-        <HR/>
-        <A href="#colaboraciones" title="Colaboraciones"><LI>Colaboraciones</LI></A>
-        <HR/>
-        <A href="http://www.curriculum.fryntiz.es" title="Curriculum Vitae de Raúl Caro Pastorino" target="_blank"><LI>Curriculum</LI></A>
-    </UL>
-</NAV>
+<nav id="navegacion">
+    <img src="./images/miniLogo.png" alt="Logo Fryntiz"
+         title="Logo Fryntiz" />
+    <ul>
+        <a href="#trabajos" title="Trabajos"><li>Trabajos</li></a>
+        <hr />
+        <a href="#colaboraciones"
+           title="Colaboraciones"><li>Colaboraciones</li></a>
+        <hr/>
+        <a href="http://www.curriculum.fryntiz.es"
+           title="Curriculum Vitae de Raúl Caro Pastorino"
+           target="_blank"><li>Curriculum</li></a>
+    </ul>
+</nav>
 
-<H1 id="titulo">Raúl Caro Pastorino</H1>
+<h1 id="titulo">Raúl Caro Pastorino</h1>
 
-<HR/>
+<hr />
 
-<H2 id="subtitulo">Desarrollador WEB</H2>
+<h2 id="subtitulo">Desarrollador WEB</h2>
 
-<HR/>
+<hr />
 
-<DIV id="portada" onClick="cambiarPortada();">
-    <IMG id="IMGsubtitulo" src="./images/Portada.png" alt="Portada WEB Fryntiz"/>
-</DIV>
+<div id="portada" onclick="cambiarPortada();">
+    <img id="IMGsubtitulo" src="./images/Portada.png"
+         alt="Portada WEB Fryntiz"/>
+</div>
 
-<HR class="separador" />
+<hr class="separador" />
 
-<DIV id="presentacion">
-    <SPAN style="color:#688cc7;">WEb oficial de</SPAN> <SPAN style="color:#1d53c7;">Fryntiz</SPAN>
-    <BR/>
-    <SPAN style="color:#be2e00;">www.fryntiz.es</SPAN>
-    <BR/>
-    <SPAN style="color:#688cc7;">Desarrollador</SPAN> <SPAN style="color:#68d162;">WEB</SPAN>
-    <BR/>
-    <SPAN style="color:#f98500;">Técnico</SPAN> <SPAN style="color:#688cc7;">en Sistemas</SPAN>
-    <BR/>
-    <SPAN style="color:#f98500;">Técnico</SPAN> <SPAN style="color:#688cc7;">en Redes</SPAN>
-</DIV>
+<div id="presentacion">
+    <span style="color:#688cc7;">WEb oficial de</span> <span style="color:#1d53c7;">Fryntiz</span>
+    <br />
+    <span style="color:#be2e00;">www.fryntiz.es</span>
+    <br />
+    <span style="color:#688cc7;">Desarrollador</span> <span style="color:#68d162;">WEB</span>
+    <br />
+    <span style="color:#f98500;">Técnico</span> <span style="color:#688cc7;">en Sistemas</span>
+    <br />
+    <span style="color:#f98500;">Técnico</span> <span style="color:#688cc7;">en Redes</span>
+</div>
 
-<HR class="separador"/>
+<hr class="separador" />
