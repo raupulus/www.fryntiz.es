@@ -108,7 +108,9 @@
 /******************************
      LENGUAJES Y APTITUDES
 *******************************/
-#hab_tecnologias, #hab_aptitudes {
+#hab_tecnologias,
+#hab_aptitudes,
+#hab_habilidades {
     text-align: center;
     margin: 5px auto;
     padding-top: 15px;
@@ -118,7 +120,9 @@
     border-radius: 10px;
 }
 
-#hab_tecnologias > .titulo, #hab_aptitudes > .titulo {
+#hab_tecnologias > .titulo,
+#hab_aptitudes > .titulo,
+#hab_habilidades > .titulo {
     margin: auto;
     width: 95%;
     text-align: center;
@@ -131,7 +135,9 @@
         -1px -1px 1px black;
 }
 
-#hab_tecnologias > p, #hab_aptitudes > p {
+#hab_tecnologias > p,
+#hab_aptitudes > p,
+#hab_habilidades > p {
     display: inline-block;
     margin: 8px 6px;
     padding: 7px;
