@@ -1,27 +1,41 @@
+/**
+ * Rellena los bloques de habilidades/aptitudes de forma dinámica desde
+ * los arrays con esta información. Esto se realiza tras cargar la página.
+ */
 function rellenarAptitudes() {
     var tecnologias = document.getElementById('hab_tecnologias');
     var aptitudes = document.getElementById('hab_aptitudes');
 
-    var list_tecnologias = [
-        'html5',
-        'javascript',
-        'css',
-        'php',
-        'ajax',
+    var listTecnologias = [
+        'Html5',
+        'Javascript',
+        'Css',
+        'Php',
+        'Ajax',
+        'Shell Script',
+        'Python',
         'jQuery',
-        'mysql',
-        'sqlite',
-        'postgreSQL',
-        'json',
-        'xml',
+        'MySQL',
+        'Sqlite',
+        'PostgreSQL',
+        'Json',
+        'Xml',
     ];
 
     // Mezclar contenido del array
-    list_tecnologias = list_tecnologias.sort(function() {
+    listTecnologias = listTecnologias.sort(function() {
         return Math.random() - 0.5
     });
 
-    var list_aptitudes = [
+    // Rellena Tecnologías
+    for (let tec of listTecnologias) {
+        var parr = document.createElement('p');
+        parr.append(document.createTextNode(tec));
+
+        tecnologias.append(parr);
+    }
+
+    var listAptitudes = [
         'Edición de vídeos',
         'Animación 2D',
         'Diseño Vectorial',
@@ -34,24 +48,16 @@ function rellenarAptitudes() {
     ];
 
     // Mezclar contenido del array
-    list_aptitudes = list_aptitudes.sort(function() {
+    listAptitudes = listAptitudes.sort(function() {
         return Math.random() - 0.5
     });
 
-    // Rellena Tecnologías
-    for (let tec of list_tecnologias) {
-        var parr = document.createElement('p');
-        var txt = document.createTextNode(tec);
-        parr.append(txt);
 
-        tecnologias.append(parr);
-    }
 
     // Rellena Aptitudes
-    for (let tec of list_aptitudes) {
+    for (let tec of listAptitudes) {
         var parr = document.createElement('p');
-        var txt = document.createTextNode(tec);
-        parr.append(txt);
+        parr.append(document.createTextNode(tec));
 
         aptitudes.append(parr);
     }
