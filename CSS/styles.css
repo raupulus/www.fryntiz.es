@@ -5,9 +5,9 @@ COLORES
 #cafcfc → Azul pastel → usar letras negras
 */
 
-/*--------------------------------
-FUENTES
----------------------------------*/
+/******************************
+            FUENTES
+*******************************/
 @font-face {font-family:robotoSlab;
 src: url(../fonts/robotoSlab.ttf) format("opentype");}
 
@@ -22,8 +22,6 @@ src: url(../fonts/vindictive.ttf) format("opentype");}
 
 @font-face {font-family:vollkorn;
 src: url(../fonts/vollkorn.ttf) format("opentype");}
-/*--------------------------------
----------------------------------*/
 
 * {
     margin: 0;

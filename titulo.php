@@ -39,6 +39,10 @@
         <p>
             La tecnología está presente en mi vida desde que tengo uso de razón, tuve mi primer contacto apenas aprendiendo a leer ya que en casa tuvimos la suerte de tener ordenador desde bastante pronto.
         </p>
+
+        <p>
+            Actualmente me encuentro terminando de formarme mientras pongo en práctica todo lo que voy aprendiendo en pequeños trabajos y proyectos con otras personas que tienen los mismos gustos o intereses.
+        </p>
     </div>
 
     <div>
