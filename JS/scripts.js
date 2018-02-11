@@ -1,27 +1,14 @@
-var ContadorSubtitulo = 0;
+function rellenarAptitudes() {
+    var tecnologias = document.getElementById('hab_tecnologias');
+    var aptitudes = document.getElementById('hab_aptitudes');
 
-/**
- * Función para cambiar la imagen de la portada
- * @returns {number} Devuelve el número de la portada actual
- */
-function cambiarPortada() {
-    if (ContadorSubtitulo === 0) {
-        document.getElementById('IMGsubtitulo').src = './images/PortadaB.png';
-        return ++ContadorSubtitulo;
-    } else if (ContadorSubtitulo === 1) {
-        document.getElementById('IMGsubtitulo').src = './images/Portada.png';
-        return --ContadorSubtitulo;
-    }
-}
-
-function nuevoCambiarPortada() {
-    var lenguajes = [
+    var list_tecnologias = [
         'html5',
         'javascript',
         'css',
         'php',
         'ajax',
-        'jquery',
+        'jQuery',
         'mysql',
         'sqlite',
         'postgreSQL',
@@ -29,7 +16,12 @@ function nuevoCambiarPortada() {
         'xml',
     ];
 
-    var aptitudes = [
+    // Mezclar contenido del array
+    list_tecnologias = list_tecnologias.sort(function() {
+        return Math.random() - 0.5
+    });
+
+    var list_aptitudes = [
         'Edición de vídeos',
         'Animación 2D',
         'Diseño Vectorial',
@@ -40,4 +32,36 @@ function nuevoCambiarPortada() {
         'Gestión DNS',
         'Gestión Hosting',
     ];
+
+    // Mezclar contenido del array
+    list_aptitudes = list_aptitudes.sort(function() {
+        return Math.random() - 0.5
+    });
+
+    // Rellena Tecnologías
+    for (let tec of list_tecnologias) {
+        var parr = document.createElement('p');
+        var txt = document.createTextNode(tec);
+        parr.append(txt);
+
+        tecnologias.append(parr);
+    }
+
+    // Rellena Aptitudes
+    for (let tec of list_aptitudes) {
+        var parr = document.createElement('p');
+        var txt = document.createTextNode(tec);
+        parr.append(txt);
+
+        aptitudes.append(parr);
+    }
 }
+
+/**
+ * Scripts ejecutados al cargar la página
+ */
+function iniciar() {
+    rellenarAptitudes();
+}
+
+window.onload = iniciar;
