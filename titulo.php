@@ -28,7 +28,7 @@
 </div>
 -->
 
-<div id="hab_lenguajes"><div class="titulo">Tecnologías</div></div>
+<div id="hab_tecnologias"><div class="titulo">Tecnologías</div></div>
 <div id="hab_aptitudes"><div class="titulo">Aptitudes</div></div>
 
 
