@@ -30,17 +30,17 @@ src: url(../fonts/vollkorn.ttf) format("opentype");}
     padding: 0;
 }
 
-BODY {
+body {
     background-image: url("../images/patron.jpg")
 }
 
-H1 {
+h1 {
 
 }
-H1 {
+h1 {
 
 }
-H3 {
+h3 {
     font-size: 1.4em;
     font-family: vollkorn;
 }

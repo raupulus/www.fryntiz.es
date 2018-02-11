@@ -46,29 +46,35 @@
         <p>
             En mi compromiso con la libertad en el uso de cualquier forma de tecnología intento en toda medida de lo posible compartir código e información que ayude a otras personas a que descubrir esta necesidad.
         </p>
+
         <p>
             Usuario fiel a GNU/Linux desde hace más de una década habiendo usado con soltura las distribuciones:
-            <ul>
-                <li>Suse Linux</li>
-                <li>Mandrake</li>
-                <li>Debian</li>
-                <li>Fedora</li>
-                <li>Gentoo</li>
-                <li>Arch Linux</li>
-            </ul>
+        </p>
+        <ul>
+            <li>Suse Linux</li>
+            <li>Mandrake</li>
+            <li>Debian</li>
+            <li>Fedora</li>
+            <li>Gentoo</li>
+            <li>Arch Linux</li>
+        </ul>
+        <p>
             Aún así donde mejor me desenvuelvo es Debian GNU/Linux
         </p>
+
         <p>
             En Las próximas secciones enlazo proyectos en los que redacto o desarrollo relacionados con el software libre.
         </p>
     </div>
 
+    <!--
     <div>
         <p class="titulo"></p>
         <p>
 
         </p>
     </div>
+    -->
 </div>
 
 <hr class="separador" />

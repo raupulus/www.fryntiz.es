@@ -92,31 +92,17 @@
     width: 100%;
 }
 
-#presentacion {
-    margin-top: 20px;
-    text-align: center;
-    font-family: urwBookmanL;
-    font-weight: bolder;
-    font-size: 1.2em;
-    text-shadow:
-        1px 1px 1px black,
-        1px -1px 1px black,
-        -1px 1px 1px black,
-        -1px -1px 1px black;
-}
-
 /******************************
      LENGUAJES Y APTITUDES
 *******************************/
 #hab_tecnologias,
 #hab_aptitudes,
 #hab_habilidades {
-    text-align: center;
     margin: 5px auto;
     padding-top: 15px;
     min-width: 300px;
     max-width: 800px;
-    color: red;
+    text-align: center;
     border-radius: 10px;
 }
 
@@ -147,4 +133,46 @@
     color: #87a8a8;
     background-color: #435454;
     box-shadow: 5px 5px 3px #000000;
+}
+
+/******************************
+         PRESENTACIÓN
+*******************************/
+#presentacion {
+    margin-top: 20px;
+}
+
+#presentacion > div {
+    margin: 15px auto;
+    padding: 15px 8px 5px 5px;
+    min-width: 300px;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 3px;
+    background-color: #87a8a8;
+    box-shadow: 5px 5px 3px #000000;
+}
+
+#presentacion > div > p.titulo {
+    margin: 6px 5px 25px 5px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-align: center;
+    color: #435454;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#presentacion > div > p {
+    margin: 15px 10px;
+    font-size: 1.2em;
+}
+
+#presentacion > div > ul > li {
+    margin: 5px 5px 10px 35px;
+    padding: 3px 8px;
+    font-size: 1.4em;
+    color: #435454;
+    list-style-type: none;
+    border-left: 3px groove #435454;
+    border-bottom: 5px groove #435454;
 }
