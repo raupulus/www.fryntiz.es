@@ -9,5 +9,8 @@ Repositorio donde almaceno la web principal de mi perfil profesional
 
 ![Previsualización 3 de www.fryntiz.es](preview3.png)
 
+![Previsualización 4 de www.fryntiz.es](preview4.png)
+
+![Previsualización 5 de www.fryntiz.es](preview5.png)
 
 ![Logo Fryntiz](http://www.fryntiz.es/images/LogoFryntiz.png "Logo Fryntiz")
