@@ -42,6 +42,7 @@
         <link rel="stylesheet" href="./CSS/titulo.css" />
         <link rel="stylesheet" href="./CSS/contenido.css" />
         <link rel="stylesheet" href="./CSS/footer.css" />
+        <script src="JS/jquery-3.3.1.js"></script>
         <script src="JS/scripts.js"></script>
     </head>
 
