@@ -86,6 +86,22 @@
     <H2 id="trabajos">SITIOS WEB CREADOS</H2>
     <div class="cajaMiniLogo"><div class="miniLogo"></div></div>
     <div class="cajaContenido">
+<!--Hostal Cristina-->
+        <div class="cajaEntrada">
+            <div class="imagenEntrada">
+                <a href="http://www.hostalcristina.com/" title="Hostal Cristina" target="_blank"><img src="./images/webs/www.hostalcristina.com.png" alt="Hostal Cristina" title="Hostal Cristina" /></A>
+            </div>
+
+            <div class="detallesEntrada">
+                <h3>Hostal Cristina</h3>
+                <hr />
+                <a href="http://www.hostalcristina.com/" title="Hostal Cristina" class="enlaceEntrada" target="_blank">hostalcristina.com</a>
+                <P>
+                    Realizo el sitio web para el Hostal Cristina en Chipiona
+                </P>
+            </div>
+        </div>
+
 <!--El Faro Inmobiliaria-->
         <div class="cajaEntrada">
             <div class="imagenEntrada">
