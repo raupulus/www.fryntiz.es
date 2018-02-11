@@ -21,29 +21,54 @@
 
 <hr />
 
-<!--
-<div id="portada" onclick="cambiarPortada();">
-    <img id="IMGsubtitulo" src="./images/Portada.png"
-         alt="Portada WEB Fryntiz"/>
-</div>
--->
-
+<!--Etiquetas de información-->
 <div id="hab_tecnologias"><div class="titulo">Tecnologías</div></div>
 <div id="hab_aptitudes"><div class="titulo">Aptitudes</div></div>
-
+<div id="hab_habilidades"><div class="titulo">Habilidades</div></div>
+<!--Fin Etiquetas de información-->
 
 <hr class="separador" />
 
 <div id="presentacion">
-    <span style="color:#688cc7;">WEb oficial de</span> <span style="color:#1d53c7;">Fryntiz</span>
-    <br />
-    <span style="color:#be2e00;">www.fryntiz.es</span>
-    <br />
-    <span style="color:#688cc7;">Desarrollador</span> <span style="color:#68d162;">WEB</span>
-    <br />
-    <span style="color:#f98500;">Técnico</span> <span style="color:#688cc7;">en Sistemas</span>
-    <br />
-    <span style="color:#f98500;">Técnico</span> <span style="color:#688cc7;">en Redes</span>
+    <div>
+        <p class="titulo">Presentación</p>
+        <p>
+            Este es mi portal de presentación donde enlazo a mis contenidos, trabajos y colaboraciones.
+        </p>
+
+        <p>
+            La tecnología está presente en mi vida desde que tengo uso de razón, tuve mi primer contacto apenas aprendiendo a leer ya que en casa tuvimos la suerte de tener ordenador desde bastante pronto.
+        </p>
+    </div>
+
+    <div>
+        <p class="titulo">Compromiso con la Libertad Digital</p>
+        <p>
+            En mi compromiso con la libertad en el uso de cualquier forma de tecnología intento en toda medida de lo posible compartir código e información que ayude a otras personas a que descubrir esta necesidad.
+        </p>
+        <p>
+            Usuario fiel a GNU/Linux desde hace más de una década habiendo usado con soltura las distribuciones:
+            <ul>
+                <li>Suse Linux</li>
+                <li>Mandrake</li>
+                <li>Debian</li>
+                <li>Fedora</li>
+                <li>Gentoo</li>
+                <li>Arch Linux</li>
+            </ul>
+            Aún así donde mejor me desenvuelvo es Debian GNU/Linux
+        </p>
+        <p>
+            En Las próximas secciones enlazo proyectos en los que redacto o desarrollo relacionados con el software libre.
+        </p>
+    </div>
+
+    <div>
+        <p class="titulo"></p>
+        <p>
+
+        </p>
+    </div>
 </div>
 
 <hr class="separador" />
