@@ -29,7 +29,7 @@
         <meta name="twitter:creator" content="@fryntiz" />
 <!--metaetiquetas para Google+-->
         <link href="https://plus.google.com/109655402661721084499/posts"
-              rel="author"/>
+              rel="author" />
         <link href="https://plus.google.com/109655402661721084499"
               rel="publisher"/>
         <meta itemprop="name" content="Fryntiz Desarrollador WEB" />
