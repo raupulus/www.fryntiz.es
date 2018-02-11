@@ -21,10 +21,16 @@
 
 <hr />
 
+<!--
 <div id="portada" onclick="cambiarPortada();">
     <img id="IMGsubtitulo" src="./images/Portada.png"
          alt="Portada WEB Fryntiz"/>
 </div>
+-->
+
+<div id="hab_lenguajes"><div class="titulo">Tecnologías</div></div>
+<div id="hab_aptitudes"><div class="titulo">Aptitudes</div></div>
+
 
 <hr class="separador" />
 
