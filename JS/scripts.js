@@ -5,6 +5,7 @@
 function rellenarAptitudes() {
     var tecnologias = document.getElementById('hab_tecnologias');
     var aptitudes = document.getElementById('hab_aptitudes');
+    var habilidades = document.getElementById('hab_habilidades');
 
     var listTecnologias = [
         'Html5',
@@ -36,6 +37,29 @@ function rellenarAptitudes() {
     }
 
     var listAptitudes = [
+        'Rápido Aprendizaje',
+        'Experiencia Colaborando',
+        'Comprometido',
+        'Amplia red de Contactos',
+        'Original',
+        'Muy Organizado',
+        'Experimentador',
+    ];
+
+    // Mezclar contenido del array
+    listAptitudes = listAptitudes.sort(function() {
+        return Math.random() - 0.5
+    });
+
+    // Rellena Aptitudes
+    for (let tec of listAptitudes) {
+        var parr = document.createElement('p');
+        parr.append(document.createTextNode(tec));
+
+        aptitudes.append(parr);
+    }
+
+    var listHabilidades = [
         'Edición de vídeos',
         'Animación 2D',
         'Diseño Vectorial',
@@ -45,21 +69,27 @@ function rellenarAptitudes() {
         'Apache2',
         'Gestión DNS',
         'Gestión Hosting',
+        'Redes Sociales',
+        'Samba/Cifs',
+        'NAS',
+        'Redes',
+        'Debian GNU/Linux',
+        'Electricidad',
+        'Micro-electrónica',
+        'Hardware',
     ];
 
     // Mezclar contenido del array
-    listAptitudes = listAptitudes.sort(function() {
+    listHabilidades = listHabilidades.sort(function() {
         return Math.random() - 0.5
     });
 
-
-
     // Rellena Aptitudes
-    for (let tec of listAptitudes) {
+    for (let tec of listHabilidades) {
         var parr = document.createElement('p');
         parr.append(document.createTextNode(tec));
 
-        aptitudes.append(parr);
+        habilidades.append(parr);
     }
 }
 
