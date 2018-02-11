@@ -13,3 +13,31 @@ function cambiarPortada() {
         return --ContadorSubtitulo;
     }
 }
+
+function nuevoCambiarPortada() {
+    var lenguajes = [
+        'html5',
+        'javascript',
+        'css',
+        'php',
+        'ajax',
+        'jquery',
+        'mysql',
+        'sqlite',
+        'postgreSQL',
+        'json',
+        'xml',
+    ];
+
+    var aptitudes = [
+        'Edición de vídeos',
+        'Animación 2D',
+        'Diseño Vectorial',
+        'Drupal',
+        'Wordpress',
+        'GNU/Linux',
+        'Apache2',
+        'Gestión DNS',
+        'Gestión Hosting',
+    ];
+}
