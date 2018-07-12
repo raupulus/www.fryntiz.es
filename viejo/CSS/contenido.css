@@ -1,0 +1,78 @@
+section article h2 {
+    margin: auto;
+    padding: 15px;
+    margin-top: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 50px;
+    color: #87a8a8;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: robotoSlab;
+    border-radius: 10px;
+    text-shadow:
+    1px 1px 1px #435454,
+    1px -1px 1px #435454,
+    -1px 1px 1px #435454,
+    -1px -1px 1px #435454;
+}
+
+.cajaContenido {
+    margin: auto;
+    padding-top: 20px;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 460px;
+    text-align: center;
+}
+
+.cajaEntrada {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 5px;
+    width: 245px;
+    height: 420px;
+    background-color: #435454;
+    border-radius: 6px;
+    box-shadow: 5px 5px 3px #000000;
+}
+
+.imagenEntrada {
+    margin: auto;
+    width: 230px;
+    height: 200px;
+}
+
+.detallesEntrada {
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 3px;
+    width: 230px;
+    min-height: 200px;
+    background-image: url("../images/fondoDetalles.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.detallesEntrada HR {
+    margin: 0 auto;
+    width: 90%;
+    height: 6px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+}
+
+.enlaceEntrada {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: vollkorn;
+}
+
+.detallesEntrada P {
+    padding: 0 12px;
+    text-align: left;
+    font-family: utopia;
+    line-height: 1.2em;
+    }

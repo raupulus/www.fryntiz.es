@@ -1,0 +1,182 @@
+#navegacion {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: -2px;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+
+#navegacion IMG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+    #navegacion IMG {
+        display: none;
+    }
+}
+
+#navegacion UL {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#navegacion UL LI {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 0;
+    color: #cafcfc;
+}
+
+#navegacion UL LI:hover {
+    background-color: #435454;
+    color: white;
+}
+
+#navegacion UL HR {
+    display: inline-block;
+    width: 2px;
+    height: 13px;
+    background-color: #435454;
+    border: none;
+}
+
+#binario {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    height: 17px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bolder;
+    color: greenyellow;
+    background-color: black;
+}
+
+#titulo {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3em;
+    color: #87a8a8;
+    text-shadow:
+        2px 2px 3px black,
+        1px 0 2px black,
+        -1px -1px 2px black,
+        -1px 0 2px black;
+
+}
+
+#subtitulo {
+    text-align: center;
+    color: #435454;
+    text-shadow: 1px 1px 1px black;
+}
+
+#portada {
+    margin: auto;
+    margin-top: 40px;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+#portada IMG {
+    width: 100%;
+}
+
+/******************************
+     LENGUAJES Y APTITUDES
+*******************************/
+#hab_tecnologias,
+#hab_aptitudes,
+#hab_habilidades {
+    margin: 35px auto;
+    padding-top: 15px;
+    min-width: 300px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#hab_tecnologias > .titulo,
+#hab_aptitudes > .titulo,
+#hab_habilidades > .titulo {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    font-size: 2.3em;
+    color: #87a8a8;
+    text-shadow:
+        1px 1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black,
+        -1px -1px 1px black;
+}
+
+#hab_tecnologias > p,
+#hab_aptitudes > p,
+#hab_habilidades > p {
+    display: inline-block;
+    margin: 8px 6px;
+    padding: 7px;
+    min-width: 80px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #87a8a8;
+    background-color: #435454;
+    box-shadow: 5px 5px 3px #000000;
+}
+
+/******************************
+         PRESENTACIÓN
+*******************************/
+#presentacion {
+    margin-top: 20px;
+}
+
+#presentacion > div {
+    margin: 15px auto;
+    padding: 15px 8px 5px 5px;
+    min-width: 300px;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 3px;
+    background-color: #87a8a8;
+    box-shadow: 5px 5px 3px #000000;
+}
+
+#presentacion > div > p.titulo {
+    margin: 6px 5px 25px 5px;
+    padding-bottom: 5px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-align: center;
+    color: #435454;
+    text-shadow: 1px 1px 1px #000000;
+    border-bottom: 8px solid #ffffff;
+    border-radius: 5px;
+}
+
+#presentacion > div > p {
+    margin: 15px 10px;
+    font-size: 1.2em;
+}
+
+#presentacion > div > ul > li {
+    margin: 5px 5px 10px 35px;
+    padding: 3px 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #435454;
+    list-style-type: none;
+    border-left: 3px groove #435454;
+    border-bottom: 5px groove #435454;
+}
