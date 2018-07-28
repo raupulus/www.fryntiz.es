@@ -14,10 +14,10 @@ import { ContactComponent } from "./contact/contact.component";
 
 // Asocio palabras con rutas a componentes
 const appRoutes: Routes = [
-    {path: "", component: IndexComponent},
+    {path: "", component: IndexComponent, pathMatch: 'full'},
     {path: "index", component: IndexComponent},
+    {path: "contact", component: ContactComponent, data: { title: 'Contacto' }},
     {path: "**", component: IndexComponent},
-    {path: "contact", component: ContactComponent},
 ];
 
 // Exporto constante de objetos para cualquier tipo

@@ -20,6 +20,9 @@ import { SlideComponent } from './slide/slide.component';
 // Importo módulos de rutas
 import { routing, appRoutingProviders } from './rutas';
 
+// Importo SlideShow
+import {SlideshowModule} from 'ng-simple-slideshow';
+
 @NgModule({
   // Clases de vista para el módulo (components|directives|pipes)
   declarations: [
@@ -36,6 +39,7 @@ import { routing, appRoutingProviders } from './rutas';
     routing,     // Módulo de rutas
     HttpModule,  // Módulo HTTP
     FormsModule, // Módulo de formularios
+    SlideshowModule, // SlideShow
   ],
 
   // Los proveedores crean servicios de este módulo globalmente a la aplicación
@@ -46,4 +50,4 @@ import { routing, appRoutingProviders } from './rutas';
 })
 
 // Se exporta la clase del módulo raíz y así puede ser invocada desde otro lugar
-export class AppModule { }
+export class AppModule {}
