@@ -10,18 +10,19 @@ import { HttpModule } from '@angular/http';
 // Agrego FormsModule para trabajar con formulario
 import { FormsModule } from '@angular/forms';
 
+// Importo módulos de rutas
+import { routing, appRoutingProviders } from './rutas';
+
+// Importo SlideShow
+import {SlideshowModule} from 'ng-simple-slideshow';
+
 // Importo cada componente propio para la aplicación
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { ContactComponent } from './contact/contact.component';
 import { BarComponent } from './bar/bar.component';
 import { SlideComponent } from './slide/slide.component';
-
-// Importo módulos de rutas
-import { routing, appRoutingProviders } from './rutas';
-
-// Importo SlideShow
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { AsideComponent } from './aside/aside.component';
 
 @NgModule({
   // Clases de vista para el módulo (components|directives|pipes)
@@ -30,7 +31,8 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     IndexComponent,
     ContactComponent,
     BarComponent,
-    SlideComponent
+    SlideComponent,
+    AsideComponent,
   ],
 
   // Importo módulos que usarán las plantillas
