@@ -1,34 +1,29 @@
 <div class="content-fluid">
-
-<!--=====================================
-                HEADER
-======================================-->
     <header id="main" class="row">
-        <figure id="logotipo" class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-            <img src="assets/img/logotipo.png" alt="Logo" />
-        </figure>
-
-        <div class="col-lg-4 col-md-2 col-sm-1 col-xs-0">
-            <br />
+        <div id="boxlogo" class="align-middle col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <figure id="logotipo" class="col-lg-4">
+                <img src="assets/img/logotipo.png" alt="Logo" />
+            </figure>
+            <h1 id="sitetitle" class="col-lg-8">Raúl Caro Pastorino</h1>
         </div>
 
         <div id="btnMovil" class="col-lg-0 col-md-0 col-sm-0 col-xs-12">
           <span class="fa fa-bars"></span>
         </div>
 
-        <nav class="col-lg-6 col-md-7 col-sm-8 col-xs-0">
+        <nav class="col-lg-7 col-md-7  col-xs-0">
             <ul>
                 <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                     <a [routerLink]="['/index']">Inicio</a>
                 </li>
                 <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                    <a href="#proyectos">Proyectos</a>
+                    <a [routerLink]="['/proyect']">Proyectos</a>
                 </li>
                 <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                    <a href="#colaboraciones">Colaboraciones</a>
+                    <a [routerLink]="['/collaboration']">Colaboro</a>
                 </li>
                 <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                    <a href="#aficciones">Aficciones</a>
+                    <a [routerLink]="['/hobbies']">Aficciones</a>
                 </li>
                 <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                     <a [routerLink]="['/contact']">Contacto</a>

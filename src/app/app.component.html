@@ -3,18 +3,16 @@
     <app-bar></app-bar>
 </header>
 
-<div id="generalbox">
-    <div id="boxcontent">
-        <p>antes router-outlet</p>
+<div id="generalbox" class="row">
+    <div id="boxcontent" class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
         <router-outlet></router-outlet>
-        <p>despues router-outlet</p>
     </div>
 
-    <div id="">
+    <div id="boxaside" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
         <app-aside></app-aside>
     </div>
 </div>
 
-<footer id="boxfooter">
+<footer id="boxfooter" class="row">
     <p>footer</p>
 </footer>

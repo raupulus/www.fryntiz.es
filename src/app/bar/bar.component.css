@@ -2,12 +2,16 @@
     background: white;
 }
 
+#boxlogo {
+    text-align: center;
+}
+
 #logotipo {
-    padding: 10px;
+    padding: 5px;
 }
 
 #logotipo > img {
-    width: 70px;
+    margin: auto;
 }
 
 #main nav ul li a {
@@ -53,10 +57,14 @@
         font-size:14px;
     }
 
-    #logotipo img {
-        width:100%;
+    #logotipo > img {
+        width: 140px;
     }
 
+    #sitetitle {
+        margin-top: 60px;
+        font-size: 1.4em;
+    }
 }
 
 /*********************************************
@@ -80,11 +88,16 @@
 
     #main nav ul li a {
         margin:30% 5px;
-        font-size:14px;
+        font-size:12px;
     }
 
-    #logotipo img {
-        width:100%;
+    #logotipo > img {
+        width: 140px;
+    }
+
+    #sitetitle {
+        margin-top: 50px;
+        font-size: 1.4em;
     }
 }
 
@@ -107,13 +120,24 @@
     .col-sm-1{width: 8.33333333%;}
     .col-sm-0{display:none;}
 
-    #main nav ul li a {
-        margin:28% 2px;
-        font-size:10px;
+    #main nav {
+        margin: auto;
+        width: 100%;
+        background-color: red;
     }
 
-    #main #logotipo img {
-        width:100%;
+    #main nav ul li a {
+        padding: 5px;
+        margin: 10px 2px;
+        font-size: 16px;
+    }
+
+    #logotipo > img {
+        width: 80px;
+    }
+
+    #sitetitle {
+        font-size: 1.2em;
     }
 }
 
@@ -140,9 +164,5 @@
         margin:0px;
         font-size:14px;
         border-bottom:1px solid #444;
-    }
-
-    #logotipo img {
-        width:50%;
     }
 }

@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class SlideComponent implements OnInit {
 
     imageUrls = [
-      { url: '/asside/img/logotipo.png', caption: 'Primer slide', href: '#', clickAction: () => alert('custom click function') },
+      { url: '/assets/img/slide/slide1.jpg', caption: 'Primer slide', href: '#', clickAction: () => console.log('Esto es un evento de img 1') },
+      { url: '/assets/img/slide/slide2.jpg', caption: 'Segundo slide', href: '#', clickAction: () => console.log('Esto es un evento de img 2') },
+      { url: '/assets/img/slide/slide3.jpg', caption: 'Tercer slide', href: '#', clickAction: () => console.log('Esto es un evento de img 3') },
+      { url: '/assets/img/slide/slide4.jpg', caption: 'Cuarto slide', href: '#', clickAction: () => console.log('Esto es un evento de img 4') },
     ];
     height: string = '400px';
     minHeight: string;
