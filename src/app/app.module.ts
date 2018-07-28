@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { ContactComponent } from './contact/contact.component';
 import { BarComponent } from './bar/bar.component';
+import { SlideComponent } from './slide/slide.component';
 
 // Importo módulos de rutas
 import { routing, appRoutingProviders } from './rutas';
@@ -25,7 +26,8 @@ import { routing, appRoutingProviders } from './rutas';
     AppComponent,
     IndexComponent,
     ContactComponent,
-    BarComponent
+    BarComponent,
+    SlideComponent
   ],
 
   // Importo módulos que usarán las plantillas

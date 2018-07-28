@@ -1,0 +1,66 @@
+<!--=====================================
+LAS DIRECTIVAS: Son pequeñas funcionalidades que se utilizan en la vista de Angular
+*ngFor es una directiva para realizar bucles en la vista
+*ngIf es una directiva para condicionales
+======================================-->
+
+
+<div id="slide" class="row" *ngIf="slideJson">
+
+  <ul >
+
+    <li *ngFor="let slide of slideJson">
+      <img src="{{slide.imagen}}">
+      <div class="textoSlide">
+        <h1>{{slide.titulo}}</h1>
+        <h3>{{slide.descripcion}}</h3>
+      </div>
+
+      <div id="gestorSlide" *ngIf="identificado">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-trash" aria-hidden="true"></i>
+      </div>
+
+    </li>
+
+   <!--  <li>
+      <img src="assets/img/slide/slide02.jpg">
+      <div class="textoSlide">
+        <h1>Lorem Ipsum</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+      </div>
+    </li>
+
+    <li>
+      <img src="assets/img/slide/slide03.jpg">
+      <div class="textoSlide">
+        <h1>Lorem Ipsum</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+      </div>
+    </li>
+
+    <li>
+      <img src="assets/img/slide/slide04.jpg">
+      <div class="textoSlide">
+        <h1>Lorem Ipsum</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+      </div>
+    </li> -->
+
+  </ul>
+
+  <ol id="paginacion">
+
+    <li *ngFor="let slide of slideJson; let i = index" value="{{i+1}}"><span class="fa fa-circle"></span></li>
+<!--     <li item="2"><span class="fa fa-circle"></span></li>
+    <li item="3"><span class="fa fa-circle"></span></li>
+    <li item="4"><span class="fa fa-circle"></span></li> -->
+
+  </ol>
+
+  <div class="flechas" id="retroceder"><span class="fa fa-chevron-left"></span></div>
+  <div class="flechas" id="avanzar"><span class="fa fa-chevron-right"></span></div>
+
+</div>
+
+<span *ngIf="!slideJson">Cargando Slide...</span>
