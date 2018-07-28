@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BarComponent } from './bar/bar.component';
 import { SlideComponent } from './slide/slide.component';
 import { AsideComponent } from './aside/aside.component';
+import { ProyectComponent } from './proyect/proyect.component';
 
 @NgModule({
   // Clases de vista para el módulo (components|directives|pipes)
@@ -33,6 +34,7 @@ import { AsideComponent } from './aside/aside.component';
     BarComponent,
     SlideComponent,
     AsideComponent,
+    ProyectComponent,
   ],
 
   // Importo módulos que usarán las plantillas
