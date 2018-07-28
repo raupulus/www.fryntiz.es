@@ -24,6 +24,7 @@ import { BarComponent } from './bar/bar.component';
 import { SlideComponent } from './slide/slide.component';
 import { AsideComponent } from './aside/aside.component';
 import { ProyectComponent } from './proyect/proyect.component';
+import { CollaborationComponent } from './collaboration/collaboration.component';
 
 @NgModule({
   // Clases de vista para el módulo (components|directives|pipes)
@@ -35,6 +36,7 @@ import { ProyectComponent } from './proyect/proyect.component';
     SlideComponent,
     AsideComponent,
     ProyectComponent,
+    CollaborationComponent,
   ],
 
   // Importo módulos que usarán las plantillas
