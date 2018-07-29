@@ -120,12 +120,6 @@
     .col-sm-1{width: 8.33333333%;}
     .col-sm-0{display:none;}
 
-    #main nav {
-        margin: auto;
-        width: 100%;
-        background-color: red;
-    }
-
     #main nav ul li a {
         padding: 5px;
         margin: 10px 2px;
