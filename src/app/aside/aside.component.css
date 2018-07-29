@@ -1,0 +1,14 @@
+#boxaside {
+    margin: 0 5px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+#boxservices {
+    min-height: 200px;
+}
+
+#boxsocial {
+    min-height: 200px;
+}
