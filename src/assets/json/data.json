@@ -1,0 +1,37 @@
+{
+    "config": [
+        {
+            "title": "Raúl Caro Pastorino",
+            "background": "",
+            "email": "",
+            "portsmtp": "",
+            "password": ""
+        }
+    ],
+    "slide": [
+        {
+            "img": "",
+            "title": "",
+            "url": ""
+        }
+    ],
+    "proyect": [
+        {
+            "title": "",
+            "url": "",
+            "img": "",
+            "description": ""
+        }
+    ],
+    "collaboration": [
+        {
+            "title": "",
+            "url": "",
+            "img": "",
+            "description": ""
+        }
+    ],
+    "hobbie": [
+
+    ]
+}
