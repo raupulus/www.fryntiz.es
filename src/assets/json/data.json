@@ -3,16 +3,49 @@
         {
             "title": "Raúl Caro Pastorino",
             "background": "",
-            "email": "",
+            "email": "dev@fryntiz.es",
             "portsmtp": "",
             "password": ""
         }
     ],
+    "menubar": [
+        [
+            "es": {}    
+        ],
+        {
+            "lang": "es",
+            "index": "Inicio",
+            "proyect": "Proyectos",
+            "collaboration": "Colaboro",
+            "hobbie": "Aficciones",
+            "contact": "Contacto",
+            "curriculum": "Curriculum"
+        },
+        {
+            "lang": "en",
+            "index": "Home",
+            "proyect": "Proyect",
+            "collaboration": "Collaboration",
+            "hobbie": "Hobbie",
+            "contact": "Contact",
+            "curriculum": "Curriculum"
+        }
+    ],
     "slide": [
         {
-            "img": "",
-            "title": "",
-            "url": ""
+            "title": "Slide 1",
+            "img": "assets/img/slide/slide1.jpg",
+            "url": "#"
+        },
+        {
+            "title": "Slide 2",
+            "img": "assets/img/slide/slide2.jpg",
+            "url": "#"
+        },
+        {
+            "title": "Slide 3",
+            "img": "assets/img/slide/slide3.jpg",
+            "url": "#"
         }
     ],
     "proyect": [
@@ -33,5 +66,25 @@
     ],
     "hobbie": [
 
+    ],
+    "contact": [
+        {
+            "lang": "es",
+            "subject": "Asunto",
+            "name": "Nombre",
+            "secondname": "Apellidos",
+            "email": "Correo",
+            "submit": "Enviar",
+            "required": "Este campo es requerido"
+        },
+        {
+            "lang": "en",
+            "subject": "Subject",
+            "name": "First Name",
+            "secondname": "Second Name",
+            "email": "Email",
+            "submit": "Submit",
+            "required": "Valid input is required"
+        }
     ]
 }
