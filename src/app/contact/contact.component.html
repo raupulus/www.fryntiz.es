@@ -1,6 +1,31 @@
-<h2>CONTACTO FUNCIONA</h2>
-<h2>CONTACTO FUNCIONA</h2>
-<h2>CONTACTO FUNCIONA</h2>
-<h2>CONTACTO FUNCIONA</h2>
-<h2>CONTACTO FUNCIONA</h2>
-<h2>CONTACTO FUNCIONA</h2>
+
+<h4 class="mb-3">Contacto</h4>
+<form class="needs-validation" novalidate="">
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="firstName">Nombre</label>
+    <input class="form-control" id="firstName" placeholder="" value="" required="" type="text">
+    <div class="invalid-feedback">
+      Valid first name is required.
+    </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="lastName">Apellidos</label>
+    <input class="form-control" id="lastName" placeholder="" value="" required="" type="text">
+    <div class="invalid-feedback">
+      Valid last name is required.
+    </div>
+  </div>
+</div>
+
+<div class="mb-3">
+  <label for="email">Email <span class="text-muted">(Optional)</span></label>
+  <input class="form-control" id="email" placeholder="you@example.com" type="email">
+  <div class="invalid-feedback">
+    Please enter a valid email address for shipping updates.
+  </div>
+</div>
+
+<hr class="mb-4">
+<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+</form>
