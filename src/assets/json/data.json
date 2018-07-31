@@ -9,9 +9,6 @@
         }
     ],
     "menubar": [
-        [
-            "es": {}    
-        ],
         {
             "lang": "es",
             "index": "Inicio",
