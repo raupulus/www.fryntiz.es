@@ -1,13 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 
+// Importo Servicio para obtener información desde JSON con los datos
+import { ServiceData } from '../../services/data.service';
+
 @Component({
   selector: 'app-bar',
   templateUrl: './bar.component.html',
-  styleUrls: ['./bar.component.css']
+  styleUrls: ['./bar.component.css'],
+  providers: [ServiceData]
 })
 export class BarComponent implements OnInit {
 
-  constructor() { }
+    // Variable con los datos recibidos del JSON
+    public datos;
+    public index;
+
+  constructor(private _ServiceData:ServiceData) {
+    // El método "subscribe()" captura respuesta del observable mapeado
+    this._ServiceData.getData().subscribe(
+      resultado => {
+        this.datos = resultado.menubar['es']; // Obtener idioma de cookie
+        console.log('this.datos', this.datos);
+      },
+      error => {
+        let msg = <any>error;
+      }
+    );
+  }
 
   ngOnInit() {
       setTimeout(()=>{

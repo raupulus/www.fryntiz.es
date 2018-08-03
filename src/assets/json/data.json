@@ -1,16 +1,14 @@
 {
-    "config": [
-        {
-            "title": "Raúl Caro Pastorino",
-            "background": "",
-            "email": "dev@fryntiz.es",
-            "portsmtp": "",
-            "password": ""
-        }
-    ],
-    "menubar": [
-        {
-            "lang": "es",
+    "config": {
+        "title": "Raúl Caro Pastorino",
+        "background": "",
+        "logo": "assets/img/logotipo.png",
+        "email": "dev@fryntiz.es",
+        "portsmtp": "",
+        "password": ""
+    },
+    "menubar": {
+        "es": {
             "index": "Inicio",
             "proyect": "Proyectos",
             "collaboration": "Colaboro",
@@ -18,8 +16,7 @@
             "contact": "Contacto",
             "curriculum": "Curriculum"
         },
-        {
-            "lang": "en",
+        "en": {
             "index": "Home",
             "proyect": "Proyect",
             "collaboration": "Collaboration",
@@ -27,7 +24,7 @@
             "contact": "Contact",
             "curriculum": "Curriculum"
         }
-    ],
+    },
     "slide": [
         {
             "title": "Slide 1",
