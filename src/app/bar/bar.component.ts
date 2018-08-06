@@ -12,6 +12,7 @@ import { ServiceData } from '../../services/data.service';
 export class BarComponent implements OnInit {
 
     // Variable con los datos recibidos del JSON
+    public config;
     public datos;
     public index;
     public proyect;
@@ -21,7 +22,24 @@ export class BarComponent implements OnInit {
     public curriculum;
 
   constructor(private _ServiceData:ServiceData) {
+      // Obtengo los datos de Configuración
+      this.config = _ServiceData.getConfig();
+
+      // Obtengo los datos directamente para el menú
+      this.datos = _ServiceData.getMenubar();
+
+      // Establezco valores
+      this.index=this.datos['index'];
+      this.proyect=this.datos['proyect'];
+      this.collaboration=this.datos['collaboration'];
+      this.hobbie=this.datos['hobbie'];
+      this.contact=this.datos['contact'];
+      this.curriculum=this.datos['curriculum'];
+
+
+    // Si se trae por ajax hay que convertir a objetos:
     // El método "subscribe()" captura respuesta del observable mapeado
+    /*
     this._ServiceData.getData().subscribe(
       resultado => {
         this.datos = resultado.menubar['es']; // Obtener idioma de cookie
@@ -37,8 +55,7 @@ export class BarComponent implements OnInit {
         let msg = <any>error;
       }
     );
-
-
+    */
   }
 
   ngOnInit() {
