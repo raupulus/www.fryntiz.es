@@ -21,25 +21,29 @@ import { Observable } from 'rxjs';
 // Defino decorador inyectable
 @Injectable()
 
-// Exporto la clase con el servicio creado
+// Exporto la clase con el servicio creado para suministrar datos
 export class ServiceData {
+    public lang:string = 'en'; //Obtener este valor mediante cookie
     public url:string = 'assets/json/data.json';
     private _data;
 
     constructor(private _http:Http) {
-        this._data = this._http.get(this.url).pipe(map(resultado => resultado.json()));
-    }
-
-    getData() {
-        return this._data;
+        // Traigo datos AJAX
+        //this._data = this._http.get(this.url).pipe(map(resultado => resultado.json()));
+        //Traigo datos directamente
+        this._data = require('../assets/json/data.json');
     }
 
     getConfig() {
-        return this._data;
+        return this._data.config;
     }
 
+    /**
+     * Devuelvo un objeto de elementos para el menú según el idioma establecido
+     * @return Object Objetco con los elementos del menú.
+     */
     getMenubar() {
-        return this._data;
+        return this._data.menubar[this.lang];
     }
 
     getSlide() {
