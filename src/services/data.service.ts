@@ -33,4 +33,32 @@ export class ServiceData {
     getData() {
         return this._data;
     }
+
+    getConfig() {
+        return this._data;
+    }
+
+    getMenubar() {
+        return this._data;
+    }
+
+    getSlide() {
+        return this._data;
+    }
+
+    getProyect() {
+        return this._data;
+    }
+
+    getCollaboration() {
+        return this._data;
+    }
+
+    getHobbie() {
+        return this._data;
+    }
+
+    getContact() {
+        return this._data;
+    }
 }
