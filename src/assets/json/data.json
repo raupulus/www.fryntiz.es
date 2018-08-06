@@ -42,28 +42,98 @@
             "url": "#"
         }
     ],
-    "proyect": [
-        {
-            "title": "",
-            "url": "",
-            "img": "",
-            "description": ""
-        }
-    ],
-    "collaboration": [
-        {
-            "title": "",
-            "url": "",
-            "img": "",
-            "description": ""
-        }
-    ],
-    "hobbie": [
-
-    ],
-    "contact": [
-        {
-            "lang": "es",
+    "proyect": {
+        "en": [
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ],
+        "es": [
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ]
+    },
+    "collaboration": {
+        "en": [
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ],
+        "es": [
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ]
+    },
+    "hobbie": {
+        "en": [
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ],
+        "es": [
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "title": "",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ]
+    },
+    "contact": {
+        "es": {
             "subject": "Asunto",
             "name": "Nombre",
             "secondname": "Apellidos",
@@ -71,8 +141,7 @@
             "submit": "Enviar",
             "required": "Este campo es requerido"
         },
-        {
-            "lang": "en",
+        "en": {
             "subject": "Subject",
             "name": "First Name",
             "secondname": "Second Name",
@@ -80,5 +149,5 @@
             "submit": "Submit",
             "required": "Valid input is required"
         }
-    ]
+    }
 }
