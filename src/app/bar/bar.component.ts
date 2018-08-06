@@ -14,18 +14,31 @@ export class BarComponent implements OnInit {
     // Variable con los datos recibidos del JSON
     public datos;
     public index;
+    public proyect;
+    public collaboration;
+    public hobbie;
+    public contact;
+    public curriculum;
 
   constructor(private _ServiceData:ServiceData) {
     // El método "subscribe()" captura respuesta del observable mapeado
     this._ServiceData.getData().subscribe(
       resultado => {
         this.datos = resultado.menubar['es']; // Obtener idioma de cookie
-        console.log('this.datos', this.datos);
+        //console.log('this.datos', this.datos);
+        this.index=this.datos['index'];
+        this.proyect=this.datos['proyect'];
+        this.collaboration=this.datos['collaboration'];
+        this.hobbie=this.datos['hobbie'];
+        this.contact=this.datos['contact'];
+        this.curriculum=this.datos['curriculum'];
       },
       error => {
         let msg = <any>error;
       }
     );
+
+
   }
 
   ngOnInit() {
