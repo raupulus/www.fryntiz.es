@@ -5,7 +5,9 @@
         "logo": "assets/img/logotipo.png",
         "email": "dev@fryntiz.es",
         "portsmtp": "",
-        "password": ""
+        "password": "",
+        "url": "https://fryntiz.es",
+        "urlcurriculum": "https://curriculum.fryntiz.es"
     },
     "menubar": {
         "es": {
