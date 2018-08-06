@@ -2,9 +2,9 @@
     <header id="main" class="row">
         <div id="boxlogo" class="align-middle col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <figure id="logotipo" class="col-lg-4">
-                <img src="assets/img/logotipo.png" alt="Logo" />
+                <img [src]="config.logo" alt="Logo" />
             </figure>
-            <h1 id="sitetitle" class="col-lg-8">Raúl Caro Pastorino</h1>
+            <h1 id="sitetitle" class="col-lg-8">{{config.title}}</h1>
         </div>
 
         <div id="btnMovil" class="col-lg-0 col-md-0 col-sm-0 col-xs-12">
@@ -29,7 +29,7 @@
                     <a [routerLink]="['/contact']">{{contact}}</a>
                 </li>
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a href="https://curriculum.fryntiz.es" alt="Curriculum Fryntiz">{{curriculum}}</a>
+                    <a [href]="config.urlcurriculum" alt="Curriculum Fryntiz" target="_blank">{{curriculum}}</a>
                 </li>
             </ul>
         </nav>
