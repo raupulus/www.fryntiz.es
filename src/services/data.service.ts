@@ -78,22 +78,22 @@ export class ServiceData {
     }
 
     getSlide() {
-        return this.data;
+        return this.data.slide;
     }
 
     getProyect() {
-        return this.data;
+        return this.data.proyect[this.lang];
     }
 
     getCollaboration() {
-        return this.data;
+        return this.data.collaboration[this.lang];
     }
 
     getHobbie() {
-        return this.data;
+        return this.data.hobbie[this.lang];
     }
 
     getContact() {
-        return this.data;
+        return this.data.contact[this.lang];
     }
 }
