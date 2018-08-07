@@ -12,57 +12,88 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
 // Librería para mapear respuestas HTTP
-//import 'rxjs/add/operator/map';
 import { map } from 'rxjs/operators';
 
 // Librería para poder utilizar rxjs
 import { Observable } from 'rxjs';
+
+// Librería para acceder a cookies
+import { CookieService } from 'ngx-cookie-service';
 
 // Defino decorador inyectable
 @Injectable()
 
 // Exporto la clase con el servicio creado para suministrar datos
 export class ServiceData {
-    public lang:string = 'en'; //Obtener este valor mediante cookie
+    public lang:string;
     public url:string = 'assets/json/data.json';
-    private _data;
+    private data;
 
-    constructor(private _http:Http) {
+    /**
+     * Constructor del servicio
+     * @param cookieService Objeto de proveedor de datos para cookies
+     */
+    constructor(private cookieService: CookieService/*private _http:Http*/) {
+        // Traigo datos directamente
+        this.data = require( '../assets/json/data.json' );
+
+        // Obtengo idioma para los datos
+        this.getLang();
+
         // Traigo datos AJAX
-        //this._data = this._http.get(this.url).pipe(map(resultado => resultado.json()));
-        //Traigo datos directamente
-        this._data = require('../assets/json/data.json');
+        //this.data = this._http.get(this.url).pipe(map(resultado => resultado.json()));
+    }
+
+    /**
+     * Comprueba si la cookie existe para obtener su valor o establece por
+     * defecto el valor inglés "es"
+     * @return String Devuelve el idioma establecido.
+     */
+    getLang() {
+        // Compruebo si la cookie está creada para obtener su valor
+        if ( this.cookieService.check('lang') ) {
+            this.lang = this.cookieService.get( 'lang' );
+        }
+
+        // Comprueba que el idioma es válido y existe al menos para el menú.
+        if ( ( this.lang === undefined ) ||
+               this.data.menubar[this.lang] === undefined) {
+            this.lang = 'en';
+            this.cookieService.set( 'lang', 'en', 30 );
+        }
+
+        return this.lang;
     }
 
     getConfig() {
-        return this._data.config;
+        return this.data.config;
     }
 
     /**
      * Devuelvo un objeto de elementos para el menú según el idioma establecido
-     * @return Object Objetco con los elementos del menú.
+     * @return Object Objeto con los elementos del menú.
      */
     getMenubar() {
-        return this._data.menubar[this.lang];
+        return this.data.menubar[this.lang];
     }
 
     getSlide() {
-        return this._data;
+        return this.data;
     }
 
     getProyect() {
-        return this._data;
+        return this.data;
     }
 
     getCollaboration() {
-        return this._data;
+        return this.data;
     }
 
     getHobbie() {
-        return this._data;
+        return this.data;
     }
 
     getContact() {
-        return this._data;
+        return this.data;
     }
 }

@@ -16,6 +16,9 @@ import { routing, appRoutingProviders } from './rutas';
 // Importo SlideShow
 import {SlideshowModule} from 'ng-simple-slideshow';
 
+// Librería para acceder a cookies
+import { CookieService } from 'ngx-cookie-service';
+
 // Importo cada componente propio para la aplicación
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
@@ -53,6 +56,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
   // Los proveedores crean servicios de este módulo globalmente a la aplicación
   providers: [
     appRoutingProviders,  // Cargo servicio para usar las rutas
+    CookieService,
   ],
   bootstrap: [AppComponent]
 })
