@@ -1,155 +1,174 @@
 {
+  "config": {
+      "title": "Raúl Caro Pastorino",
+      "background": "",
+      "logo": "assets/img/logotipo.png",
+      "email": "dev@fryntiz.es",
+      "portsmtp": "",
+      "password": "",
+      "url": "https://fryntiz.es",
+      "urlcurriculum": "https://curriculum.fryntiz.es"
+  },
+  "menubar": {
+      "es": {
+          "index": "Inicio",
+          "proyect": "Proyectos",
+          "collaboration": "Colaboro",
+          "hobbie": "Aficciones",
+          "contact": "Contacto",
+          "curriculum": "Curriculum"
+      },
+      "en": {
+          "index": "Home",
+          "proyect": "Proyect",
+          "collaboration": "Collaboration",
+          "hobbie": "Hobbie",
+          "contact": "Contact",
+          "curriculum": "Curriculum"
+      }
+  },
+  "slide": {
     "config": {
-        "title": "Raúl Caro Pastorino",
-        "background": "",
-        "logo": "assets/img/logotipo.png",
-        "email": "dev@fryntiz.es",
-        "portsmtp": "",
-        "password": "",
-        "url": "https://fryntiz.es",
-        "urlcurriculum": "https://curriculum.fryntiz.es"
+      "debug": false,
+      "height": "400px",
+      "minHeight": "'300px'",
+      "autoPlay": true,
+      "autoPlayInterval": "6000",
+      "autoPlayWaitForLazyLoad": true,
+      "arrowSize": "30px",
+      "showArrows": true,
+      "disableSwiping": false,
+      "backgroundSize": "cover",
+      "backgroundPosition": "center center",
+      "backgroundRepeat": "no-repeat",
+      "showDots": true,
+      "dotColor": "#FFF",
+      "showCaptions": true,
+      "captionColor": "#FFF",
+      "captionBackground": "rgba(0, 0, 0, .35)",
+      "lazyLoad": "imageSources?.length > 1"
     },
-    "menubar": {
-        "es": {
-            "index": "Inicio",
-            "proyect": "Proyectos",
-            "collaboration": "Colaboro",
-            "hobbie": "Aficciones",
-            "contact": "Contacto",
-            "curriculum": "Curriculum"
-        },
-        "en": {
-            "index": "Home",
-            "proyect": "Proyect",
-            "collaboration": "Collaboration",
-            "hobbie": "Hobbie",
-            "contact": "Contact",
-            "curriculum": "Curriculum"
-        }
-    },
-    "slide": [
-        {
-            "title": "Slide 1",
-            "img": "assets/img/slide/slide1.jpg",
-            "url": "#"
-        },
-        {
-            "title": "Slide 2",
-            "img": "assets/img/slide/slide2.jpg",
-            "url": "#"
-        },
-        {
-            "title": "Slide 3",
-            "img": "assets/img/slide/slide3.jpg",
-            "url": "#"
-        }
+    "img" : [
+      {
+        "title": "Slide 1",
+        "url": "assets/img/slide/slide1.jpg",
+        "href": "#",
+        "caption": "Slide 1"
+      },
+      {
+        "title": "Slide 2",
+        "url": "assets/img/slide/slide2.jpg",
+        "href": "#",
+        "caption": "Slide 2"
+      }
+    ]
+  },
+  "proyect": {
+    "en": [
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      }
     ],
-    "proyect": {
-        "en": [
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            },
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            }
-        ],
-        "es": [
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            },
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            }
-        ]
+    "es": [
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      }
+    ]
+  },
+  "collaboration": {
+    "en": [
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      }
+    ],
+    "es": [
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      }
+    ]
+  },
+  "hobbie": {
+    "en": [
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      }
+    ],
+    "es": [
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "url": "",
+        "img": "",
+        "description": ""
+      }
+    ]
+  },
+  "contact": {
+    "es": {
+      "subject": "Asunto",
+      "name": "Nombre",
+      "secondname": "Apellidos",
+      "email": "Correo",
+      "submit": "Enviar",
+      "required": "Este campo es requerido"
     },
-    "collaboration": {
-        "en": [
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            },
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            }
-        ],
-        "es": [
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            },
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            }
-        ]
-    },
-    "hobbie": {
-        "en": [
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            },
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            }
-        ],
-        "es": [
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            },
-            {
-                "title": "",
-                "url": "",
-                "img": "",
-                "description": ""
-            }
-        ]
-    },
-    "contact": {
-        "es": {
-            "subject": "Asunto",
-            "name": "Nombre",
-            "secondname": "Apellidos",
-            "email": "Correo",
-            "submit": "Enviar",
-            "required": "Este campo es requerido"
-        },
-        "en": {
-            "subject": "Subject",
-            "name": "First Name",
-            "secondname": "Second Name",
-            "email": "Email",
-            "submit": "Submit",
-            "required": "Valid input is required"
-        }
+    "en": {
+      "subject": "Subject",
+      "name": "First Name",
+      "secondname": "Second Name",
+      "email": "Email",
+      "submit": "Submit",
+      "required": "Valid input is required"
     }
+  }
 }
