@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// Importo Servicio para obtener información desde JSON con los datos
+// Importo Servicio para obtener información desde JSON
 import { ServiceData } from '../../services/data.service';
 
 @Component({
