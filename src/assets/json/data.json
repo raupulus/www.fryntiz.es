@@ -12,7 +12,7 @@
   "menubar": {
       "es": {
           "index": "Inicio",
-          "proyect": "Proyectos",
+          "projects": "Proyectos",
           "collaboration": "Colaboro",
           "hobbie": "Aficciones",
           "contact": "Contacto",
@@ -20,7 +20,7 @@
       },
       "en": {
           "index": "Home",
-          "proyect": "Proyect",
+          "projects": "Project",
           "collaboration": "Collaboration",
           "hobbie": "Hobbie",
           "contact": "Contact",
@@ -63,13 +63,13 @@
       }
     ]
   },
-  "proyect": {
+  "projects": {
     "es": [
       {
         "title": "La Guía Linux",
-        "alt": "Web principal del proyecto de software libre La Guía Linux",
+        "alt": "Web principal del proyectos de software libre La Guía Linux",
         "url": "https://laguialinux.es",
-        "img": "assets/img/proyect/laguialinux.png",
+        "img": "assets/img/projects/laguialinux.png",
         "description": "Mis apuntes, Guías y vídeotutoriales sobre informática y tecnología, especialmente sobre software libre.",
         "repository": "GitLab",
         "urlrepository": "https://gitlab.com/fryntiz"
@@ -78,7 +78,7 @@
         "title": "Scripts Debian Configuration",
         "alt": "Repositorio con scripts para configurar debian GNU/Linux",
         "url": "",
-        "img": "assets/img/proyect/debian-scripts.png",
+        "img": "assets/img/projects/debian-scripts.png",
         "description": "Conjuntos de scripts para adaptar un sistema operativo Debian a mi gusto para desarrollo web.",
         "repository": "GitHub",
         "urlrepository": "https://github.com/fryntiz/debian-developer-conf"
@@ -87,7 +87,7 @@
         "title": "Scripts Fedora Configuration",
         "alt": "Repositorio con scripts para configurar Fedora GNU/Linux",
         "url": "",
-        "img": "assets/img/proyect/script_fedora.png",
+        "img": "assets/img/projects/script_fedora.png",
         "description": "Conjuntos de scripts para adaptar un sistema operativo Fedora a mi gusto para desarrollo web",
         "repository": "GitLab",
         "urlrepository": "https://gitlab.com/fryntiz/fedora-devconf.git"
@@ -96,7 +96,7 @@
         "title": "Bot Twitter en Python",
         "alt": "Repositorio de Bot para publicar en Twitter",
         "url": "",
-        "img": "assets/img/proyect/bot-twitter.png",
+        "img": "assets/img/projects/bot-twitter.png",
         "description": "Bot para interactuar en las redes sociales de forma independiente para publicar, retwittear, fav...",
         "repository": "GitLab",
         "urlrepository": "https://gitlab.com/fryntiz/bot-twitter-python"
@@ -105,7 +105,7 @@
         "title": "Diseño en Debian",
         "alt": "Repositorio con mis diseños para debian",
         "url": "",
-        "img": "assets/img/proyect/debian-design.png",
+        "img": "assets/img/projects/debian-design.png",
         "description": "Mis diseños de fondos para el Escritorio, GRUB, Playmouth, GDM... sobre Debian",
         "repository": "GitLab",
         "urlrepository": "https://gitlab.com/fryntiz/Art-for-Debian"
@@ -114,16 +114,88 @@
         "title": "Mini Apps WEB",
         "alt": "Repositorio con pequeñas aplicaciones web",
         "url": "",
-        "img": "assets/img/proyect/",
-        "description": "Pequeñas aplicaciones web que he realizado para integrarlas en otros proyectos",
+        "img": "assets/img/projects/miniapps.png",
+        "description": "Pequeñas aplicaciones web que he realizado para integrarlas en otros projectsos",
         "repository": "GitLab",
         "urlrepository": "https://gitlab.com/fryntiz/Mini-Aplicaciones-Web"
+      },
+      {
+        "title": "SuperBashScript",
+        "alt": "Repositorio con scripts en bash para administrar sistema",
+        "url": "",
+        "img": "assets/img/projects/superbashscript.png",
+        "description": "Script para ayudar con administración, mantenimiento y acceso a programas Shell Linux.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/superadminscript"
+      },
+      {
+        "title": "Jquery LeftBar",
+        "alt": "Repositorio con el desarrollo del plugin Jquery LeftBar",
+        "url": "",
+        "img": "assets/img/projects/jquery.leftbar.png",
+        "description": "Barra personalizable en forma de plugin creado con jQuery donde solo hay que pasar imagen, enlace y nombre por cada elemento.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/jquery.leftbar"
+      },
+      {
+        "title": "Jquery OptionsFixed",
+        "alt": "Repositorio con el desarrollo del plugin",
+        "url": "",
+        "img": "assets/img/projects/jquery.png",
+        "description": "Menú de opciones discreto y fijo. Posiciona una imagen en una esquina que al pulsar mostrará un menú personalizable con enlaces.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/jquery.optionsfixed"
+      },
+      {
+        "title": "Jquery Ejercicios Resueltos",
+        "alt": "Repositorio con los ejercicios JQuery que yo he resuelto",
+        "url": "",
+        "img": "assets/img/projects/jquery.png",
+        "description": "Ejercicios ya resueltos de jquery con los que he practicado durante mis estudios en este lenguaje.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/jquery-ejercicios-resueltos.git"
+      },
+      {
+        "title": "Javascript Ejercicios Resueltos",
+        "alt": "Repositorio con mis ejercicios resueltos de javascript",
+        "url": "",
+        "img": "assets/img/projects/javascript.png",
+        "description": "Ejercicios con instrucciones y comentarios a cada paso de cuando estudiaba.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/jquery-ejercicios-resueltos"
+      },
+      {
+        "title": "Librería de Javascript",
+        "alt": "Repositorio con mis librerías para el lenguaje javascript",
+        "url": "",
+        "img": "assets/img/projects/javascript.png",
+        "description": "Librerías de funciones para javascript",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/javascript-library"
+      },
+      {
+        "title": "Juego Snake",
+        "alt": "Repositorio con el juego del snake en javascript",
+        "url": "",
+        "img": "assets/img/projects/game-javascript-snake.png",
+        "description": "El clásico juego de la Serpiente que come manzanas escrito en javascript orientado a objetos y documentando. Para estudio y aprendizaje más que para jugar.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/snake-game-javascript"
+      },
+      {
+        "title": "Generador de Proyectos",
+        "alt": "Repositorio con mis scripts para generar Proyectos",
+        "url": "",
+        "img": "assets/img/projects/project-generator.png",
+        "description": "Genera la estructura entre varios Proyectos de los más recurridos en mi trabajo y preferencias, ahorrando tiempo al configurar.",
+        "repository": "GitLab",
+        "urlrepository": ""
       },
       {
         "title": "",
         "alt": "",
         "url": "",
-        "img": "assets/img/proyect/",
+        "img": "assets/img/projects/",
         "description": "",
         "repository": "",
         "urlrepository": ""
@@ -132,7 +204,7 @@
         "title": "",
         "alt": "",
         "url": "",
-        "img": "assets/img/proyect/",
+        "img": "assets/img/projects/",
         "description": "",
         "repository": "",
         "urlrepository": ""
@@ -143,8 +215,8 @@
         "title": "La Guía Linux",
         "alt": "",
         "url": "https://laguialinux.es",
-        "img": "assets/img/proyect/laguialinux.png",
-        "description": "The proyect La Guía Linux...",
+        "img": "assets/img/projects/laguialinux.png",
+        "description": "The projects La Guía Linux...",
         "repository": "",
         "urlrepository": ""
       },

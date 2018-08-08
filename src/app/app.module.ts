@@ -26,7 +26,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BarComponent } from './bar/bar.component';
 import { SlideComponent } from './slide/slide.component';
 import { AsideComponent } from './aside/aside.component';
-import { ProyectComponent } from './proyect/proyect.component';
+import { ProjectComponent } from './project/project.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 
@@ -39,7 +39,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     BarComponent,
     SlideComponent,
     AsideComponent,
-    ProyectComponent,
+    ProjectComponent,
     CollaborationComponent,
     HobbiesComponent,
   ],

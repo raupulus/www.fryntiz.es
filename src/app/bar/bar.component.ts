@@ -15,7 +15,7 @@ export class BarComponent implements OnInit {
     public config;
     public datos;
     public index;
-    public proyect;
+    public projects;
     public collaboration;
     public hobbie;
     public contact;
@@ -30,7 +30,7 @@ export class BarComponent implements OnInit {
 
       // Establezco valores
       this.index=this.datos['index'];
-      this.proyect=this.datos['proyect'];
+      this.projects=this.datos['projects'];
       this.collaboration=this.datos['collaboration'];
       this.hobbie=this.datos['hobbie'];
       this.contact=this.datos['contact'];
@@ -45,7 +45,7 @@ export class BarComponent implements OnInit {
         this.datos = resultado.menubar['es']; // Obtener idioma de cookie
         //console.log('this.datos', this.datos);
         this.index=this.datos['index'];
-        this.proyect=this.datos['proyect'];
+        this.project=this.datos['project'];
         this.collaboration=this.datos['collaboration'];
         this.hobbie=this.datos['hobbie'];
         this.contact=this.datos['contact'];

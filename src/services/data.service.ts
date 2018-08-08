@@ -81,8 +81,8 @@ export class ServiceData {
         return this.data.slide;
     }
 
-    getProyect() {
-        return this.data.proyect[this.lang];
+    getProjects() {
+        return this.data.projects[this.lang];
     }
 
     getCollaboration() {

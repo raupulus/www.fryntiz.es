@@ -11,7 +11,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Importo los componentes
 import { IndexComponent } from "./index/index.component";
 import { ContactComponent } from "./contact/contact.component";
-import { ProyectComponent } from './proyect/proyect.component';
+import { ProjectComponent } from './project/project.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 
@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     {path: "", component: IndexComponent, pathMatch: 'full'},
     {path: "index", component: IndexComponent},
     {path: "contact", component: ContactComponent, data: { title: 'Contacto' }},
-    {path: "proyect", component: ProyectComponent, data: { title: 'Proyectos' }},
+    {path: "projects", component: ProjectComponent, data: { title: 'Proyectos' }},
     {path: "collaboration", component: CollaborationComponent, data: { title: 'Colaboraciones' }},
     {path: "hobbies", component: HobbiesComponent, data: { title: 'Hobbies' }},
     {path: "**", component: IndexComponent},

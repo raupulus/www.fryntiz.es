@@ -4,17 +4,18 @@ import { Component, OnInit } from '@angular/core';
 import { ServiceData } from '../../services/data.service';
 
 @Component({
-  selector: 'app-proyect',
-  templateUrl: './proyect.component.html',
-  styleUrls: ['./proyect.component.css'],
+  selector: 'app-project',
+  templateUrl: './project.component.html',
+  styleUrls: ['./project.component.css'],
   providers: [ServiceData]
 })
-export class ProyectComponent implements OnInit {
+
+export class ProjectComponent implements OnInit {
   private datos;
 
   constructor(private _ServiceData:ServiceData) {
     // Obtengo los datos directamente para los proyectos
-    this.datos = _ServiceData.getProyect();
+    this.datos = _ServiceData.getProjects();
   }
 
   ngOnInit() {
