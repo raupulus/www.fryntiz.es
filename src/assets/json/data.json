@@ -64,32 +64,44 @@
     ]
   },
   "proyect": {
-    "en": [
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      },
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      }
-    ],
     "es": [
       {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
+        "title": "La Guía Linux",
+        "alt": "Web principal del proyecto de software libre La Guía Linux",
+        "url": "https://laguialinux.es",
+        "img": "assets/img/proyect/laguialinux.png",
+        "description": "La guía linux es....",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz"
       },
       {
         "title": "",
+        "alt": "",
         "url": "",
         "img": "",
-        "description": ""
+        "description": "",
+        "repository": "",
+        "urlrepository": ""
+      }
+    ],
+    "en": [
+      {
+        "title": "La Guía Linux",
+        "alt": "",
+        "url": "https://laguialinux.es",
+        "img": "assets/img/proyect/laguialinux.png",
+        "description": "The proyect La Guía Linux...",
+        "repository": "",
+        "urlrepository": ""
+      },
+      {
+        "title": "",
+        "alt": "",
+        "url": "",
+        "img": "",
+        "description": "",
+        "repository": "",
+        "urlrepository": ""
       }
     ]
   },
