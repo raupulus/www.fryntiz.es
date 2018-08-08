@@ -3,6 +3,13 @@
     <div class="card mb-4 shadow-sm">
       <img class="card-img-top" [alt]="dato.alt" [src]="dato.img" />
 
+      <h3>{{ dato.title }}</h3>
+      <p>
+        <a [href]="dato.url" [title]="dato.alt">
+          <small class="text-muted">{{ dato.url }}</small>
+        </a>
+      </p>
+
       <div class="card-body">
         <p class="card-text">{{ dato.description }}</p>
 
