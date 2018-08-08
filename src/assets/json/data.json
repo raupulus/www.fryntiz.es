@@ -70,15 +70,69 @@
         "alt": "Web principal del proyecto de software libre La Guía Linux",
         "url": "https://laguialinux.es",
         "img": "assets/img/proyect/laguialinux.png",
-        "description": "La guía linux es....",
+        "description": "Mis apuntes, Guías y vídeotutoriales sobre informática y tecnología, especialmente sobre software libre.",
         "repository": "GitLab",
         "urlrepository": "https://gitlab.com/fryntiz"
+      },
+      {
+        "title": "Scripts Debian Configuration",
+        "alt": "Repositorio con scripts para configurar debian GNU/Linux",
+        "url": "",
+        "img": "assets/img/proyect/debian-scripts.png",
+        "description": "Conjuntos de scripts para adaptar un sistema operativo Debian a mi gusto para desarrollo web.",
+        "repository": "GitHub",
+        "urlrepository": "https://github.com/fryntiz/debian-developer-conf"
+      },
+      {
+        "title": "Scripts Fedora Configuration",
+        "alt": "Repositorio con scripts para configurar Fedora GNU/Linux",
+        "url": "",
+        "img": "assets/img/proyect/script_fedora.png",
+        "description": "Conjuntos de scripts para adaptar un sistema operativo Fedora a mi gusto para desarrollo web",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/fedora-devconf.git"
+      },
+      {
+        "title": "Bot Twitter en Python",
+        "alt": "Repositorio de Bot para publicar en Twitter",
+        "url": "",
+        "img": "assets/img/proyect/bot-twitter.png",
+        "description": "Bot para interactuar en las redes sociales de forma independiente para publicar, retwittear, fav...",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/bot-twitter-python"
+      },
+      {
+        "title": "Diseño en Debian",
+        "alt": "Repositorio con mis diseños para debian",
+        "url": "",
+        "img": "assets/img/proyect/debian-design.png",
+        "description": "Mis diseños de fondos para el Escritorio, GRUB, Playmouth, GDM... sobre Debian",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/Art-for-Debian"
+      },
+      {
+        "title": "Mini Apps WEB",
+        "alt": "Repositorio con pequeñas aplicaciones web",
+        "url": "",
+        "img": "assets/img/proyect/",
+        "description": "Pequeñas aplicaciones web que he realizado para integrarlas en otros proyectos",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/Mini-Aplicaciones-Web"
       },
       {
         "title": "",
         "alt": "",
         "url": "",
-        "img": "",
+        "img": "assets/img/proyect/",
+        "description": "",
+        "repository": "",
+        "urlrepository": ""
+      },
+      {
+        "title": "",
+        "alt": "",
+        "url": "",
+        "img": "assets/img/proyect/",
         "description": "",
         "repository": "",
         "urlrepository": ""
