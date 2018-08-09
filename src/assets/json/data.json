@@ -48,7 +48,7 @@
       "captionBackground": "rgba(0, 0, 0, .35)",
       "lazyLoad": "imageSources?.length > 1"
     },
-    "img" : [
+    "img": [
       {
         "title": "Slide 1",
         "url": "assets/img/slide/slide1.jpg",
@@ -65,15 +65,6 @@
   },
   "projects": {
     "es": [
-      {
-        "title": "La Guía Linux",
-        "alt": "Web principal del proyectos de software libre La Guía Linux",
-        "url": "https://laguialinux.es",
-        "img": "assets/img/projects/laguialinux.png",
-        "description": "Mis apuntes, Guías y vídeotutoriales sobre informática y tecnología, especialmente sobre software libre.",
-        "repository": "GitLab",
-        "urlrepository": "https://gitlab.com/fryntiz"
-      },
       {
         "title": "Scripts Debian Configuration",
         "alt": "Repositorio con scripts para configurar debian GNU/Linux",
@@ -189,25 +180,74 @@
         "img": "assets/img/projects/project-generator.png",
         "description": "Genera la estructura entre varios Proyectos de los más recurridos en mi trabajo y preferencias, ahorrando tiempo al configurar.",
         "repository": "GitLab",
-        "urlrepository": ""
+        "urlrepository": "https://gitlab.com/fryntiz/project-generator"
       },
+      {
+        "title": "Raspberry LCD 16x2",
+        "alt": "Repositorio con mi librería intermedia para HD44780 LCD 16x2",
+        "url": "",
+        "img": "assets/img/projects/raspberry-lcd.png",
+        "description": "Pequeña librería para el modelo 1602 chip HD44780 con el que trabajar más fácil mediante funciones predefinidas por mi.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/raspberry-HD44780-LCD16x2"
+      },
+      {
+        "title": "Raspberry Pantalla 7 Segmentos",
+        "alt": "Repositorios para pantallas de 8 dígitos MAX7219",
+        "url": "",
+        "img": "assets/img/projects/raspberry.png",
+        "description": "Instalación y librerías personalizadas para display de 7 segmentos (8 dígitos) con el chip MAX7219 en Raspberry y Raspbian Estable.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/raspberry-MAX7219"
+      },
+      {
+        "title": "Raspberry Display Oled",
+        "alt": "Repositorio con mi librería de raspberry para pantallas oled",
+        "url": "",
+        "img": "assets/img/projects/raspberry.png",
+        "description": "Librería para trabajar con pantallas Oled de 128x64 píxeles que tengan el controlador SSD 1306 instalando y usando las librerías: Adafruit_SSD1306, Adafruit_GPIO, Pillow y RPIO para python3",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/raspberry-SSD1306-DisplayOled"
+      },
+      {
+        "title": "Python Scripts",
+        "alt": "Repositorio con mis scripts en python",
+        "url": "",
+        "img": "assets/img/projects/python.png",
+        "description": "Scripts individuales escritos en python para objetivos específicos. Desarrollo con el propósito de ser reutilizado en otros proyectos.",
+        "repository": "GitLab",
+        "urlrepository": "https://gitlab.com/fryntiz/python"
+      }
+    ],
+    "en": [
       {
         "title": "",
         "alt": "",
         "url": "",
         "img": "assets/img/projects/",
         "description": "",
-        "repository": "",
+        "repository": "GitLab",
         "urlrepository": ""
+      }
+    ]
+  },
+  "collaboration": {
+    "es": [
+      {
+        "title": "La Guía Linux",
+        "alt": "Web principal del proyectos de software libre La Guía Linux",
+        "url": "https://laguialinux.es",
+        "urlinfo": "",
+        "img": "assets/img/collaborations/www.laguialinux.es.png",
+        "description": "Mis apuntes, Guías y vídeotutoriales sobre informática y tecnología, especialmente sobre software libre.",
       },
       {
         "title": "",
         "alt": "",
         "url": "",
-        "img": "assets/img/projects/",
+        "urlinfo": "",
+        "img": "assets/img/collaborations/",
         "description": "",
-        "repository": "",
-        "urlrepository": ""
       }
     ],
     "en": [
@@ -224,40 +264,10 @@
         "title": "",
         "alt": "",
         "url": "",
-        "img": "",
+        "img": "assets/img/projects/",
         "description": "",
-        "repository": "",
+        "repository": "GitLab",
         "urlrepository": ""
-      }
-    ]
-  },
-  "collaboration": {
-    "en": [
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      },
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      }
-    ],
-    "es": [
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      },
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
       }
     ]
   },
