@@ -286,7 +286,7 @@
   "hobbies": {
     "es": [
       {
-        "title": "titulo",
+        "title": "Arduino",
         "subtitle": "subtitulo",
         "url": "#",
         "img": "assets/img/hobbies/default.png",
@@ -294,7 +294,47 @@
         "description": "Descripción del bloque"
       },
       {
-        "title": "titulo",
+        "title": "Raspberry",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
+      },
+      {
+        "title": "Editar Contenido",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
+      },
+      {
+        "title": "Diseño Grafico 2D",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
+      },
+      {
+        "title": "GNU/Linux",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
+      },
+      {
+        "title": "Electrónica",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
+      },
+      {
+        "title": "Deporte",
         "subtitle": "subtitulo",
         "url": "#",
         "img": "assets/img/hobbies/default.png",
