@@ -1,31 +1,33 @@
 {
   "config": {
-      "title": "Raúl Caro Pastorino",
-      "background": "",
-      "logo": "assets/img/logotipo.png",
-      "email": "dev@fryntiz.es",
-      "portsmtp": "",
-      "password": "",
-      "url": "https://fryntiz.es",
-      "urlcurriculum": "https://curriculum.fryntiz.es"
+    "title": "Raúl Caro Pastorino",
+    "background": "",
+    "logo": "assets/img/logotipo.png",
+    "email": "dev@fryntiz.es",
+    "portsmtp": "",
+    "password": "",
+    "url": "https://fryntiz.es",
+    "urlcurriculum": "https://curriculum.fryntiz.es"
   },
   "menubar": {
-      "es": {
-          "index": "Inicio",
-          "projects": "Proyectos",
-          "collaboration": "Colaboro",
-          "hobbie": "Aficciones",
-          "contact": "Contacto",
-          "curriculum": "Curriculum"
-      },
-      "en": {
-          "index": "Home",
-          "projects": "Project",
-          "collaboration": "Collaboration",
-          "hobbie": "Hobbie",
-          "contact": "Contact",
-          "curriculum": "Curriculum"
-      }
+    "es": {
+      "index": "Inicio",
+      "projects": "Proyectos",
+      "collaboration": "Colaboro",
+      "hobbie": "Aficciones",
+      "curriculum": "Curriculum",
+      "jobs": "Trabajos",
+      "contact": "Contacto"
+    },
+    "en": {
+      "index": "Home",
+      "projects": "Project",
+      "collaboration": "Collaboration",
+      "hobbie": "Hobbie",
+      "curriculum": "Curriculum",
+      "jobs": "Jobs",
+      "contact": "Contact"
+    }
   },
   "slide": {
     "config": {
