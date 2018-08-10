@@ -1,5 +1,22 @@
-img {
+#boxcard img {
     height: 225px;
     width: 100%;
     display: block;
+}
+
+.sectioncard {
+  padding: 0 5px;
+  background-color: #fff;
+}
+
+.elementcard {
+  padding: 3px;
+  height: 550px;
+}
+
+/* Caja de texto interior, se hace scroll si es demasiado texto */
+.descritpioncard {
+  margin: 0;
+  max-height: 170px;
+  overflow-x: scroll;
 }
