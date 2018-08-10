@@ -20,6 +20,10 @@ import { Observable } from 'rxjs';
 // Librería para acceder a cookies
 import { CookieService } from 'ngx-cookie-service';
 
+// Quita el error al obtener json con require, esto no es correcto hacerlo
+// pero quedará así temporalmente.
+declare var require: any;
+
 // Defino decorador inyectable
 @Injectable()
 
