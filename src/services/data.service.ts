@@ -29,75 +29,83 @@ declare var require: any;
 
 // Exporto la clase con el servicio creado para suministrar datos
 export class ServiceData {
-    public lang:string;
-    public url:string = 'assets/json/data.json';
-    private data;
+  public lang:string;
+  public url:string = 'assets/json/data.json';
+  private data;
 
-    /**
-     * Constructor del servicio
-     * @param cookieService Objeto de proveedor de datos para cookies
-     */
-    constructor(private cookieService: CookieService/*private _http:Http*/) {
-        // Traigo datos directamente
-        this.data = require( '../assets/json/data.json' );
+  /**
+   * Constructor del servicio
+   * @param cookieService Objeto de proveedor de datos para cookies
+   */
+  constructor(private cookieService: CookieService/*private _http:Http*/) {
+    // Traigo datos directamente
+    this.data = require( '../assets/json/data.json' );
 
-        // Obtengo idioma para los datos
-        this.getLang();
+    // Obtengo idioma para los datos
+    this.getLang();
 
-        // Traigo datos AJAX
-        //this.data = this._http.get(this.url).pipe(map(resultado => resultado.json()));
+    // Traigo datos AJAX
+    //this.data = this._http.get(this.url).pipe(map(resultado => resultado.json()));
+  }
+
+  /**
+   * Comprueba si la cookie existe para obtener su valor o establece por
+   * defecto el valor inglés "es"
+   * @return String Devuelve el idioma establecido.
+   */
+  getLang() {
+    // Compruebo si la cookie está creada para obtener su valor
+    if ( this.cookieService.check('lang') ) {
+        this.lang = this.cookieService.get( 'lang' );
     }
 
-    /**
-     * Comprueba si la cookie existe para obtener su valor o establece por
-     * defecto el valor inglés "es"
-     * @return String Devuelve el idioma establecido.
-     */
-    getLang() {
-        // Compruebo si la cookie está creada para obtener su valor
-        if ( this.cookieService.check('lang') ) {
-            this.lang = this.cookieService.get( 'lang' );
-        }
-
-        // Comprueba que el idioma es válido y existe al menos para el menú.
-        if ( ( this.lang === undefined ) ||
-               this.data.menubar[this.lang] === undefined) {
-            this.lang = 'en';
-            this.cookieService.set( 'lang', 'en', 30 );
-        }
-
-        return this.lang;
+    // Comprueba que el idioma es válido y existe al menos para el menú.
+    if ( ( this.lang === undefined ) ||
+           this.data.menubar[this.lang] === undefined) {
+        this.lang = 'en';
+        this.cookieService.set( 'lang', 'en', 30 );
     }
 
-    getConfig() {
-        return this.data.config;
-    }
+    return this.lang;
+  }
 
-    /**
-     * Devuelvo un objeto de elementos para el menú según el idioma establecido
-     * @return Object Objeto con los elementos del menú.
-     */
-    getMenubar() {
-        return this.data.menubar[this.lang];
-    }
+  getConfig() {
+    return this.data.config;
+  }
 
-    getSlide() {
-        return this.data.slide;
-    }
+  /**
+   * Devuelvo un objeto de elementos para el menú según el idioma establecido
+   * @return Object Objeto con los elementos del menú.
+   */
+  getMenubar() {
+    return this.data.menubar[this.lang];
+  }
 
-    getProjects() {
-        return this.data.projects[this.lang];
-    }
+  getSlide() {
+    return this.data.slide;
+  }
 
-    getCollaboration() {
-        return this.data.collaboration[this.lang];
-    }
+  getProjects() {
+    return this.data.projects[this.lang];
+  }
 
-    getHobbie() {
-        return this.data.hobbie[this.lang];
-    }
+  getCollaboration() {
+    return this.data.collaboration[this.lang];
+  }
 
-    getContact() {
-        return this.data.contact[this.lang];
-    }
+  getHobbie() {
+    return this.data.hobbie[this.lang];
+  }
+
+  getJobs() {
+    return this.data.jobs[this.lang];
+  }
+
+  getContact() {
+      return this.data.contact[this.lang];
+  }
+
+  getAside() {
+      return this.data.aside[this.lang];
+  }
 }
