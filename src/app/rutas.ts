@@ -14,15 +14,17 @@ import { ContactComponent } from "./contact/contact.component";
 import { ProjectComponent } from './project/project.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 // Asocio palabras con rutas a componentes
 const appRoutes: Routes = [
     {path: "", component: IndexComponent, pathMatch: 'full'},
     {path: "index", component: IndexComponent},
-    {path: "contact", component: ContactComponent, data: { title: 'Contacto' }},
-    {path: "projects", component: ProjectComponent, data: { title: 'Proyectos' }},
-    {path: "collaboration", component: CollaborationComponent, data: { title: 'Colaboraciones' }},
+    {path: "contact", component: ContactComponent, data: { title: 'Contact' }},
+    {path: "projects", component: ProjectComponent, data: { title: 'Proyects' }},
+    {path: "collaboration", component: CollaborationComponent, data: { title: 'Collaborations' }},
     {path: "hobbies", component: HobbiesComponent, data: { title: 'Hobbies' }},
+    {path: "jobs", component: JobsComponent, data: { title: 'Jobs' }},
     {path: "**", component: IndexComponent},
 ];
 
