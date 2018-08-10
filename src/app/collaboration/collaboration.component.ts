@@ -27,5 +27,4 @@ export class CollaborationComponent implements OnInit {
   linkTo(url:string) {
     window.open(url, '_blank');
   }
-
 }
