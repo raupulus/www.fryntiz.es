@@ -311,15 +311,23 @@
       }
     ]
   },
-  "work": {
+  "jobs": {
     "es": [
       {
-        "title": "",
-        "alt": "",
-        "url": "",
-        "urlinfo": "",
-        "img": "assets/img/work/",
-        "description": ""
+        "title": "Hostal Cristina",
+        "alt": "Web realizada por Raúl Caro Pastorino para Hostal Cristina",
+        "url": "https://www.hostalcristina.com",
+        "urlinfo": "https://www.hostalcristina.com/index.php/contactar/",
+        "img": "assets/img/work/www.hostalcristina.com.png",
+        "description": "Realizo el sitio web para el Hostal Cristina en Chipiona."
+      },
+      {
+        "title": "El faro Inmobiliaria",
+        "alt": "Web realizada por Raúl Caro Pastorino para El faro Inmobiliaria",
+        "url": "http://www.elfaroinmobiliaria.es/",
+        "urlinfo": "http://www.elfaroinmobiliaria.es/sobre-nosotros/",
+        "img": "assets/img/jobs/www.elfaroinmobiliaria.com.png",
+        "description": "Creación de este sitio web para la empresa inmobiliaria el faro."
       }
     ],
     "en": [
@@ -328,7 +336,7 @@
         "alt": "",
         "url": "",
         "urlinfo": "",
-        "img": "assets/img/work/",
+        "img": "assets/img/jobs/",
         "description": ""
       }
     ]
