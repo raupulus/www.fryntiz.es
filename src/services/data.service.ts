@@ -93,8 +93,8 @@ export class ServiceData {
     return this.data.collaboration[this.lang];
   }
 
-  getHobbie() {
-    return this.data.hobbie[this.lang];
+  getHobbies() {
+    return this.data.hobbies[this.lang];
   }
 
   getJobs() {
