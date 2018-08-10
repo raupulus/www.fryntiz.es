@@ -283,28 +283,26 @@
       }
     ]
   },
-  "hobbie": {
-    "en": [
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      },
-      {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
-      }
-    ],
+  "hobbies": {
     "es": [
       {
-        "title": "",
-        "url": "",
-        "img": "",
-        "description": ""
+        "title": "titulo",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
       },
+      {
+        "title": "titulo",
+        "subtitle": "subtitulo",
+        "url": "#",
+        "img": "assets/img/hobbies/default.png",
+        "alt": "alt",
+        "description": "Descripción del bloque"
+      }
+    ],
+    "en": [
       {
         "title": "",
         "url": "",
@@ -328,7 +326,7 @@
         "alt": "Web realizada por Raúl Caro Pastorino para El faro Inmobiliaria",
         "url": "http://www.elfaroinmobiliaria.es/",
         "urlinfo": "http://www.elfaroinmobiliaria.es/sobre-nosotros/",
-        "img": "assets/img/jobs/www.elfaroinmobiliaria.com.png",
+        "img": "assets/img/jobs/www.elfaroinmobiliaria.es.png",
         "description": "Creación de este sitio web para la empresa inmobiliaria el faro."
       }
     ],
