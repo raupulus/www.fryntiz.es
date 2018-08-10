@@ -29,6 +29,8 @@ import { AsideComponent } from './aside/aside.component';
 import { ProjectComponent } from './project/project.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { FooterComponent } from './footer/footer.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @NgModule({
   // Clases de vista para el módulo (components|directives|pipes)
@@ -42,6 +44,8 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     ProjectComponent,
     CollaborationComponent,
     HobbiesComponent,
+    FooterComponent,
+    JobsComponent,
   ],
 
   // Importo módulos que usarán las plantillas
