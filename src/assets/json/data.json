@@ -43,11 +43,11 @@
       "backgroundSize": "cover",
       "backgroundPosition": "center center",
       "backgroundRepeat": "no-repeat",
-      "showDots": true,
+      "showDots": false,
       "dotColor": "#FFF",
       "showCaptions": true,
       "captionColor": "#FFF",
-      "captionBackground": "rgba(0, 0, 0, .35)",
+      "captionBackground": "rgba(0, 0, 0, .45)",
       "lazyLoad": "imageSources?.length > 1"
     },
     "img": [
