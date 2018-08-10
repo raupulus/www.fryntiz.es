@@ -18,8 +18,9 @@ export class BarComponent implements OnInit {
     public projects;
     public collaboration;
     public hobbie;
-    public contact;
     public curriculum;
+    public jobs;
+    public contact;
 
   constructor(private _ServiceData:ServiceData) {
       // Obtengo los datos de Configuración
@@ -33,9 +34,9 @@ export class BarComponent implements OnInit {
       this.projects=this.datos['projects'];
       this.collaboration=this.datos['collaboration'];
       this.hobbie=this.datos['hobbie'];
-      this.contact=this.datos['contact'];
       this.curriculum=this.datos['curriculum'];
-
+      this.jobs=this.datos['jobs'];
+      this.contact=this.datos['contact'];
 
     // Si se trae por ajax hay que convertir a objetos:
     // El método "subscribe()" captura respuesta del observable mapeado
