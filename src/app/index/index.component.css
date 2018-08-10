@@ -5,3 +5,30 @@
   background-color: #435454;
   box-shadow: 2px 2px 3px #000;
 }
+
+#boxindex {
+  border: 1px solid #000;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.indexsection {
+  padding: 3px 14px;
+}
+
+.indexsection h2 {
+  text-align: center;
+}
+
+.indexsection .boxrounded {
+  margin: 8px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.boxrounded img {
+  width: 140px;
+  height: 140px;
+  box-shadow: 3px 3px 4px #000;
+  background-color: #212529;
+}
