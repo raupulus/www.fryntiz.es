@@ -358,5 +358,27 @@
       "submit": "Submit",
       "required": "Valid input is required"
     }
+  },
+  "aside": {
+    "es": [
+      {
+        "title": "",
+        "alt": "",
+        "url": "",
+        "urlinfo": "",
+        "img": "assets/img/jobs/",
+        "description": ""
+      }
+    ],
+    "en": [
+      {
+        "title": "",
+        "alt": "",
+        "url": "",
+        "urlinfo": "",
+        "img": "assets/img/jobs/",
+        "description": ""
+      }
+    ]
   }
 }
