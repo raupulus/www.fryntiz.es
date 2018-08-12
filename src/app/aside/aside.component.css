@@ -1,14 +1,47 @@
 #boxaside {
     margin: 0 5px;
+    padding: 5px 10px;
+    color: white;
     border: 2px solid #000000;
     border-radius: 6px;
     box-shadow: 3px 3px 3px #000000;
+    background-color: #333;
 }
 
-#boxservices {
-    min-height: 200px;
+#boxlanguage {
+  text-align: center;
+  height: 30px;
 }
 
-#boxsocial {
-    min-height: 200px;
+#boxlanguage section {
+  margin: 3px 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#boxlanguage section img {
+  width: 20px;
+  height: 20px;
+}
+
+#spanish {
+
+}
+
+#english {
+
+}
+
+#boxContacto {
+  padding: 10px;
+  text-align: center;
+}
+
+#boxaside h2 {
+  color: orange;
+  text-align: center;
+}
+
+#boxaside section {
+
 }
