@@ -30,8 +30,15 @@ declare var require: any;
 // Exporto la clase con el servicio creado para suministrar datos
 export class ServiceData {
   public lang:string;
-  public url:string = 'assets/json/data.json';
-  private data;
+  private config;
+  private menubar;
+  private aside;
+  private slide;
+  private projects;
+  private collaborations;
+  private jobs;
+  private contact;
+  private hobbies;
 
   /**
    * Constructor del servicio
@@ -39,7 +46,16 @@ export class ServiceData {
    */
   constructor(private cookieService: CookieService/*private _http:Http*/) {
     // Traigo datos directamente
-    this.data = require( '../assets/json/data.json' );
+    //this.data = require( '../assets/json/data.json' );
+    this.config = require( '../assets/json/config.json' );
+    this.menubar = require( '../assets/json/menubar.json' );
+    this.aside = require( '../assets/json/aside.json' );
+    this.slide = require( '../assets/json/slide.json' );
+    this.projects = require( '../assets/json/projects.json' );
+    this.collaborations = require( '../assets/json/collaborations.json' );
+    this.jobs = require( '../assets/json/jobs.json' );
+    this.contact = require( '../assets/json/contact.json' );
+    this.hobbies = require( '../assets/json/hobbies.json' );
 
     // Obtengo idioma para los datos
     this.getLang();
@@ -61,7 +77,7 @@ export class ServiceData {
 
     // Comprueba que el idioma es válido y existe al menos para el menú.
     if ( ( this.lang === undefined ) ||
-           this.data.menubar[this.lang] === undefined) {
+           this.menubar[this.lang] === undefined) {
         this.lang = 'en';
         this.cookieService.set( 'lang', 'en', 30 );
     }
@@ -70,7 +86,7 @@ export class ServiceData {
   }
 
   getConfig() {
-    return this.data.config;
+    return this.config;
   }
 
   /**
@@ -78,34 +94,34 @@ export class ServiceData {
    * @return Object Objeto con los elementos del menú.
    */
   getMenubar() {
-    return this.data.menubar[this.lang];
+    return this.menubar[this.lang];
   }
 
   getSlide() {
-    return this.data.slide;
+    return this.slide;
   }
 
   getProjects() {
-    return this.data.projects[this.lang];
+    return this.projects[this.lang];
   }
 
   getCollaboration() {
-    return this.data.collaboration[this.lang];
+    return this.collaborations[this.lang];
   }
 
   getHobbies() {
-    return this.data.hobbies[this.lang];
+    return this.hobbies[this.lang];
   }
 
   getJobs() {
-    return this.data.jobs[this.lang];
+    return this.jobs[this.lang];
   }
 
   getContact() {
-      return this.data.contact[this.lang];
+      return this.contact[this.lang];
   }
 
   getAside() {
-      return this.data.aside[this.lang];
+      return this.aside[this.lang];
   }
 }

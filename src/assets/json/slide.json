@@ -1,0 +1,36 @@
+{
+  "config": {
+    "debug": false,
+    "height": "400px",
+    "minHeight": "'300px'",
+    "autoPlay": true,
+    "autoPlayInterval": "6000",
+    "autoPlayWaitForLazyLoad": true,
+    "arrowSize": "30px",
+    "showArrows": true,
+    "disableSwiping": false,
+    "backgroundSize": "cover",
+    "backgroundPosition": "center center",
+    "backgroundRepeat": "no-repeat",
+    "showDots": false,
+    "dotColor": "#FFF",
+    "showCaptions": true,
+    "captionColor": "#FFF",
+    "captionBackground": "rgba(0, 0, 0, .45)",
+    "lazyLoad": "imageSources?.length > 1"
+  },
+  "img": [
+    {
+      "title": "Slide 1",
+      "url": "assets/img/slide/slide1.jpg",
+      "href": "#",
+      "caption": "Slide 1"
+    },
+    {
+      "title": "Slide 2",
+      "url": "assets/img/slide/slide2.jpg",
+      "href": "#",
+      "caption": "Slide 2"
+    }
+  ]
+}

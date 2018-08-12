@@ -1,0 +1,50 @@
+{
+  "es": [
+    {
+      "title": "La Guía Linux",
+      "alt": "Web principal del proyectos de software libre La Guía Linux",
+      "url": "https://laguialinux.es",
+      "urlinfo": "https://laguialinux.es/sobre-laguialinux/",
+      "img": "assets/img/collaborations/www.laguialinux.es.png",
+      "description": "Mis apuntes, Guías y vídeotutoriales sobre informática y tecnología, especialmente sobre software libre.",
+      "rol": "Editor y Desarrollador"
+    },
+    {
+      "title": "Asociación Lignux",
+      "alt": "Web de la asociación Lignux",
+      "url": "https://lignux.com",
+      "urlinfo": "https://lignux.com/asociacion-lignux/",
+      "img": "assets/img/collaborations/www.lignux.com.png",
+      "description": "Colaboraciones puntuales creando entradas para este proyecto y ayudando en el mantenimiento.",
+      "rol": "Editor y Colaborador"
+    },
+    {
+      "title": "Desde Chipiona",
+      "alt": "WEB desde chipiona",
+      "url": "https://desdechipiona.es",
+      "urlinfo": "https://desdechipiona.es",
+      "img": "assets/img/collaborations/www.desdechipiona.es.png",
+      "description": "Proyecto de sitio WEB con información y Galería de imágenes sobre Chipiona.",
+      "rol": "Editor y Desarrollador"
+    },
+    {
+      "title": "Galería Desde Chipiona",
+      "alt": "Galería WEB desde chipiona",
+      "url": "https://galeria.desdechipiona.es",
+      "urlinfo": "https://galeria.desdechipiona.es",
+      "img": "assets/img/collaborations/www.desdechipiona.es.png",
+      "description": "Proyecto de sitio WEB la Galería de imágenes sobre el proyecto DesdeChipiona.",
+      "rol": "Editor y Desarrollador"
+    }
+  ],
+  "en": [
+    {
+      "title": "La Guía Linux",
+      "alt": "",
+      "url": "https://laguialinux.es",
+      "urlinfo": "",
+      "img": "assets/img/collaborations/www.laguialinux.es.png",
+      "description": "The projects La Guía Linux..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "es": [
+    {
+      "title": "Repositorios",
+      "description": "Listado de repositorios donde colaboro",
+      "data": [
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/fryntiz",
+          "alt": "Repositorio de Raúl Caro Pastorino (fryntiz) en Gitlab"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/fryntiz",
+          "alt": "Repositorio de Raúl Caro Pastorino (fryntiz) en GitHub"
+        }
+      ]
+    },
+    {
+      "title": "Servicios",
+      "description": "",
+      "data": [
+        {
+          "name": "Mumble",
+          "url": "#",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "Redes Sociales",
+      "description": "",
+      "data": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/fryntiz",
+          "alt": "",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "Telegram Personal",
+          "url": "https://t.me/Fryntiz",
+          "alt": "",
+          "nick": "@fryntiz"
+        },
+        {
+          "name": "Canal público de Telegram",
+          "url": "https://t.me/FryntizOpenDev",
+          "alt": ""
+        }
+      ]
+    }
+  ],
+  "en": [
+    {
+      "title": "",
+      "description": "",
+      "repos": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

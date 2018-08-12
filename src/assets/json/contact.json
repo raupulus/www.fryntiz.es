@@ -1,0 +1,18 @@
+{
+  "es": {
+    "subject": "Asunto",
+    "name": "Nombre",
+    "secondname": "Apellidos",
+    "email": "Correo",
+    "submit": "Enviar",
+    "required": "Este campo es requerido"
+  },
+  "en": {
+    "subject": "Subject",
+    "name": "First Name",
+    "secondname": "Second Name",
+    "email": "Email",
+    "submit": "Submit",
+    "required": "Valid input is required"
+  }
+}

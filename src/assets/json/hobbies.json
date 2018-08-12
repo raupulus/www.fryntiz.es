@@ -1,0 +1,68 @@
+{
+  "es": [
+    {
+      "title": "Arduino",
+      "subtitle": "prototipos con sensores y hardware libre",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Desarrollo de prototipos en hardware libre con arduino",
+      "description": "Durante estos últimos años siempre tengo algún proyecto con arduino pendiente sobre la mesa de trabajo. Me fascina programar estos microcontroladores aunque solo sea aprovechando una pequeña escala de su potencial, sobre todo usando sensores para obtener valores y jugar con las estadísticas."
+    },
+    {
+      "title": "Raspberry",
+      "subtitle": "servidores para jugar con APIs en mis VPS",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Raspberry pi como servidor para comunicar datos con una API",
+      "description": "Tengo varias raspberry pi Zero y una pi 2 con las que me entretengo también creando maquetas de domóticas a pequeña escala y almacenar o consultar datos en un VPS mediante API. También utilizo una como NAS y Backups en red para los demás ordenadores de mesa y portátiles."
+    },
+    {
+      "title": "VPS",
+      "subtitle": "administrando y alojando mis propios VPS y dominios",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Administrando mis propios servidores VPS y dominios",
+      "description": "Para mis propios despliegues y como forma de adquirir experiencia en la administración de servidores principales he optado por autoalojar todos los sitios web que tengo creados. De esta forma he disminuido costes por sitio web y además adquiero constantemente experiencia con los errores."
+    },
+    {
+      "title": "Generar Contenido",
+      "subtitle": "entradas, vídeos y comentarios",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Contenido generado en texto y multimedia",
+      "description": "Eventualmente escribo para varios blogs propios, de conocidos y de asociación. Además también colaboro generando cartelería y vídeos con guías o tutoriales sobre software libre y técnicas de uso."
+    },
+    {
+      "title": "Diseño Grafico 2D",
+      "subtitle": "cartelería, logotipos y animaciones",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Diseño gráfico 2d para cartelería, logotipos y animaciones",
+      "description": "El diseño gráfico (especialmente con vectores) me ha llamado mucho la atención y he llegado a controlar varias aplicaciones como Inkscape, Synfig Studio, Gimp.. con cierta soltura."
+    },
+    {
+      "title": "GNU/Linux",
+      "subtitle": "distribuciones y software libre",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Distribuciones GNU/Linux y software libre",
+      "description": "Soy usuario de este tipo de sistemas desde hace más de una década habiendo recorrido muchas distribuciones (Mandrake, arch, debian, gentoo, Suse, Fedora...) durante larga estancia en ellas. Siempre me ha gustado esta filosofía pero sobre todo la flexibilidad de poder adaptar el sistema para que resuleva mis necesidades con más fluidez o en menor tiempo."
+    },
+    {
+      "title": "Electrónica",
+      "subtitle": "soldar y construir PCB",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Electrónica, soldar y construir PCB",
+      "description": "La electrónica y componentes siempre me han fascinado. En su momento recibí formación como técnico electricista y desde entonces he ido cada vez investigando y reparando cada dispositivo averiado que pasaba por mis manos (algunos incluso mejorándolos o modificando su uso original)."
+    }
+  ],
+  "en": [
+    {
+      "title": "",
+      "url": "",
+      "img": "",
+      "description": ""
+    }
+  ]
+}
