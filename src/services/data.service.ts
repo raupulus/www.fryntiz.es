@@ -85,6 +85,13 @@ export class ServiceData {
     return this.lang;
   }
 
+  setLang(lang:string) {
+    if (( lang !== '' )) {
+      this.cookieService.set( 'lang', lang, 30 );
+    }
+    return this.getLang();
+  }
+
   getConfig() {
     return this.config;
   }
