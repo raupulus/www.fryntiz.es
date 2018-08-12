@@ -1,9 +1,21 @@
 <aside id="boxaside">
-  <div id="boxContacto">
-    <a [routerLink]="['/contact']">{{ contact }}</a>
+  <div id="boxlanguage">
+    <section id="spanish" (click)="language('es')">
+      <img src="/assets/img/aside/es.png" title="Idioma Español" alt="Idioma Español" />es
+    </section>
+
+    <section id="english" (click)="language('en')">
+      <img src="/assets/img/aside/en.png" title="Idioma Inglés" alt="Idioma Inglés" />en
+    </section>
   </div>
+
+  <div id="boxContacto">
+    <a [routerLink]="['/contact']" class="btn btn-danger">{{ contact }}</a>
+  </div>
+
   <section *ngFor="let data of datos">
     <h2>{{ data.title }}</h2>
+
     <ul>
       <li *ngFor="let list of data.data">
         <a [href]="list.url" [title]="list.alt" target="_blank">
@@ -11,5 +23,7 @@
         </a>
       </li>
     </ul>
+
+    <hr />
   </section>
 </aside>
