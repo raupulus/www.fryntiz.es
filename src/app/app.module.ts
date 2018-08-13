@@ -19,6 +19,9 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 // Librería para acceder a cookies
 import { CookieService } from 'ngx-cookie-service';
 
+// Librería para formularios reactivos
+import { ReactiveFormsModule } from '@angular/forms';
+
 // Importo cada componente propio para la aplicación
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
@@ -55,6 +58,7 @@ import { JobsComponent } from './jobs/jobs.component';
     HttpModule,  // Módulo HTTP
     FormsModule, // Módulo de formularios
     SlideshowModule, // SlideShow
+    ReactiveFormsModule, // Formularios Reactivos
   ],
 
   // Los proveedores crean servicios de este módulo globalmente a la aplicación
