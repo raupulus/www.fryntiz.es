@@ -25,7 +25,6 @@ export class BarComponent implements OnInit {
   constructor(private _ServiceData:ServiceData) {
       // Obtengo los datos de Configuración
       this.config = _ServiceData.getConfig();
-      console.log(this.config);
 
       // Obtengo los datos directamente para el menú
       this.datos = _ServiceData.getMenubar();
