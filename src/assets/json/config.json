@@ -2,9 +2,14 @@
   "title": "Raúl Caro Pastorino",
   "background": "",
   "logo": "assets/img/logotipo.png",
+  "author": "Raúl Caro Pastorino",
   "email": "dev@fryntiz.es",
-  "portsmtp": "",
+  "emailfrom": "dev@fryntiz.es",
+  "portsmtp": "587",
+  "mailserver": "smtp.fryntiz.es",
   "password": "",
   "url": "https://fryntiz.es",
-  "urlcurriculum": "https://curriculum.fryntiz.es"
+  "urlcurriculum": "https://curriculum.fryntiz.es",
+  "gitlab": "https://gitlab.com/fryntiz",
+  "github": "https://github.com/fryntiz"
 }
