@@ -1,17 +1,23 @@
-<section *ngFor="let hobbie of datos">
-  <div class="hobbie row featurette">
+<section class="sectionhobbie" *ngFor="let hobbie of datos">
+  <article class="hobbie row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">
         {{ hobbie.title }},
         <span class="text-muted"> {{ hobbie.subtitle }}</span>
       </h2>
-      <p class="lead">{{ hobbie.description }}</p>
+
     </div>
 
     <div class="boximg col-md-5">
       <img class="featurette-image img-fluid mx-auto" [alt]="hobbie.alt" [src]="hobbie.img" />
     </div>
-  </div>
 
-  <hr class="featurette-divider">
+    <div class="col-md-12">
+      <p class="lead" *ngFor="let description of hobbie.description">
+        {{ description }}
+      </p>
+    </div>
+  </article>
+
+  <hr class="featurette-divider" />
 </section>

@@ -1,17 +1,29 @@
+.sectionhobbie {
+  margin: 0 8px 5px 8px;
+}
+
 .hobbie {
-    border: 2px solid #000;
-    border-radius: 3px;
-    box-shadow: 2px 2px 3px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #000;
+}
+
+.hobbie h2 {
+  text-align: center;
 }
 
 .boximg {
-    background-color: yellow;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .boximg img {
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    background-color: red;
+  margin: auto;
+  text-align: center;
 }
