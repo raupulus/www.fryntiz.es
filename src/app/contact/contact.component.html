@@ -1,31 +1,181 @@
 
-<h4 class="mb-3">Contacto</h4>
-<form class="needs-validation" novalidate="">
+<h4 class="mb-3">{{ datos.form }}</h4>
+
+<div class="description row">
+  <div class="col-md-8 mb-3">{{ datos.description }}</div>
+  <div class="col-md-4 mb-3 center-block"><strong><a [href]="'mailto:'+config.email" alt="Raúl Caro Pastorino contact email">{{ config.email }}</a></strong></div>
+</div>
+
+<hr class="mb-4" />
+
+<form [formGroup]="form" (submit)="onSubmit(form.value)" novalidate>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="name">{{ datos.name }}</label>
+      <input class="form-control"
+             type="text"
+             name="name"
+             formControlName="name" />
+      <div class="alert alert-danger"
+           *ngIf="form.get('name').hasError('required') &&
+                  form.get('name').touched">
+        {{ datos.required }}
+      </div>
+      <div class="alert alert-danger"
+           *ngIf="form.get('name').hasError('minlength') &&
+                  form.get('name').touched">
+        {{ datos.length }}
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="lastName">
+        {{ datos.secondname }}
+        <span class="text-muted">
+          ({{ datos.optional }})
+        </span>
+      </label>
+
+      <input class="form-control"
+             type="text"
+             name="lastName"
+             formControlName="lastName" />
+      <div class="alert alert-danger"
+           *ngIf="form.get('lastName').hasError('minlength') &&
+                  form.get('lastName').touched">
+       {{ datos.length }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="subject">{{ datos.subject }}</label>
+      <input class="form-control"
+             type="text"
+             name="subject"
+             formControlName="subject" />
+
+      <div class="alert alert-danger"
+           *ngIf="form.get('subject').hasError('required') &&
+                  form.get('subject').touched">
+        {{ datos.required }}
+      </div>
+      <div class="alert alert-danger"
+           *ngIf="form.get('subject').hasError('minlength') &&
+                  form.get('subject').touched">
+        {{ datos.length }}
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="email">
+        {{ datos.email }}
+        <span class="text-muted">
+          ({{ datos.optional }})
+        </span>
+      </label>
+      <input class="form-control"
+             placeholder="you@example.com"
+             type="email"
+             name="email"
+             formControlName="email" />
+
+      <div class="alert alert-danger"
+           *ngIf="form.get('email').hasError('email') &&
+                  form.get('email').touched">
+       {{ datos.invalidmail }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <label for="message">{{ datos.message }}</label>
+      <textarea class="form-control"
+                name="mesagge"
+                formControlName="mesagge"></textarea>
+    </div>
+
+    <div *ngIf="form.get('mesagge').hasError('required') &&
+                form.get('mesagge').touched">
+      {{ datos.required }}
+    </div>
+    <div *ngIf="form.get('mesagge').hasError('minlength') &&
+                form.get('mesagge').touched">
+      {{ datos.length }}
+    </div>
+  </div>
+
+  <hr class="mb-4" />
+
+  <label for="registeredOn">{{ datos.registered }} &nbsp;</label>
+  <input name="registeredOn"
+         formControlName="registeredOn"
+         type="date"
+         readonly />
+
+  <hr class="mb-4" />
+
+  <input class="btn btn-primary btn-lg btn-block"
+         type="submit"
+         [value]="datos.submit"
+         [disabled]="form.invalid"/>
+</form>
+
+<!--
+[disabled]="form.invalid"
+
+
+<form #usuarioForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
 <div class="row">
   <div class="col-md-6 mb-3">
-    <label for="firstName">Nombre</label>
-    <input class="form-control" id="firstName" placeholder="" value="" required="" type="text">
-    <div class="invalid-feedback">
-      Valid first name is required.
+    <label for="firstName">{{ datos.name }}</label>
+    <input id="firstName" class="form-control" type="text" name="name" ngControl="name" [(ngModel)]="user.name" minlength="4" ng-pattern="/^[a-zA-Z]*$/" required />
+    <div class="invalid-feedback" ng-show="invalidName">
+      {{ datos.required }}
     </div>
   </div>
+
   <div class="col-md-6 mb-3">
-    <label for="lastName">Apellidos</label>
-    <input class="form-control" id="lastName" placeholder="" value="" required="" type="text">
+    <label for="lastName">{{ datos.secondname }}</label>
+    <input id="lastName" class="form-control" type="text" required />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="subject">{{ datos.subject }}</label>
+    <input id="lastName" class="form-control" type="text" required />
+
     <div class="invalid-feedback">
-      Valid last name is required.
+      {{ datos.required }}
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="email">{{ datos.email }} <span class="text-muted">({{ datos.optional }})</span></label>
+    <input class="form-control" id="email" placeholder="you@example.com" type="email">
+
+    <div class="invalid-feedback">
+      {{ datos.invalidmail }}
     </div>
   </div>
 </div>
 
-<div class="mb-3">
-  <label for="email">Email <span class="text-muted">(Optional)</span></label>
-  <input class="form-control" id="email" placeholder="you@example.com" type="email">
+<div class="row">
+  <div class="col-md-12">
+    <label for="message">{{ datos.message }}</label>
+    <textarea id="message" class="form-control"></textarea>
+  </div>
+
   <div class="invalid-feedback">
-    Please enter a valid email address for shipping updates.
+    {{ datos.required }}
   </div>
 </div>
 
-<hr class="mb-4">
-<button class="btn btn-primary btn-lg btn-block" type="submit">submit</button>
+<hr class="mb-4" />
+
+<input class="btn btn-primary btn-lg btn-block" type="submit" [value]="datos.submit" />
 </form>
+-->
