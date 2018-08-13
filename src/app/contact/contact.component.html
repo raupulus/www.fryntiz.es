@@ -1,16 +1,19 @@
 
-<h4 class="mb-3">{{ datos.form }}</h4>
+<h2 id="contacttitle" class="mb-3">{{ datos.form }}</h2>
 
-<div class="description row">
+<div id="boxdescription" class="description row">
   <div class="col-md-8 mb-3">{{ datos.description }}</div>
   <div class="col-md-4 mb-3 center-block"><strong><a [href]="'mailto:'+config.email" alt="Raúl Caro Pastorino contact email">{{ config.email }}</a></strong></div>
 </div>
 
 <hr class="mb-4" />
 
-<form [formGroup]="form" (submit)="onSubmit(form.value)" novalidate>
+<form id="contactform"
+      [formGroup]="form"
+      (submit)="onSubmit(form.value)"
+      novalidate>
   <div class="row">
-    <div class="col-md-6 mb-3">
+    <div class="formelement col-md-6 mb-3">
       <label for="name">{{ datos.name }}</label>
       <input class="form-control"
              type="text"
@@ -28,7 +31,7 @@
       </div>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="formelement col-md-6 mb-3">
       <label for="lastName">
         {{ datos.secondname }}
         <span class="text-muted">
@@ -49,7 +52,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6 mb-3">
+    <div class="formelement col-md-6 mb-3">
       <label for="subject">{{ datos.subject }}</label>
       <input class="form-control"
              type="text"
@@ -68,7 +71,7 @@
       </div>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="formelement col-md-6 mb-3">
       <label for="email">
         {{ datos.email }}
         <span class="text-muted">
