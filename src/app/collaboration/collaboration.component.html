@@ -10,12 +10,25 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary" (click)="linkTo(dato.url)">
+            <button type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    (click)="linkTo(dato.url)"
+                    *ngIf="dato.url !== undefined && dato.url !== ''">
               Web
             </button>
 
-            <button type="button" class="btn btn-sm btn-outline-secondary" (click)="linkTo(dato.urlinfo)">
+            <button type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    (click)="linkTo(dato.urlinfo)"
+                    *ngIf="dato.urlinfo !== undefined && dato.urlinfo !== ''">
               +Info
+            </button>
+
+            <button type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    (click)="linkTo(dato.urlrepository)"
+                    *ngIf="dato.urlrepository !== undefined && dato.urlrepository !== ''">
+              Source
             </button>
           </div>
         </div>
