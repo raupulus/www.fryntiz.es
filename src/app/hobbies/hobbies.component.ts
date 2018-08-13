@@ -19,4 +19,8 @@ export class HobbiesComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  public scrollTo(anchor) {
+    document.getElementById(anchor).scrollIntoView();
+  }
 }
