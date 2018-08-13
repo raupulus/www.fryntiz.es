@@ -1,11 +1,74 @@
-<div>
-  <a [routerLink]="['/contact']">Contactar</a>
-</div>
+<div id="boxfooter" class="row">
+  <section id="boxcontact" class="col-md-12">
+    <a [routerLink]="['/contact']"
+       [title]="'Contact to ' + config.author"
+       class="">{{ contact }}</a>
 
-<div>
-  <a href="https://gitlab.com/fryntiz/www.fryntiz.es" title="Página web realizada en angular" target="_blank">Página web realizada en angular</a>
-</div>
+    <hr />
+  </section>
 
-<div>
-  Licencia: Código fuente del sitio web bajo licencia GPLv3
+
+  <section class="col-md-4">
+    <ul>
+      <li>
+        <a [href]="config.urlcurriculum"
+           [title]="config.author">
+          {{ config.author }}
+        </a>
+      </li>
+
+      <li>
+        <a [href]="'mailto:' + config.email"
+           [title]="config.author">
+          {{ config.email }}
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="col-md-4">
+    <ul>
+      <li>
+        <a [href]="config.gitlab"
+           [title]="'GitLab de ' + config.author">
+          GitLab
+        </a>
+      </li>
+      <li>
+        <a [href]="config.github"
+           [title]="'GitHub de ' + config.author">
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="col-md-4">
+    <ul>
+      <li>
+        <a [href]="config.urlcurriculum"
+           [title]="config.author">
+          Curriculum Online
+        </a>
+      </li>
+      <li>
+        <a [href]="config.urlphotogallery"
+           [title]="config.author">
+          Photo gallery <small>(working on it)</small>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="col-md-12">
+    <hr />
+    <a [href]="config.websitesource" [title]="config.technology" target="_blank">{{ config.technology }}</a>
+  </section>
+
+  <section class="col-md-12">
+    <a [href]="config.urllicence"
+       [title]="config.licence">
+      {{ config.licence }}
+    </a>
+  </section>
 </div>
