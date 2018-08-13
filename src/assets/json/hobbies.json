@@ -1,6 +1,7 @@
 {
   "es": [
     {
+      "id": "arduino",
       "title": "Arduino",
       "subtitle": "prototipos con sensores y hardware libre",
       "url": "#",
@@ -13,6 +14,7 @@
       ]
     },
     {
+      "id": "raspberry",
       "title": "Raspberry",
       "subtitle": "servidores para jugar con APIs en mis VPS",
       "url": "#",
@@ -25,6 +27,7 @@
       ]
     },
     {
+      "id": "vps",
       "title": "VPS",
       "subtitle": "administrando y alojando mis propios VPS y dominios",
       "url": "#",
@@ -37,6 +40,7 @@
       ]
     },
     {
+      "id": "contenido",
       "title": "Generar Contenido",
       "subtitle": "entradas, vídeos y comentarios",
       "url": "#",
@@ -49,6 +53,7 @@
       ]
     },
     {
+      "id": "design",
       "title": "Diseño Grafico 2D",
       "subtitle": "cartelería, logotipos y animaciones",
       "url": "#",
@@ -59,6 +64,7 @@
       ]
     },
     {
+      "id": "linux",
       "title": "GNU/Linux",
       "subtitle": "distribuciones y software libre",
       "url": "#",
@@ -71,6 +77,7 @@
       ]
     },
     {
+      "id": "electronic",
       "title": "Electrónica",
       "subtitle": "soldar y construir PCB",
       "url": "#",
@@ -85,6 +92,7 @@
   ],
   "en": [
     {
+      "id": "",
       "title": "",
       "subtitle": "",
       "url": "#",
