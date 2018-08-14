@@ -17,7 +17,6 @@
     <h2>{{ section.title }}</h2>
     <!--<small class="sectionsubtitle">{{ section.description }}</small>-->
 
-
     <div class="row" *ngFor="let list of section.data">
       <a [href]="list.url" [title]="list.alt" target="_blank">
         <div class="sectionimg float-left">
@@ -29,17 +28,6 @@
         </div>
       </a>
     </div>
-
-<!--
-    <ul>
-      <li *ngFor="let list of section.data">
-        <img [src]="list.img" [title]="list.alt" [alt]="list.alt" />
-        <a [href]="list.url" [title]="list.alt" target="_blank">
-          {{ list.name }}
-        </a>
-      </li>
-    </ul>
--->
 
     <hr class="featurette-divider col-lg-12" />
   </section>
