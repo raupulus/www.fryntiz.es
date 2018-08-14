@@ -1,4 +1,4 @@
-<div class="content-fluid">
+<div id="boxbar" class="content-fluid">
     <header id="main" class="row">
         <div id="boxlogo" class="align-middle col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <figure id="logotipo" class="col-lg-4">
@@ -14,22 +14,42 @@
         <nav class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
             <ul>
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a [routerLink]="['/index']">{{ index }}</a>
+                    <a id="barindex" [routerLink]="['/index']">
+                      {{ index }}
+                    </a>
                 </li>
+
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a [routerLink]="['/projects']">{{ projects }}</a>
+                    <a id="barprojects" [routerLink]="['/projects']">
+                    {{ projects }}
+                  </a>
                 </li>
+
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a [routerLink]="['/collaboration']">{{ collaboration }}</a>
+                    <a id="barcollaboration" [routerLink]="['/collaboration']">
+                      {{ collaboration }}
+                    </a>
                 </li>
+
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a [routerLink]="['/jobs']">{{ jobs }}</a>
+                    <a id="barjobs" [routerLink]="['/jobs']">
+                      {{ jobs }}
+                    </a>
                 </li>
+
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a [routerLink]="['/hobbies']">{{ hobbie }}</a>
+                    <a id="barhobbies" [routerLink]="['/hobbies']">
+                      {{ hobbie }}
+                    </a>
                 </li>
+
                 <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <a [href]="config.urlcurriculum" alt="Curriculum Fryntiz" target="_blank">{{ curriculum }}</a>
+                    <a id="barcurriculum"
+                       [href]="config.urlcurriculum"
+                       alt="Curriculum Fryntiz"
+                       target="_blank">
+                      {{ curriculum }}
+                    </a>
                 </li>
             </ul>
         </nav>
