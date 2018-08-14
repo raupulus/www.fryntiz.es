@@ -11,10 +11,6 @@ import { ServiceData } from '../../services/data.service';
 })
 export class IndexComponent implements OnInit {
   private datos:ServiceData;
-  private tags = [
-    'Html5', 'Javascript', 'CSS', 'Php', 'Ajax', 'Shell Script', 'Python',
-    'jQuery', 'MySQL', 'Sqlite', 'PostgreSQL', 'JSON', 'Xml', 'Angular',
-  ];
 
   constructor(private _ServiceData:ServiceData) {
     // Obtengo los datos directamente para el menú
@@ -22,14 +18,7 @@ export class IndexComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Mezclar contenido del array
-    this.tags = this.tags.sort(function() {
-      return Math.random() - 0.5
-    });
-  }
 
-  getTags() {
-    return this.tags;
   }
 
   public scrollTo(anchor) {

@@ -24,6 +24,14 @@
       </li>
     </ul>
 
-    <hr />
+    <hr class="featurette-divider col-lg-12" />
+  </section>
+
+  <section>
+    <ul id="boxtags" class="list-inline col-lg-12">
+      <li class="tag list-inline-item" *ngFor="let tag of getTags()">
+        {{ tag }}
+      </li>
+    </ul>
   </section>
 </aside>

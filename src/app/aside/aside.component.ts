@@ -16,6 +16,10 @@ import { CookieService } from 'ngx-cookie-service';
 export class AsideComponent implements OnInit {
   private datos:ServiceData;
   private contact:string;
+  private tags = [
+    'Html5', 'Javascript', 'CSS', 'Php', 'Ajax', 'Shell Script', 'Python',
+    'jQuery', 'MySQL', 'Sqlite', 'PostgreSQL', 'JSON', 'Xml', 'Angular',
+  ];
 
   constructor( private _ServiceData:ServiceData,
                private cookieService:CookieService ) {
@@ -27,6 +31,18 @@ export class AsideComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Mezclar contenido del array
+    this.tags = this.tags.sort(function() {
+      return Math.random() - 0.5
+    });
+  }
+
+  /**
+   * Devuelve el array de etiquetas mezcladas
+   * @return Array de etiquetas
+   */
+  public getTags() {
+    return this.tags;
   }
 
   /**
