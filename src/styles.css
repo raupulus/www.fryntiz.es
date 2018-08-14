@@ -1,45 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 
-*{
-    margin:0px;
-    padding:0px;
-    list-style: none;
-    text-decoration: none;
-    font-family: sans-serif;
-    box-sizing: border-box;
+* {
+  margin:0px;
+  padding:0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/img/patron.jpg");
 }
 
 .content-fluid{
-    position:relative;
-    margin:auto;
-    width:100%;
-    height: auto;
-    padding:
+  position:relative;
+  margin:auto;
+  width:100%;
+  height: auto;
+  padding:
 
 }
 
 .row{
-    position:relative;
-    margin:auto;
-    width:100%;
-    height: auto;
-    clear:both;
-    display:table;
+  position:relative;
+  margin:auto;
+  width:100%;
+  height: auto;
+  clear:both;
+  display:table;
 }
 
 [class*="col-"]{
-    float:left;
-    padding:0px;
+  float:left;
+  padding:0px;
 }
 
 h1.titulos{
-    background:white;
-    text-align: center;
-    color:#666;
-    font-weight:100;
+  background:white;
+  text-align: center;
+  color:#666;
+  font-weight:100;
 }
 
 h1.titulos hr{
-    margin:20px;
-    border:1px solid #ddd;
+  margin:20px;
+  border:1px solid #ddd;
 }
