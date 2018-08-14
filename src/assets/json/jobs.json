@@ -21,13 +21,22 @@
   ],
   "en": [
     {
-      "title": "",
-      "alt": "",
-      "url": "",
-      "urlinfo": "",
+      "title": "Hostal Cristina",
+      "alt": "Web made by Raúl Caro Pastorino for Hostal Cristina",
+      "url": "https://www.hostalcristina.com",
+      "urlinfo": "https://www.hostalcristina.com/index.php/contactar/",
       "urlrepository": "",
-      "img": "assets/img/jobs/",
-      "description": ""
+      "img": "assets/img/jobs/www.hostalcristina.com.png",
+      "description": "I make the website for Hostal Cristina in Chipiona."
+    },
+    {
+      "title": "El faro Inmobiliaria",
+      "alt": "Web made by Raúl Caro Pastorino for El faro Inmobiliaria",
+      "url": "http://www.elfaroinmobiliaria.es/",
+      "urlinfo": "http://www.elfaroinmobiliaria.es/sobre-nosotros/",
+      "urlrepository": "",
+      "img": "assets/img/jobs/www.elfaroinmobiliaria.es.png",
+      "description": "Creation of this website for the company Inmobiliaria el Faro."
     }
   ]
 }

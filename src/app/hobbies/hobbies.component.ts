@@ -18,6 +18,22 @@ export class HobbiesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.menuSelect();
+  }
+
+  /**
+   * Marca la opción del menú seleccionada actualmente y limpia otras.
+   * (TODO → Refactorizar función usada en cada sitio)
+   */
+  public menuSelect() {
+    Array.from(
+      document.querySelectorAll('#boxbar nav ul li a')
+    ).forEach(
+      function(ele, idx) {
+        ele['style'].borderBottom = '3px solid #0069d9';
+    });
+
+    document.getElementById('barhobbies').style.borderBottom = '3px solid orange';
   }
 
   public scrollTo(anchor) {

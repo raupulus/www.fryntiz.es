@@ -1,27 +1,46 @@
 import { Component, OnInit } from '@angular/core';
 
+// Importo Servicio para obtener información desde JSON
+import { ServiceData } from '../../services/data.service';
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['./index.component.css'],
+  providers: [ServiceData]
 })
 export class IndexComponent implements OnInit {
-  private tags = [
-    'Html5', 'Javascript', 'CSS', 'Php', 'Ajax', 'Shell Script', 'Python',
-    'jQuery', 'MySQL', 'Sqlite', 'PostgreSQL', 'JSON', 'Xml', 'Angular',
-  ];
+  private datos:ServiceData;
 
-  constructor() {
+  constructor(private _ServiceData:ServiceData) {
+    // Obtengo los datos directamente para el menú
+    this.datos = _ServiceData.getIndex();
   }
 
   ngOnInit() {
-    // Mezclar contenido del array
-    this.tags = this.tags.sort(function() {
-      return Math.random() - 0.5
-    });
+    this.menuSelect();
   }
 
-  getTags() {
-    return this.tags;
+  /**
+   * Marca la opción del menú seleccionada actualmente y limpia otras.
+   * (TODO → Refactorizar función usada en cada sitio)
+   */
+  public menuSelect() {
+    Array.from(
+      document.querySelectorAll('#boxbar nav ul li a')
+    ).forEach(
+      function(ele, idx) {
+        ele['style'].borderBottom = '3px solid #0069d9';
+    });
+
+    document.getElementById('barindex').style.borderBottom = '3px solid orange';
+  }
+
+  /**
+   * Realiza un scroll hasta el lugar del elemento ID recibido
+   * @param  anchor Recibe el elemento hacia el que hacer el scroll
+   */
+  public scrollTo(anchor) {
+    document.getElementById(anchor).scrollIntoView();
   }
 }

@@ -13,17 +13,30 @@
     <a [routerLink]="['/contact']" class="btn btn-primary">{{ contact }}</a>
   </div>
 
-  <section *ngFor="let data of datos">
-    <h2>{{ data.title }}</h2>
+  <section class="boxsection" *ngFor="let section of datos">
+    <h2>{{ section.title }}</h2>
+    <!--<small class="sectionsubtitle">{{ section.description }}</small>-->
 
-    <ul>
-      <li *ngFor="let list of data.data">
-        <a [href]="list.url" [title]="list.alt" target="_blank">
+    <div class="row" *ngFor="let list of section.data">
+      <a [href]="list.url" [title]="list.alt" target="_blank">
+        <div class="sectionimg float-left">
+          <img [src]="list.img" [title]="list.alt" [alt]="list.alt" />
+        </div>
+
+        <div class="float-left">
           {{ list.name }}
-        </a>
+        </div>
+      </a>
+    </div>
+
+    <hr class="featurette-divider col-lg-12" />
+  </section>
+
+  <section>
+    <ul id="boxtags" class="list-inline col-lg-12">
+      <li class="tag list-inline-item" *ngFor="let tag of getTags()">
+        {{ tag }}
       </li>
     </ul>
-
-    <hr />
   </section>
 </aside>

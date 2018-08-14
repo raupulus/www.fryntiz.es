@@ -94,5 +94,4 @@ export class BarComponent implements OnInit {
         mb.inicioMovil();
     }, 100);
   }
-
 }

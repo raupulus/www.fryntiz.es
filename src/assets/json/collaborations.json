@@ -44,12 +44,43 @@
   "en": [
     {
       "title": "La Guía Linux",
-      "alt": "",
+      "alt": "My main web of free software projects The Linux Guide",
       "url": "https://laguialinux.es",
-      "urlinfo": "",
+      "urlinfo": "https://laguialinux.es/sobre-laguialinux/",
       "urlrepository": "",
       "img": "assets/img/collaborations/www.laguialinux.es.png",
-      "description": "The projects La Guía Linux..."
+      "description": "My notes, Guides and video tutorials on computer science and technology, especially on free software.",
+      "rol": "Editor and Developer"
+    },
+    {
+      "title": "Lignux Association",
+      "alt": "Website of the Lignux association",
+      "url": "https://lignux.com",
+      "urlinfo": "https://lignux.com/asociacion-lignux/",
+      "urlrepository": "",
+      "img": "assets/img/collaborations/www.lignux.com.png",
+      "description": "Specific collaborations creating entries for this project and helping in the maintenance.",
+      "rol": "Editor and Collaborator"
+    },
+    {
+      "title": "From Chipiona",
+      "alt": "WEB from chipiona",
+      "url": "https://desdechipiona.es",
+      "urlinfo": "https://desdechipiona.es",
+      "urlrepository": "",
+      "img": "assets/img/collaborations/www.desdechipiona.es.png",
+      "description": "Website project with information and Image Gallery about Chipiona.",
+      "rol": "Editor and Developer"
+    },
+    {
+      "title": "Gallery From Chipiona",
+      "alt": "WEB Gallery from chipiona",
+      "url": "https://galeria.desdechipiona.es",
+      "urlinfo": "https://galeria.desdechipiona.es",
+      "urlrepository": "",
+      "img": "assets/img/collaborations/www.desdechipiona.es.png",
+      "description": "Project of the WEB site Image gallery about the project SinceChipiona.",
+      "rol": "Editor and Developer"
     }
   ]
 }
