@@ -4,12 +4,6 @@
     <li class="tag list-inline-item"
         *ngFor="let hobbie of datos" (click)="scrollTo(hobbie.id)">
         {{ hobbie.title }}
-
-      <!--
-      <a [href]="['/hobbies'] + '#' + hobbie.id" [title]="hobbie.title" target="_self">
-        {{ hobbie.title }}
-      </a>
-      -->
     </li>
   </ul>
 </section>
