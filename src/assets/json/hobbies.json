@@ -92,14 +92,92 @@
   ],
   "en": [
     {
-      "id": "",
-      "title": "",
-      "subtitle": "",
+      "id": "arduino",
+      "title": "Arduino",
+      "subtitle": "prototypes with sensors and free hardware",
       "url": "#",
       "img": "assets/img/hobbies/default.png",
-      "alt": "",
+      "alt": "Development of prototypes in free hardware with arduino",
       "description": [
-        ""
+        "During these last years I always have some project with arduino pending on the work table.",
+
+        "It fascinates me to program these microcontrollers even if only taking advantage of a small scale of their potential, especially using sensors to obtain values and play with statistics."
+      ]
+    },
+    {
+      "id": "raspberry",
+      "title": "Raspberry",
+      "subtitle": "servers to play with APIs in my VPS",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Raspberry Pi as a server to communicate data with an API",
+      "description": [
+        "I have several raspberry pi Zero and a pi 2 with which I entertain myself also creating scale models of domotics on a small scale and store or consult data in a VPS using API.",
+
+        "I also use one as NAS and network backups for the other desktops and laptops."
+      ]
+    },
+    {
+      "id": "vps",
+      "title": "VPS",
+      "subtitle": "managing and hosting my own VPS and domains",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Managing my own VPS servers and domains",
+      "description": [
+        "For my own deployments and as a way to gain experience in the administration of main servers I have chosen to auto-lodge all the websites that I have created.",
+
+        "In this way I have reduced costs per website and I also constantly gain experience with errors."
+      ]
+    },
+    {
+      "id": "contenido",
+      "title": "Generate Content",
+      "subtitle": "tickets, videos and comments",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Content generated in text and multimedia",
+      "description": [
+        "Eventually I write for several own, acquaintances and association blogs.",
+
+        "I also collaborate generating posters and videos with guides or tutorials on free software and techniques of use."
+      ]
+    },
+    {
+      "id": "design",
+      "title": "2D Graphic Design",
+      "subtitle": "signage, logos and animations",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "2d graphic design for signage, logos and animations",
+      "description": [
+        "The graphic design (especially with vectors) has attracted my attention and I have managed to control several applications such as Inkscape, Synfig Studio, Gimp .. with a certain ease."
+      ]
+    },
+    {
+      "id": "linux",
+      "title": "GNU/Linux",
+      "subtitle": "distribuciones y software libre",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "distributions and free software",
+      "description": [
+        "I have been a user of this type of systems for more than a decade, having traveled many distributions (Mandrake, arch, debian, gentoo, Suse, Fedora ...) during a long stay in them.",
+
+        "I have always liked this philosophy but above all the flexibility of being able to adapt the system so that it meets my needs more fluently or in less time."
+      ]
+    },
+    {
+      "id": "electronic",
+      "title": "Electronics",
+      "subtitle": "weld and build PCB",
+      "url": "#",
+      "img": "assets/img/hobbies/default.png",
+      "alt": "Electronics, solder and build PCB",
+      "description": [
+        "The electronics and components have always fascinated me.",
+
+        "At the time I received training as an electrician and since then I have been researching and repairing every damaged device that passed through my hands (some even improving or modifying their original use)."
       ]
     }
   ]
