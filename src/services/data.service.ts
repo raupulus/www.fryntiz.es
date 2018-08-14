@@ -33,6 +33,7 @@ export class ServiceData {
   private config;
   private menubar;
   private aside;
+  private index;
   private slide;
   private projects;
   private collaborations;
@@ -50,6 +51,7 @@ export class ServiceData {
     this.config = require( '../assets/json/config.json' );
     this.menubar = require( '../assets/json/menubar.json' );
     this.aside = require( '../assets/json/aside.json' );
+    this.index = require( '../assets/json/index.json' );
     this.slide = require( '../assets/json/slide.json' );
     this.projects = require( '../assets/json/projects.json' );
     this.collaborations = require( '../assets/json/collaborations.json' );
@@ -102,6 +104,10 @@ export class ServiceData {
    */
   getMenubar() {
     return this.menubar[this.lang];
+  }
+
+  getIndex() {
+    return this.index[this.lang];
   }
 
   getSlide() {
