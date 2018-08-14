@@ -4,6 +4,15 @@
 
 <hr class="featurette-divider"/>
 
+<section>
+  <ul id="boxtags" class="list-inline col-lg-12">
+    <li class="tag list-inline-item"
+        *ngFor="let section of datos" (click)="scrollTo(section.id)">
+        {{ section.title }}
+    </li>
+  </ul>
+</section>
+
 <ul id="boxtags" class="list-inline col-lg-12">
   <li class="tag list-inline-item" *ngFor="let x of getTags()">{{ x }}</li>
 </ul>
@@ -11,7 +20,7 @@
 <hr class="featurette-divider col-lg-12" />
 
 <div id="boxindex" class="row">
-  <div class="indexsection col-lg-12" *ngFor="let section of datos">
+  <div [id]="section.id" class="indexsection col-lg-12" *ngFor="let section of datos">
     <div class="boxrounded">
       <img class="rounded-circle"
            src="assets/img/presentacion.png"

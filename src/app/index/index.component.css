@@ -1,9 +1,18 @@
+#boxtags {
+  text-align: center;
+}
+
 .tag {
   margin: 2px 4px;
   padding: 2px 6px;
   color: #fff;
   background-color: #435454;
   box-shadow: 2px 2px 3px #000;
+  cursor: pointer;
+}
+
+.tag a {
+  color: #fff;
 }
 
 #boxindex {

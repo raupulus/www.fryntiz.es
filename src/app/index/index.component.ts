@@ -18,7 +18,7 @@ export class IndexComponent implements OnInit {
 
   constructor(private _ServiceData:ServiceData) {
     // Obtengo los datos directamente para el menú
-    this.datos = _ServiceData.getHobbies();
+    this.datos = _ServiceData.getIndex();
   }
 
   ngOnInit() {
