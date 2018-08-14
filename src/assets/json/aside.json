@@ -2,51 +2,131 @@
   "es": [
     {
       "title": "Repositorios",
-      "description": "Listado de repositorios donde colaboro",
+      "description": "Listado de repositorios.",
       "data": [
         {
           "name": "GitLab",
           "url": "https://gitlab.com/fryntiz",
-          "alt": "Repositorio de Raúl Caro Pastorino (fryntiz) en Gitlab"
+          "alt": "Repositorio de Raúl Caro Pastorino (fryntiz) en Gitlab",
+          "img": "assets/img/icons/gitlab.png"
         },
         {
           "name": "GitHub",
           "url": "https://github.com/fryntiz",
-          "alt": "Repositorio de Raúl Caro Pastorino (fryntiz) en GitHub"
+          "alt": "Repositorio de Raúl Caro Pastorino (fryntiz) en GitHub",
+          "img": "assets/img/icons/github.png"
+        },
+        {
+          "name": "Packagist",
+          "url": "https://packagist.org/users/fryntiz",
+          "alt": "Repositorio para compozer de Raúl Caro Pastorino (fryntiz)",
+          "img": "assets/img/icons/packagist.png"
+        },
+        {
+          "name": "NPM",
+          "url": "https://www.npmjs.com/~fryntiz",
+          "alt": "Repositorio para npmjs de Raúl Caro Pastorino (fryntiz)",
+          "img": "assets/img/icons/npmjs.png"
         }
       ]
     },
     {
       "title": "Servicios",
-      "description": "",
+      "description": "Servicio que mantengo y comparto para uso público.",
       "data": [
         {
           "name": "Mumble",
           "url": "#",
-          "alt": ""
+          "alt": "Servidor para comunicaciones Voip Mumble",
+          "img": "assets/img/icons/mumble.png"
         }
       ]
     },
     {
       "title": "Redes Sociales",
-      "description": "",
+      "description": "Redes Sociales donde estoy presente",
       "data": [
         {
-          "name": "Twitter",
-          "url": "https://twitter.com/fryntiz",
-          "alt": "",
+          "name": "Stack OverFlow",
+          "url": "https://es.stackoverflow.com/users/82651/fryntiz",
+          "alt": "Raúl Caro Pastorino en Stack OverFlow",
+          "img": "assets/img/icons/stackoverflow.png",
           "nick": "fryntiz"
         },
         {
-          "name": "Telegram Personal",
+          "name": "Beta Beers",
+          "url": "https://betabeers.com/user/raul-caro-pastorino-23321/",
+          "alt": "Raúl Caro Pastorino en Beta Beers",
+          "img": "assets/img/icons/betabeers.png",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/fryntiz",
+          "alt": "Raúl Caro Pastorino en Twitter",
+          "img": "assets/img/icons/twitter.png",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "Google+",
+          "url": "https://plus.google.com/109655402661721084499?hl=es",
+          "alt": "Fryntiz en Google+",
+          "img": "assets/img/icons/googleplus.png",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "Telegram",
           "url": "https://t.me/Fryntiz",
-          "alt": "",
+          "alt": "Mi perfil personal en Telegram",
+          "img": "assets/img/icons/telegram.png",
           "nick": "@fryntiz"
         },
         {
-          "name": "Canal público de Telegram",
+          "name": "Canal Telegram",
           "url": "https://t.me/FryntizOpenDev",
-          "alt": ""
+          "alt": "Canal de telegram donde comparto publicaciones",
+          "img": "assets/img/icons/telegram.png"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/fryntiz",
+          "alt": "Raúl Caro Pastorino en Facebook",
+          "img": "assets/img/icons/facebook.png",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "dev@fryntiz.es",
+          "url": "mailto:dev@fryntiz.es",
+          "alt": "Correo electrónico Raúl Caro Pastorino",
+          "img": "assets/img/icons/gmail.png",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "Mi Canal La Guía Linux",
+          "url": "https://www.youtube.com/laguialinux",
+          "alt": "Canal de Youtube La Guía Linux",
+          "img": "assets/img/icons/youtube.png",
+          "nick": "laguialinux"
+        },
+        {
+          "name": "Google+ Personal",
+          "url": "https://plus.google.com/113082636471212411622",
+          "alt": "Perfil personal de Google+",
+          "img": "assets/img/icons/googleplus.png"
+        },
+        {
+          "name": "Linkedin Personal",
+          "url": "https://www.linkedin.com/in/raulcaropastorino",
+          "alt": "Raúl Caro Pastorino en Linkedin",
+          "img": "assets/img/icons/linkedin.png",
+          "nick": "fryntiz"
+        },
+        {
+          "name": "Twitter Personal",
+          "url": "https://twitter.com/fryntiz",
+          "alt": "Raúl Caro Pastorino en Twitter",
+          "img": "assets/img/icons/twitter.png",
+          "nick": "fryntiz"
         }
       ]
     }
