@@ -173,14 +173,174 @@
   ],
   "en": [
     {
-      "title": "",
-      "alt": "",
+      "title": "Debian Configuration Scripts",
+      "alt": "Repository with scripts to configure debian GNU/Linux",
       "url": "",
       "urlinfo": "",
-      "img": "assets/img/projects/",
-      "description": "",
+      "img": "assets/img/projects/debian-scripts.png",
+      "description": "Sets of scripts to adapt a Debian operating system to my liking for web development.",
+      "repository": "GitHub",
+      "urlrepository": "https://github.com/fryntiz/debian-developer-conf"
+    },
+    {
+      "title": "Fedora Configuration Scripts",
+      "alt": "Sets of scripts to adapt a Fedora GNU/Linux",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/script_fedora.png",
+      "description": "Sets of scripts to adapt a Fedora operating system to my liking for web development",
       "repository": "GitLab",
-      "urlrepository": ""
+      "urlrepository": "https://gitlab.com/fryntiz/fedora-devconf.git"
+    },
+    {
+      "title": "Bot Twitter in Python",
+      "alt": "Bot repository to post on Twitter",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/bot-twitter.png",
+      "description": "Bot to interact in social networks independently to publish, retweet, fav ...",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/bot-twitter-python"
+    },
+    {
+      "title": "Design in Debian",
+      "alt": "Repository with my designs for debian",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/debian-design.png",
+      "description": "My background designs for the Desktop, GRUB, Playmouth, GDM... on Debian",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/Art-for-Debian"
+    },
+    {
+      "title": "Mini WEB Apps",
+      "alt": "Repository with small web applications",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/miniapps.png",
+      "description": "Small web applications that I have made to integrate them into other projects",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/Mini-Aplicaciones-Web"
+    },
+    {
+      "title": "SuperBashScript",
+      "alt": "Repository with scripts in bash to administer system",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/superbashscript.png",
+      "description": "Script to help with administration, maintenance and access to Shell Linux programs.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/superadminscript"
+    },
+    {
+      "title": "Jquery LeftBar",
+      "alt": "Repository with the development of the Jquery LeftBar plugin",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/jquery.leftbar.png",
+      "description": "Customizable bar in the form of a plugin created with jQuery where you only have to pass image, link and name for each element.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/jquery.leftbar"
+    },
+    {
+      "title": "Jquery OptionsFixed",
+      "alt": "Repository with the development of the plugin",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/jquery.png",
+      "description": "Option menu discreet and fixed. Position an image in a corner that when pressed will show a customizable menu with links.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/jquery.optionsfixed"
+    },
+    {
+      "title": "Jquery Solved Exercises",
+      "alt": "Repository with the JQuery exercises that I have solved",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/jquery.png",
+      "description": "Exercises already solved by jquery with which I have practiced during my studies in this language.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/jquery-ejercicios-resueltos.git"
+    },
+    {
+      "title": "Javascript Solved Exercises",
+      "alt": "Repository with my solved javascript exercises",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/javascript.png",
+      "description": "Exercises with instructions and comments at each step of when I was studying.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/jquery-ejercicios-resueltos"
+    },
+    {
+      "title": "Javascript library",
+      "alt": "Repository with my libraries for the javascript language",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/javascript.png",
+      "description": "Function libraries for javascript.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/javascript-library"
+    },
+    {
+      "title": "Snake game",
+      "alt": "Repository with snake game in javascript",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/game-javascript-snake.png",
+      "description": "The classic game of Snake that eats apples written in javascript oriented to objects and documenting. For study and learning rather than for playing.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/snake-game-javascript"
+    },
+    {
+      "title": "Project Generator",
+      "alt": "Repository with my scripts to generate Projects",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/project-generator.png",
+      "description": "It generates the structure among several Projects of the most used in my work and preferences, saving time when configuring.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/project-generator"
+    },
+    {
+      "title": "Raspberry LCD 16x2",
+      "alt": "Repository with my intermediate library for HD44780 LCD 16x2",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/raspberry-lcd.png",
+      "description": "Pequeña librería para el modelo 1602 chip HD44780 con el que trabajar más fácil mediante funciones predefinidas por mi.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/raspberry-HD44780-LCD16x2"
+    },
+    {
+      "title": "Raspberry Screen 7 Segments",
+      "alt": "Repositories for 8 digit screens MAX7219",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/raspberry.png",
+      "description": "Installation and custom libraries for 7 segment display (8 digits) with chip MAX7219 in Raspberry and Raspbian Stable.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/raspberry-MAX7219"
+    },
+    {
+      "title": "Raspberry Display Oled",
+      "alt": "Repository with my raspberry library for oled screens",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/raspberry.png",
+      "description": "Library for working with Oled screens of 128x64 pixels that have the SSD 1306 controller installing and using the libraries: Adafruit_SSD1306, Adafruit_GPIO, Pillow and RPIO for python3",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/raspberry-SSD1306-DisplayOled"
+    },
+    {
+      "title": "Python Scripts",
+      "alt": "Repository with my scripts in python",
+      "url": "",
+      "urlinfo": "",
+      "img": "assets/img/projects/python.png",
+      "description": "Individual scripts written in python for specific purposes. Development with the purpose of being reused in other projects.",
+      "repository": "GitLab",
+      "urlrepository": "https://gitlab.com/fryntiz/python"
     }
   ]
 }
