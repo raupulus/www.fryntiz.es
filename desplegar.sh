@@ -68,7 +68,7 @@ dependencias() {
     echo 'Instalando dependencias'
     cd "$DIR_DESTINO" || exit 1
     if [[ "$SERVERENV" = 'prod' ]]; then
-        sudo -u www-data npm install
+        sudo npm install
     elif [[ "$SERVERENV" = 'dev' ]]; then
         npm install
     fi
@@ -84,7 +84,7 @@ configuraciones() {
 
     if [[ "$SERVERENV" = 'prod' ]]; then
         echo 'Generando contendio con ng build --prod'
-        sudo -u www-data ng build --prod
+        sudo ng build --prod
     elif [[ "$SERVERENV" = 'dev' ]]; then
         echo 'Generando contendio con ng build'
         ng build
@@ -140,6 +140,22 @@ certificado() {
     fi
 }
 
+update() {
+    cd "$DIR_DESTINO" || exit 1
+
+    if [[ "$SERVERENV" = 'prod' ]]; then
+        echo 'Generando contendio con ng build --prod'
+        sudo git pull
+        sudo ng build --prod
+    elif [[ "$SERVERENV" = 'dev' ]]; then
+        echo 'Generando contendio con ng build'
+        git pull
+        ng build
+    fi
+
+    cd "$WORKSCRIPT" || exit 1
+}
+
 setEnv
 
 if [[ "$1" = '-p' ]]; then
@@ -154,12 +170,16 @@ elif [[ "$1" = '-a' ]]; then
 elif [[ "$1" = '-s' ]]; then
     certificado "$1" "$2"
     recargarServicios
+elif [[ "$1" = '-u' ]]; then
+    update
+    permisos
 else
     echo "-d    Dependencias"
     echo "-p    Permisos"
     echo "-c    Configuraciones"
     echo "-a    Apache"
     echo "-s    Certificado SSL con Cerboot"
+    echo "-u    Update Repo and rebuild"
 fi
 
 exit 0

@@ -20,6 +20,9 @@ a apache:
 s ssl cert certificado:
 	./desplegar.sh -s -y
 
+u update:
+	./desplegar.sh -u
+
 serve:
 	ng serve
 
