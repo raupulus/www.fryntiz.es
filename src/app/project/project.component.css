@@ -1,7 +1,7 @@
 #boxcard img {
-    height: 225px;
-    width: 100%;
-    display: block;
+  margin: auto;
+  max-width: 225px;
+  display: block;
 }
 
 #boxcard h3 {
