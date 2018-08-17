@@ -87,7 +87,8 @@ configuraciones() {
     if [[ "$SERVERENV" = 'prod' ]]; then
         echo 'Generando contendio con ng build --prod'
         sudo chown -R "$ADMIN" "$DIR_DESTINO"
-        sudo -u "$ADMIN" ng build --prod
+        #sudo -u "$ADMIN" ng build --prod ## No funciona
+        sudo su web "$(ng build --prod)"
     elif [[ "$SERVERENV" = 'dev' ]]; then
         echo 'Generando contendio con ng build'
         ng build
@@ -150,7 +151,8 @@ update() {
         echo 'Generando contendio con ng build --prod'
         sudo chown -R ${ADMIN}:www-data "$DIR_DESTINO"
         sudo -u "$ADMIN" git pull
-        sudo -u "$ADMIN" ng build --prod
+        #sudo -u "$ADMIN" ng build --prod
+        sudo su web "$(ng build --prod)"
     elif [[ "$SERVERENV" = 'dev' ]]; then
         echo 'Generando contendio con ng build'
         git pull
