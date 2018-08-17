@@ -16,17 +16,19 @@
 <hr class="featurette-divider col-lg-12" />
 
 <div id="boxindex" class="row">
-  <div [id]="section.id" class="indexsection col-lg-12" *ngFor="let section of datos">
+  <div [id]="section.id"
+       class="indexsection col-lg-12"
+       *ngFor="let section of datos">
     <div class="boxrounded">
       <img class="rounded-circle"
-           src="assets/img/presentacion.png"
+           [src]="section.img"
            [alt]="section.alt" />
     </div>
 
     <h2 class="titulo">{{ section.title }}</h2>
 
     <h3 class="subtitulo"
-        *ngIf="section.url !== undefined && section.url !== ''">
+        *ngIf="section.subtitle !== undefined && section.subtitle !== ''">
       {{ section.subtitle }}
     </h3>
 

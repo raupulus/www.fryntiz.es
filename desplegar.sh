@@ -60,6 +60,10 @@ permisos() {
     elif [[ "$SERVERENV" = 'dev' ]]; then
         sudo chown -R $USER:www-data "$DIR_DESTINO"
     fi
+
+    if [[ -d "$DIR_DESTINO/$DIR_WEB" ]]; then
+        sudo chmod 775 -R "$DIR_DESTINO/$DIR_WEB"
+    fi
 }
 
 ##
