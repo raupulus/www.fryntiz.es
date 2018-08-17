@@ -14,38 +14,61 @@
 ## @style      https://github.com/fryntiz/Bash_Style_Guide
 
 VERSION="0.0.1"
-WORKSCRIPT=$PWD
+WORKSCRIPT="$PWD"
 USER=$(whoami)
-APACHECONF='/etc/apache2/sites-available'
-DIR_DESTINO='/var/www/html/Public/www.fryntiz.es'  ## Ruta dónde se instalará
-SITECONF='www.fryntiz.es.conf'  ## Nombre del archivo conf para apache
+APACHECONF='/etc/apache2/sites-available'  ## Donde guarda conf de apache
 
+URL1='fryntiz.es'  ## Primera url sin www
+URL2='www.fryntiz.es'  ## Segunda url con www
+DIR_WEB='dist/fryntizweb'  ## Directorio publico
+
+DIR_DESTINO="/var/www/html/Public/$URL2"  ## Ruta dónde se instalará
+DIR_LOG="/var/log/apache2/$URL2"
+SITECONF="${URL2}.conf"  ## Nombre del archivo conf para apache
+
+##
+## Establece permisos para el sitio virtual.
+##
 permisos() {
+    echo 'Aplicando permisos y propietario www-data'
     sudo chown -R www-data:www-data "$DIR_DESTINO"
 }
 
+##
+## Resuelve dependencias para funcionar.
+##
 dependencias() {
+    echo 'Instalando dependencias'
     cd "$DIR_DESTINO" || exit 1
     sudo -u www-data npm install
 }
 
+##
+## Configura el sitio virtual y/o el entorno.
+##
 configuraciones() {
-
+    echo 'Aplicando configuraciones'
 }
 
+##
+## Agrega configuración para Virtual Host de apache y resuelve dependencias a él
+##
 apache() {
+    echo 'Agregando configuración de Apache'
     ## Copio la configuración
     sudo cp "$DIR_DESTINO/$SITECONF" "$APACHECONF"
 
     ## Creo directorio para guardar logs
-    sudo mkdir -p /var/log/apache2/www.fryntiz.es
+    if [[ ! -d "$DIR_LOG" ]]; then
+        sudo mkdir -p "$DIR_LOG"
+    fi
 
     ## Habilito el sitio
-    sudo a2ensite www.fryntiz.es
+    sudo a2ensite "$URL2"
 }
 
-
 ##
+## Configura un certificado para https con ssl mediante certbot
 ## Cuando la llamada al script recibe el parámetro "-y" se ejecuta sin preguntas
 ##
 certificado() {
@@ -60,19 +83,34 @@ certificado() {
 
         if [[ "$SN" = 's' ]] || [[ "$SN" = 'S' ]]; then
             sudo certbot --authenticator webroot --installer apache \
-                -w /var/www/html/Publico/www.fryntiz.es/public \
-                -d www.fryntiz.es -d apuntes.laguialinux.es
+                -w "$DIR_DESTINO/$DIR_WEB" \
+                -d "$URL1" -d "$URL2"
         fi
+    else
+        echo "No se ha configurado SSL porque cerbot no se encuentra instalado"
     fi
 }
 
-permisos
-dependencias
-configuraciones
-apache
-
 sudo systemctl reload apache2
-certificado "$1"
+
+if [[ "$1" = '-p' ]]; then
+    dependencias
+elif [[ "$1" = '-d' ]]; then
+    permisos
+elif [[ "$1" = '-c' ]]; then
+    configuraciones
+elif [[ "$1" = '-a' ]]; then
+    apache
+elif [[ "$1" = '-s' ]]; then
+    certificado "$1" "$2"
+else
+    echo "-d    Dependencias"
+    echo "-p    Permisos"
+    echo "-c    Configuraciones"
+    echo "-a    Apache"
+    echo "-s    Certificado SSL con Cerboot"
+fi
+
 sudo systemctl reload apache2
 sudo systemctl status apache2
 
