@@ -114,7 +114,6 @@ apache() {
 recargarServicios() {
     echo 'Reiniciando servicios'
     sudo systemctl reload apache2
-    sudo systemctl status apache2
 }
 
 ##
@@ -128,7 +127,7 @@ certificado() {
         if [[ "$1" = '-y' ]]; then
             SN='S'
         else
-            read -p "¿Generar certificado ssl para https con certbot? → s/N" SN
+            read -p "¿Generar certificado ssl para https con certbot? s/N → " SN
         fi
 
         if [[ "$SN" = 's' ]] || [[ "$SN" = 'S' ]]; then
