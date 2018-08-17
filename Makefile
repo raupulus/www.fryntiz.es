@@ -1,5 +1,5 @@
 .PHONY: all install d dep dependencias p perm permisos c conf configuraciones \
-a apache c cert certificado serve clean
+a apache s ssl cert certificado serve clean
 
 all: install
 
@@ -17,7 +17,7 @@ c conf configuraciones:
 a apache:
 	./desplegar.sh -a
 
-c cert certificado:
+s ssl cert certificado:
 	./desplegar.sh -s -y
 
 serve:
