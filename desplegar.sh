@@ -23,7 +23,7 @@ URL2='www.fryntiz.es'  ## Segunda url con www
 DIR_WEB='dist/fryntizweb'  ## Directorio publico
 SERVERENV=$ENV
 
-DIR_DESTINO="/var/www/html/Public/$URL2"  ## Ruta dónde se instalará
+DIR_DESTINO="/var/www/html/Publico/$URL2"  ## Ruta dónde se instalará
 DIR_LOG="/var/log/apache2/$URL2"
 SITECONF="${URL2}.conf"  ## Nombre del archivo conf para apache
 
