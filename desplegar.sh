@@ -21,17 +21,40 @@ APACHECONF='/etc/apache2/sites-available'  ## Donde guarda conf de apache
 URL1='fryntiz.es'  ## Primera url sin www
 URL2='www.fryntiz.es'  ## Segunda url con www
 DIR_WEB='dist/fryntizweb'  ## Directorio publico
+SERVERENV=$ENV
 
 DIR_DESTINO="/var/www/html/Public/$URL2"  ## Ruta dónde se instalará
 DIR_LOG="/var/log/apache2/$URL2"
 SITECONF="${URL2}.conf"  ## Nombre del archivo conf para apache
 
 ##
+## Comprueba si se ha declarado entorno para desplegar y si no es así pregunta.
+##
+setEnv() {
+    if [[ "$SERVERENV" = 'prod' ]]; then
+        echo 'Entorno de Producción'
+    elif [[ "$SERVERENV" = 'dev' ]]; then
+        echo 'Entorno de Desarrollo'
+    else
+        local input=''
+        while [[ "$input" != 'dev' ]] || [[ "$input" != 'prod' ]]; do
+            echo 'Introduce el entorno Desarrollo o Producción'
+            read -p 'dev/prod → ' input
+        done
+        SERVERENV="$input"
+    fi
+}
+
+##
 ## Establece permisos para el sitio virtual.
 ##
 permisos() {
     echo 'Aplicando permisos y propietario www-data'
-    sudo chown -R www-data:www-data "$DIR_DESTINO"
+    if [[ "$SERVERENV" = 'prod' ]]; then
+        sudo chown -R www-data:www-data "$DIR_DESTINO"
+    elif [[ "$SERVERENV" = 'dev' ]]; then
+        sudo chown -R $USER:www-data "$DIR_DESTINO"
+    fi
 }
 
 ##
@@ -40,7 +63,11 @@ permisos() {
 dependencias() {
     echo 'Instalando dependencias'
     cd "$DIR_DESTINO" || exit 1
-    sudo -u www-data npm install
+    if [[ "$SERVERENV" = 'prod' ]]; then
+        sudo -u www-data npm install
+    elif [[ "$SERVERENV" = 'dev' ]]; then
+        npm install
+    fi
 }
 
 ##
@@ -49,9 +76,15 @@ dependencias() {
 configuraciones() {
     echo 'Aplicando configuraciones'
 
-    echo 'Generando contendio con ng build --prod'
     cd "$DIR_DESTINO" || exit 1
-    sudo -u www-data ng build --prod
+
+    if [[ "$SERVERENV" = 'prod' ]]; then
+        echo 'Generando contendio con ng build --prod'
+        sudo -u www-data ng build --prod
+    elif [[ "$SERVERENV" = 'dev' ]]; then
+        echo 'Generando contendio con ng build'
+        ng build
+    fi
 }
 
 ##
@@ -103,6 +136,8 @@ certificado() {
         echo "No se ha configurado SSL porque cerbot no se encuentra instalado"
     fi
 }
+
+setEnv
 
 if [[ "$1" = '-p' ]]; then
     dependencias
