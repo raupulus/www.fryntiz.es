@@ -48,6 +48,10 @@ dependencias() {
 ##
 configuraciones() {
     echo 'Aplicando configuraciones'
+
+    echo 'Generando contendio con ng build --prod'
+    cd "$DIR_DESTINO" || exit 1
+    sudo -u www-data ng build --prod
 }
 
 ##
@@ -65,6 +69,15 @@ apache() {
 
     ## Habilito el sitio
     sudo a2ensite "$URL2"
+}
+
+##
+## Recarga servicios configurados para aplicar los cambios
+##
+recargarServicios() {
+    echo 'Reiniciando servicios'
+    sudo systemctl reload apache2
+    sudo systemctl status apache2
 }
 
 ##
@@ -91,8 +104,6 @@ certificado() {
     fi
 }
 
-sudo systemctl reload apache2
-
 if [[ "$1" = '-p' ]]; then
     dependencias
 elif [[ "$1" = '-d' ]]; then
@@ -101,8 +112,10 @@ elif [[ "$1" = '-c' ]]; then
     configuraciones
 elif [[ "$1" = '-a' ]]; then
     apache
+    recargarServicios
 elif [[ "$1" = '-s' ]]; then
     certificado "$1" "$2"
+    recargarServicios
 else
     echo "-d    Dependencias"
     echo "-p    Permisos"
@@ -110,8 +123,5 @@ else
     echo "-a    Apache"
     echo "-s    Certificado SSL con Cerboot"
 fi
-
-sudo systemctl reload apache2
-sudo systemctl status apache2
 
 exit 0
