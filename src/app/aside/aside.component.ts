@@ -55,5 +55,6 @@ export class AsideComponent implements OnInit {
       this.cookieService.set( 'lang', lang, 30 );
     }
     window.location.reload();
+    //window.location.assign(window.location.href)
   }
 }
