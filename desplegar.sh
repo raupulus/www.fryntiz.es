@@ -37,8 +37,12 @@ setEnv() {
         echo 'Entorno de Desarrollo'
     else
         local input=''
+
+        echo 'No se encuentra establecida la constante global "ENV"'
+
         while [[ "$input" != 'dev' ]] || [[ "$input" != 'prod' ]]; do
-            echo 'Introduce el entorno Desarrollo o Producción'
+            echo 'Introduce el entorno Desarrollo (dev) o Producción (prod)'
+            echo 'sobre el que se desplegará:'
             read -p 'dev/prod → ' input
         done
         SERVERENV="$input"
