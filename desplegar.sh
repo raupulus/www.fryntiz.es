@@ -68,7 +68,7 @@ dependencias() {
     echo 'Instalando dependencias'
     cd "$DIR_DESTINO" || exit 1
     if [[ "$SERVERENV" = 'prod' ]]; then
-        sudo npm install
+        sudo -u www-data npm install
     elif [[ "$SERVERENV" = 'dev' ]]; then
         npm install
     fi
