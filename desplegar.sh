@@ -176,7 +176,7 @@ elif [[ "$1" = '-a' ]]; then
     apache
     recargarServicios
 elif [[ "$1" = '-s' ]]; then
-    certificado "$1" "$2"
+    certificado "$2"
     recargarServicios
 elif [[ "$1" = '-u' ]]; then
     update
