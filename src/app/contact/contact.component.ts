@@ -15,8 +15,8 @@ import { Validators, FormBuilder, FormControl,
 })
 
 export class ContactComponent implements OnInit {
-  private datos;
-  private config;
+  public datos;
+  public config;
   public form:FormGroup;
 
   constructor( private _ServiceData:ServiceData,

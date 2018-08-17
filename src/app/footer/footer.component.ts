@@ -10,8 +10,8 @@ import { ServiceData } from '../../services/data.service';
   providers: [ ServiceData ]
 })
 export class FooterComponent implements OnInit {
-  private config;
-  private contact;
+  public config;
+  public contact;
 
   constructor( private _ServiceData:ServiceData ) {
     // Obtengo configuraciones de la aplicación

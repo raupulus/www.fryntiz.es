@@ -14,8 +14,8 @@ import { CookieService } from 'ngx-cookie-service';
 })
 
 export class AsideComponent implements OnInit {
-  private datos:ServiceData;
-  private contact:string;
+  public datos:ServiceData;
+  public contact:string;
   private tags = [
     'Html5', 'Javascript', 'CSS', 'Php', 'Ajax', 'Shell Script', 'Python',
     'jQuery', 'MySQL', 'Sqlite', 'PostgreSQL', 'JSON', 'Xml', 'Angular',

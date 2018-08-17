@@ -10,7 +10,7 @@ import { ServiceData } from '../../services/data.service';
   providers: [ServiceData]
 })
 export class IndexComponent implements OnInit {
-  private datos:ServiceData;
+  public datos:ServiceData;
 
   constructor(private _ServiceData:ServiceData) {
     // Obtengo los datos directamente para el menú

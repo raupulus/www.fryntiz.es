@@ -11,9 +11,9 @@ import { ServiceData } from '../../services/data.service';
 })
 
 export class SlideComponent implements OnInit {
-  private config;
-  private slideConfig;
-  private imageUrls;
+  public config;
+  public slideConfig;
+  public imageUrls;
 
   /*
     Información sobre el componente slide:

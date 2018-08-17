@@ -11,7 +11,7 @@ import { ServiceData } from '../../services/data.service';
 })
 
 export class ProjectComponent implements OnInit {
-  private datos;
+  public datos;
 
   constructor(private _ServiceData:ServiceData) {
     // Obtengo los datos directamente para los proyectos

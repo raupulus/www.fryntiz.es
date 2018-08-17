@@ -10,8 +10,8 @@ import { ServiceData } from '../../services/data.service';
   providers: [ServiceData]
 })
 export class CollaborationComponent implements OnInit {
-  private config:ServiceData;
-  private datos:ServiceData;
+  public config:ServiceData;
+  public datos:ServiceData;
 
   constructor(private _ServiceData:ServiceData) {
     // Obtengo los datos de Configuración
