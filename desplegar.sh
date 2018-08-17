@@ -16,6 +16,7 @@
 VERSION="0.0.1"
 WORKSCRIPT="$PWD"
 USER=$(whoami)
+ADMIN='web'  ## Nombre del usuario administrador
 APACHECONF='/etc/apache2/sites-available'  ## Donde guarda conf de apache
 
 URL1='fryntiz.es'  ## Primera url sin www
@@ -55,7 +56,7 @@ setEnv() {
 permisos() {
     echo 'Aplicando permisos y propietario www-data'
     if [[ "$SERVERENV" = 'prod' ]]; then
-        sudo chown -R www-data:www-data "$DIR_DESTINO"
+        sudo chown -R www-data:$ADMIN "$DIR_DESTINO"
     elif [[ "$SERVERENV" = 'dev' ]]; then
         sudo chown -R $USER:www-data "$DIR_DESTINO"
     fi
@@ -68,7 +69,8 @@ dependencias() {
     echo 'Instalando dependencias'
     cd "$DIR_DESTINO" || exit 1
     if [[ "$SERVERENV" = 'prod' ]]; then
-        sudo -u www-data npm install
+        sudo chown -R ${ADMIN}:www-data "$DIR_DESTINO"
+        sudo -u "$ADMIN" npm install
     elif [[ "$SERVERENV" = 'dev' ]]; then
         npm install
     fi
@@ -84,7 +86,8 @@ configuraciones() {
 
     if [[ "$SERVERENV" = 'prod' ]]; then
         echo 'Generando contendio con ng build --prod'
-        sudo ng build --prod
+        sudo chown -R "$ADMIN" "$DIR_DESTINO"
+        sudo -u "$ADMIN" ng build --prod
     elif [[ "$SERVERENV" = 'dev' ]]; then
         echo 'Generando contendio con ng build'
         ng build
@@ -145,8 +148,9 @@ update() {
 
     if [[ "$SERVERENV" = 'prod' ]]; then
         echo 'Generando contendio con ng build --prod'
-        sudo git pull
-        sudo ng build --prod
+        sudo chown -R ${ADMIN}:www-data "$DIR_DESTINO"
+        sudo -u "$ADMIN" git pull
+        sudo -u "$ADMIN" ng build --prod
     elif [[ "$SERVERENV" = 'dev' ]]; then
         echo 'Generando contendio con ng build'
         git pull
@@ -160,10 +164,12 @@ setEnv
 
 if [[ "$1" = '-p' ]]; then
     dependencias
+    permisos
 elif [[ "$1" = '-d' ]]; then
     permisos
 elif [[ "$1" = '-c' ]]; then
     configuraciones
+    permisos
 elif [[ "$1" = '-a' ]]; then
     apache
     recargarServicios
