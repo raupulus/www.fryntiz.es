@@ -36,7 +36,7 @@
       "data": [
         {
           "name": "Mumble",
-          "url": "#",
+          "url": "https://voip.fryntiz.es",
           "alt": "Servidor para comunicaciones Voip Mumble",
           "img": "assets/img/icons/mumble.png"
         }
@@ -168,7 +168,7 @@
       "data": [
         {
           "name": "Mumble",
-          "url": "#",
+          "url": "https://voip.fryntiz.es",
           "alt": "Server for Voip Mumble communications",
           "img": "assets/img/icons/mumble.png"
         }
