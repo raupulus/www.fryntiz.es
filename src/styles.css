@@ -13,16 +13,14 @@ body {
   background-image: url("/assets/img/patron.jpg");
 }
 
-.content-fluid{
+.content-fluid {
   position:relative;
   margin:auto;
   width:100%;
   height: auto;
-  padding:
-
 }
 
-.row{
+.row {
   position:relative;
   margin:auto;
   width:100%;
@@ -31,19 +29,19 @@ body {
   display:table;
 }
 
-[class*="col-"]{
+[class*="col-"] {
   float:left;
   padding:0px;
 }
 
-h1.titulos{
+h1.titulos {
   background:white;
   text-align: center;
   color:#666;
   font-weight:100;
 }
 
-h1.titulos hr{
+h1.titulos hr {
   margin:20px;
   border:1px solid #ddd;
 }
