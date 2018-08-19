@@ -21,28 +21,28 @@
   },
   "img": [
     {
-      "title": "Entorno de Trabajo",
+      "title": "Work Environment",
       "url": "assets/img/slide/slide1.jpg",
       "href": "#",
-      "caption": "Entorno de Trabajo"
+      "caption": "Work Environment"
     },
     {
-      "title": "Entorno de Trabajo",
+      "title": "Work Environment",
       "url": "assets/img/slide/slide2.jpg",
       "href": "#",
-      "caption": "Entorno de Trabajo"
+      "caption": "Work Environment"
     },
     {
-      "title": "Circuitos Solares",
+      "title": "Solar Circuits",
       "url": "assets/img/slide/slide3.jpg",
       "href": "#",
-      "caption": "Circuitos Solares"
+      "caption": "Solar Circuits"
     },
     {
-      "title": "Circuitos Solares",
+      "title": "Solar Circuits",
       "url": "assets/img/slide/slide4.jpg",
       "href": "#",
-      "caption": "Circuitos Solares"
+      "caption": "Solar Circuits"
     }
   ]
 }

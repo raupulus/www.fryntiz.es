@@ -5,7 +5,7 @@
       "title": "Presentación",
       "subtitle": "",
       "url": "",
-      "img": "assets/img/index/presentacion.png",
+      "img": "assets/img/index/presentacion.jpg",
       "alt": "Presentación de Raúl Caro Pastorino (Fryntiz)",
       "description": [
         "Soy Raúl Caro Pastorino, apasionado por el software y el hardware",
@@ -22,7 +22,7 @@
       "title": "Libertad Digital",
       "subtitle": "",
       "url": "",
-      "img": "assets/img/index/compromiso.png",
+      "img": "assets/img/index/compromiso.jpg",
       "alt": "Mi compromiso con la libertad en la tecnología",
       "description": [
         "En mi compromiso con la libertad en el uso de cualquier forma de tecnología intento en toda medida de lo posible compartir código e información que ayude a otras personas a que descubrir esta necesidad.",
@@ -60,7 +60,7 @@
       "title": "Objetivos de Futuro",
       "subtitle": "",
       "url": "",
-      "img": "assets/img/index/",
+      "img": "assets/img/index/future.jpg",
       "alt": "Objetivos de futuro",
       "description": [
         "Hasta ahora he probado muchas tecnologías centrándome algo más en la parte backend y aplicaciones sin interfaz gráfica aunque esta también la haya trabajado.",
@@ -77,7 +77,7 @@
       "title": "Presentation",
       "subtitle": "",
       "url": "",
-      "img": "assets/img/index/presentacion.png",
+      "img": "assets/img/index/presentacion.jpg",
       "alt": "Presentation by Raúl Caro Pastorino (Fryntiz)",
       "description": [
         "I'm Raúl Caro Pastorino, passionate about software and hardware.",
@@ -94,7 +94,7 @@
       "title": "Digital Freedom",
       "subtitle": "",
       "url": "",
-      "img": "assets/img/index/compromiso.png",
+      "img": "assets/img/index/compromiso.jpg",
       "alt": "My commitment to freedom in technology",
       "description": [
         "In my commitment to freedom in the use of any form of technology I try as much as possible to share code and information that helps other people discover this need.",
@@ -134,7 +134,7 @@
       "title": "Future Objectives",
       "subtitle": "",
       "url": "",
-      "img": "assets/img/index/futuro.png",
+      "img": "assets/img/index/future.jpg",
       "alt": "Objetivos de futuro",
       "description": [
         "So far I have tried many technologies focusing more on the backend part and applications without graphical interface although this has also worked.",
