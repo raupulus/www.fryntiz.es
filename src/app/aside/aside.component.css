@@ -9,22 +9,6 @@
     background-color: #333;
 }
 
-#boxlanguage {
-  text-align: center;
-  height: 30px;
-}
-
-#boxlanguage section {
-  margin: 3px 8px;
-  display: inline-block;
-  cursor: pointer;
-}
-
-#boxlanguage section img {
-  width: 20px;
-  height: 20px;
-}
-
 #boxContacto {
   padding: 10px;
   text-align: center;

@@ -45,3 +45,21 @@ h1.titulos hr {
   margin:20px;
   border:1px solid #ddd;
 }
+
+.boxlanguage {
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+}
+
+/* Zona de idiomas */
+.boxlanguage section {
+  margin: 3px 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.boxlanguage section img {
+  width: 20px;
+  height: 20px;
+}
