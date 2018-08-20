@@ -1,6 +1,6 @@
 {
   "es": {
-    "description": "Puedes contactar mediante el correo siguiente o el formulario adjunto más abajo.",
+    "description": "Puedes contactar mediante el correo electrónico adjunto. Este formulario de más abajo es una versión demostrativa temporalmente.",
     "form": "Formulario de Contacto",
     "subject": "Asunto",
     "name": "Nombre",
@@ -15,7 +15,7 @@
     "invalidmail": "Por favor introduce un correo electrónico válido."
   },
   "en": {
-    "description": "You can contact through the following email or the attached form below.",
+    "description": "You can contact by email attached. This form below is a demo version temporarily.",
     "form": "Contact",
     "subject": "Subject",
     "name": "First Name",
