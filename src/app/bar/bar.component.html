@@ -1,0 +1,57 @@
+<div id="boxbar" class="content-fluid">
+    <header id="main" class="row">
+        <div id="boxlogo" class="align-middle col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <figure id="logotipo" class="col-lg-4">
+                <img [src]="config.logo" alt="Logo" />
+            </figure>
+            <h1 id="sitetitle" class="col-lg-8">{{ config.title }}</h1>
+        </div>
+
+        <div id="btnMovil" class="col-lg-0 col-md-0 col-sm-0 col-xs-12">
+          <span class="fa fa-bars"></span>
+        </div>
+
+        <nav class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+            <ul>
+                <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a id="barindex" [routerLink]="['/index']">
+                      {{ index }}
+                    </a>
+                </li>
+
+                <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a id="barprojects" [routerLink]="['/projects']">
+                    {{ projects }}
+                  </a>
+                </li>
+
+                <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a id="barcollaboration" [routerLink]="['/collaboration']">
+                      {{ collaboration }}
+                    </a>
+                </li>
+
+                <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a id="barjobs" [routerLink]="['/jobs']">
+                      {{ jobs }}
+                    </a>
+                </li>
+
+                <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a id="barhobbies" [routerLink]="['/hobbies']">
+                      {{ hobbie }}
+                    </a>
+                </li>
+
+                <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a id="barcurriculum"
+                       [href]="config.urlcurriculum"
+                       alt="Curriculum Fryntiz"
+                       target="_blank">
+                      {{ curriculum }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>

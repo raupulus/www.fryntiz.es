@@ -1,0 +1,20 @@
+{
+  "title": "Raúl Caro Pastorino",
+  "background": "",
+  "logo": "assets/img/logotipo.png",
+  "author": "Raúl Caro Pastorino",
+  "email": "dev@fryntiz.es",
+  "emailfrom": "dev@fryntiz.es",
+  "portsmtp": "587",
+  "mailserver": "smtp.fryntiz.es",
+  "password": "",
+  "url": "https://fryntiz.es",
+  "urlcurriculum": "https://curriculum.fryntiz.es",
+  "urlphotogallery": "#",
+  "gitlab": "https://gitlab.com/fryntiz",
+  "github": "https://github.com/fryntiz",
+  "technology": "Website written in angular",
+  "websitesource": "https://gitlab.com/fryntiz/www.fryntiz.es",
+  "licence": "Site licence GPLv3",
+  "urllicence": "https://gitlab.com/fryntiz/www.fryntiz.es/blob/master/LICENSE"
+}

@@ -1,0 +1,20 @@
+{
+  "es": {
+    "index": "Inicio",
+    "projects": "Proyectos",
+    "collaboration": "Colaboro",
+    "hobbie": "Aficciones",
+    "curriculum": "Curriculum",
+    "jobs": "Trabajos",
+    "contact": "Contacto"
+  },
+  "en": {
+    "index": "Home",
+    "projects": "Project",
+    "collaboration": "Collabor.",
+    "hobbie": "Hobbie",
+    "curriculum": "Curriculum",
+    "jobs": "Jobs",
+    "contact": "Contact"
+  }
+}

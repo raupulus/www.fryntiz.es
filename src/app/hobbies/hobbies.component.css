@@ -1,0 +1,57 @@
+#boxtags {
+  text-align: center;
+}
+
+.tag {
+  margin: 2px 4px;
+  padding: 2px 6px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #435454;
+  box-shadow: 2px 2px 3px #000;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #000;
+  border-radius: 2px;
+}
+
+.tag:hover {
+  color: orange;
+  background-color: #0069d9;
+}
+
+.tag a {
+  color: #fff;
+}
+
+.sectionhobbie {
+  margin: 0 8px 5px 8px;
+  background-color: #fff;
+}
+
+.hobbie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #000;
+}
+
+.hobbie h2 {
+  text-align: center;
+  color: #435454;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.boximg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.boximg img {
+  margin: auto;
+  text-align: center;
+}

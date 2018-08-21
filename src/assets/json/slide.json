@@ -1,0 +1,48 @@
+{
+  "config": {
+    "debug": false,
+    "height": "400px",
+    "minHeight": "'300px'",
+    "autoPlay": true,
+    "autoPlayInterval": "6000",
+    "autoPlayWaitForLazyLoad": true,
+    "arrowSize": "30px",
+    "showArrows": true,
+    "disableSwiping": false,
+    "backgroundSize": "cover",
+    "backgroundPosition": "center center",
+    "backgroundRepeat": "no-repeat",
+    "showDots": false,
+    "dotColor": "#FFF",
+    "showCaptions": true,
+    "captionColor": "#FFF",
+    "captionBackground": "rgba(0, 0, 0, .45)",
+    "lazyLoad": "imageSources?.length > 1"
+  },
+  "img": [
+    {
+      "title": "Work Environment",
+      "url": "assets/img/slide/slide1.jpg",
+      "href": "#",
+      "caption": "Work Environment"
+    },
+    {
+      "title": "Work Environment",
+      "url": "assets/img/slide/slide2.jpg",
+      "href": "#",
+      "caption": "Work Environment"
+    },
+    {
+      "title": "Solar Circuits",
+      "url": "assets/img/slide/slide3.jpg",
+      "href": "#",
+      "caption": "Solar Circuits"
+    },
+    {
+      "title": "Solar Circuits",
+      "url": "assets/img/slide/slide4.jpg",
+      "href": "#",
+      "caption": "Solar Circuits"
+    }
+  ]
+}
