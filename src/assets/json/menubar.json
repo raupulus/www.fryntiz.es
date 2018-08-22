@@ -1,10 +1,10 @@
-{
+y{
   "es": {
     "index": "Inicio",
     "projects": "Proyectos",
     "collaboration": "Colaboro",
     "hobbie": "Aficciones",
-    "curriculum": "Curriculum",
+    "curriculum": "CV",
     "jobs": "Trabajos",
     "contact": "Contacto"
   },
@@ -12,8 +12,8 @@
     "index": "Home",
     "projects": "Project",
     "collaboration": "Collabor.",
-    "hobbie": "Hobbie",
-    "curriculum": "Curriculum",
+    "hobbie": "Hobby",
+    "curriculum": "CV",
     "jobs": "Jobs",
     "contact": "Contact"
   }
