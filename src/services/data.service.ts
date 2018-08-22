@@ -80,8 +80,8 @@ export class ServiceData {
     // Comprueba que el idioma es válido y existe al menos para el menú.
     if ( ( this.lang === undefined ) ||
            this.menubar[this.lang] === undefined) {
-        this.lang = 'en';
-        this.cookieService.set( 'lang', 'en', 30 );
+        this.lang = 'es';
+        this.cookieService.set( 'lang', 'es', 30 );
     }
 
     return this.lang;
