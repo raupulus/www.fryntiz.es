@@ -28,6 +28,24 @@ ng build --prod
 ng serve
 ```
 
+## Preparar apache
+
+```bash
+sudo chown -R www-data:www-data /var/www/public/www.fryntiz.es/dist/www.fryntiz.es
+sudo find /var/www/public/www.fryntiz.es/dist/www.fryntiz.es -type f -exec chmod 644 {} \;
+sudo find /var/www/public/www.fryntiz.es/dist/www.fryntiz.es -type d -exec chmod 775 {} \;
+
+sudo cp /var/www/public/www.fryntiz.es/apache.conf /etc/apache2/sites-available/www.fryntiz.es.conf
+sudo a2ensite www.fryntiz.es.conf
+
+echo '127.0.0.1       fryntiz.es' | sudo tee -a /etc/hosts
+echo '127.0.0.1       www.fryntiz.es' | sudo tee -a /etc/hosts
+
+sudo systemctl reload apache2
+```
+
+
+
 ## Posibles problemas
 
 ### Error: ENOSPC: System limit for number of file watchers reached, watch '/home/foldername/abcrypto/static'
