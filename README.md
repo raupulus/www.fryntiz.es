@@ -3,14 +3,35 @@
 
 Repositorio donde almaceno la web principal de mi perfil profesional
 
-![Previsualización 1 de www.fryntiz.es](preview1.png)
+Actualmente desarrollada en Angular 6
 
-![Previsualización 2 de www.fryntiz.es](preview2.png)
+Utilizada como portal para mostrar y enlazar a proyectos, redes sociales y 
+todos los aspectos en los que me involucro.
 
-![Previsualización 3 de www.fryntiz.es](preview3.png)
+![Logo Fryntiz](src/assets/img/logotipo.png "Logo Fryntiz")
 
-![Previsualización 4 de www.fryntiz.es](preview4.png)
+## Instalar dependencias npm
 
-![Previsualización 5 de www.fryntiz.es](preview5.png)
+```bash
+npm install
+```
 
-![Logo Fryntiz](http://www.fryntiz.es/images/LogoFryntiz.png "Logo Fryntiz")
+## Construir aplicación para producción
+
+```bash
+ng build
+```
+
+## Abrir servidor con el desarrollo
+
+```bash
+ng serve
+```
+
+## Posibles problemas
+
+### Error: ENOSPC: System limit for number of file watchers reached, watch '/home/foldername/abcrypto/static'
+
+```bash
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
