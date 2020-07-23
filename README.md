@@ -76,7 +76,7 @@ sudo certbot renew --post-hook "service apache2 reload"
 
 ## Posibles problemas
 
-### Error: ENOSPC: System limit for number of file watchers reached, watch '/home/foldername/abcrypto/static'
+### Error: ENOSPC: System limit for number of file watchers reached, watch...
 
 ```bash
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
