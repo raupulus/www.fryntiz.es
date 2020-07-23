@@ -1,6 +1,6 @@
 {
   "name": "fryntizweb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -27,7 +27,7 @@
     "ng-simple-slideshow": "^1.2.3",
     "ngx-cookie-service": "^1.0.10",
     "popper.js": "^1.14.4",
-    "rxjs": "^6.2.2",
+    "rxjs": "6.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
