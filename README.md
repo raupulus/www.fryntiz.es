@@ -1,9 +1,9 @@
 # WEB oficial fryntiz
-**Dominio:** *[www.fryntiz.es](http://www.fryntiz.es "Página web oficial de Fryntiz")*
+**Dominio:** *[fryntiz.es](https://fryntiz.es "Página web oficial de Fryntiz")*
 
 Repositorio donde almaceno la web principal de mi perfil profesional
 
-Actualmente desarrollada en Angular 6
+Actualmente desarrollada en **Angular 6**
 
 Utilizada como portal para mostrar y enlazar a proyectos, redes sociales y 
 todos los aspectos en los que me involucro.
@@ -35,3 +35,4 @@ ng serve
 ```bash
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
+
