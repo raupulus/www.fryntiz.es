@@ -19,7 +19,7 @@ npm install
 ## Construir aplicación para producción
 
 ```bash
-ng build
+ng build --prod
 ```
 
 ## Abrir servidor con el desarrollo

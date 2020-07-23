@@ -158,7 +158,7 @@ update() {
         #sudo -u "$ADMIN" ng build --prod
         sudo su web "$(ng build --prod)"
     elif [[ "$SERVERENV" = 'dev' ]]; then
-        echo 'Generando contendio con ng build'
+        echo 'Generando contenido con ng build'
         git pull
         ng build
     fi
