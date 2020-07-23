@@ -44,7 +44,35 @@ echo '127.0.0.1       www.fryntiz.es' | sudo tee -a /etc/hosts
 sudo systemctl reload apache2
 ```
 
+## Instalar certificado
 
+```bash
+sudo certbot --authenticator webroot --installer apache \
+    -w /var/www/public/www.fryntiz.es/dist/fryntizweb \
+    -d www.fryntiz.es -d fryntiz.es
+
+sudo certbot certonly --webroot -w /var/www/public/www.fryntiz.es/dist/fryntizweb \
+    -d www.fryntiz.es -d fryntiz.es
+```
+
+### Instalar certificado de forma interactiva forzando dominios
+
+```bash
+sudo certbot certonly --authenticator standalone --pre-hook "apachectl -k stop" --post-hook "apachectl -k start"
+```
+
+## Añadir crontab para renovar certificados
+
+```bash
+#15 2,14 * * * /usr/bin/certbot renew --quiet --post-hook "service apache2 reload"
+43 5 * * * certbot renew --post-hook "systemctl reload apache2"
+```
+
+## Renovar certificados manualmente
+
+```bash
+sudo certbot renew --post-hook "service apache2 reload"
+```
 
 ## Posibles problemas
 
