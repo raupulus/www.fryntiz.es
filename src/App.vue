@@ -3,17 +3,24 @@
     <Navbar />
   </div>
 
+  <Alert open="false" 
+         title="Título del Alert"
+         message="Mensaje de prueba"
+         type="danger" />
+
   <router-view/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Navbar from '@/components/Navbar.vue';
+import Alert from '@/components/Alert.vue';
 
 export default defineComponent({
     name: 'App',
     components: {
-      Navbar
+      Navbar,
+      Alert
     }
   
 });
