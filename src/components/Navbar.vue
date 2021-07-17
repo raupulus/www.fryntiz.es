@@ -62,7 +62,7 @@ export default defineComponent({
       Repositories: "/repositories",
       Services: "/services",
       About: "/about",
-      Contacto: "/contact",
+      Contac: "/contact",
     });
 
     /**
