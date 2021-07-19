@@ -27,7 +27,7 @@
           </a>
 
           <div
-            class="relative z-20 w-full h-auto py-8 text-white background-gray border-t-0 border-yellow-200 px-7"
+            class="z-index-0 relative z-20 w-full h-auto py-8 text-white background-gray border-t-0 border-yellow-200 px-7"
           >
             <a
               href="#_"
@@ -54,7 +54,7 @@
           >
           </a>
           <div
-            class="relative z-20 w-full h-auto py-8 text-white background-blue border-t-0 border-yellow-200 px-7"
+            class="z-index-0 relative z-20 w-full h-auto py-8 text-white background-blue border-t-0 border-yellow-200 px-7"
           >
             <a
               href="#_"
@@ -80,7 +80,7 @@
             class="image-open-source block w-full transition duration-300 ease-in-out transform bg-center bg-cover h-96 hover:scale-110"
           ></a>
           <div
-            class="relative z-20 flex flex-col items-start justify-center w-full h-auto py-8 text-white bg-yellow-400 border-t-0 border-yellow-200 sm:h-full xl:h-auto px-7"
+            class="z-index-0 relative z-20 flex flex-col items-start justify-center w-full h-auto py-8 text-white bg-yellow-400 border-t-0 border-yellow-200 sm:h-full xl:h-auto px-7"
           >
             <a
               href="#_"
@@ -155,5 +155,9 @@ export default defineComponent({
 
 .background-orange {
   background-color: $orange;
+}
+
+.z-index-0 {
+  z-index: 0;
 }
 </style>
