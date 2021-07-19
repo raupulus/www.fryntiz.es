@@ -134,15 +134,15 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .image-curious {
-  background-image: url("../assets/images/home/cards/curioso.jpg");
+  background-image: url("../../assets/images/home/cards/curioso.jpg");
 }
 
 .image-backend {
-  background-image: url("../assets/images/home/cards/backend-developer.jpg");
+  background-image: url("../../assets/images/home/cards/backend-developer.jpg");
 }
 
 .image-open-source {
-  background-image: url("../assets/images/home/cards/open-source.jpg");
+  background-image: url("../../assets/images/home/cards/open-source.jpg");
 }
 
 .background-gray {
