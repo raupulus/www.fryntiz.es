@@ -24,7 +24,10 @@
           <p class="text-white text-3xl mb-4 text-center">+</p>
 
           <div class="text-center">
-            <span class="text-gray-400 inline-block text-center text-lg mx-1">
+            <span
+              v-if="technologies.includes('laravel')"
+              class="text-gray-400 inline-block text-center text-lg mx-1"
+            >
               <svg
                 width="40"
                 height="42"
@@ -51,39 +54,10 @@
               Laravel
             </span>
 
-            <span class="text-gray-400 inline-block text-center text-lg mx-1">
-              <svg
-                height="21"
-                preserveAspectRatio="xMidYMid"
-                width="42"
-                xmlns="http://www.w3.org/2000/svg"
-                class="mx-auto"
-                viewBox="0 0 256 153.6"
-              >
-                <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">
-                  <stop offset="0" stop-color="#2298bd" />
-                  <stop offset="1" stop-color="#0ed7b5" />
-                </linearGradient>
-
-                <path
-                  d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z"
-                  fill="url(#a)"
-                />
-
-                <animateTransform
-                  attributeName="transform"
-                  type="translate"
-                  values="0 -12; 0 -8; 0 -4; 0 0; 0 -12;"
-                  begin="0s"
-                  dur="2s"
-                  repeatCount="indefinite"
-                ></animateTransform>
-              </svg>
-
-              Tailwind
-            </span>
-
-            <span class="text-gray-400 inline-block text-center text-lg mx-1">
+            <span
+              v-if="technologies.includes('vue')"
+              class="text-gray-400 inline-block text-center text-lg mx-1"
+            >
               <svg
                 version="1.1"
                 height="42"
@@ -120,7 +94,45 @@
               VueJs
             </span>
 
-            <span class="text-gray-400 inline-block text-center text-lg mx-1">
+            <span
+              v-if="technologies.includes('tailwind')"
+              class="text-gray-400 inline-block text-center text-lg mx-1"
+            >
+              <svg
+                height="21"
+                preserveAspectRatio="xMidYMid"
+                width="42"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mx-auto"
+                viewBox="0 0 256 153.6"
+              >
+                <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">
+                  <stop offset="0" stop-color="#2298bd" />
+                  <stop offset="1" stop-color="#0ed7b5" />
+                </linearGradient>
+
+                <path
+                  d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z"
+                  fill="url(#a)"
+                />
+
+                <animateTransform
+                  attributeName="transform"
+                  type="translate"
+                  values="0 -12; 0 -8; 0 -4; 0 0; 0 -12;"
+                  begin="0s"
+                  dur="2s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+              </svg>
+
+              Tailwind
+            </span>
+
+            <span
+              v-if="technologies.includes('postgres')"
+              class="text-gray-400 inline-block text-center text-lg mx-1"
+            >
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
               <svg
@@ -241,52 +253,37 @@
           <div class="sm:flex">
             <div class="sm:flex-1">
               <h6 class="text-base font-medium text-white uppercase mb-2">
-                Apis
+                {{ links1_title ?? "&nbsp;" }}
               </h6>
 
               <div>
-                <a href="#" class="text-gray-400 py-1 block hover:underline">
-                  Link TEST
-                </a>
-
-                <!--
-                @forelse(MenuHelper::getApiRoutesIndex() as $idx => $ele)
-                <a
-                  href=""
-                  class="text-gray-400 py-1 block hover:underline ?¿?¿? ? 'underline' : ''"
-                >
-                  
-                </a>
-                @empty
-                <p class="text-gray-400">WIP (Coming soon)</p>
-                @endforelse
-                -->
+                <div v-if="links1">
+                  <a
+                    v-for="(link, title) of links1"
+                    :key="title"
+                    :href="link"
+                    class="text-gray-400 py-1 block hover:underline"
+                  >
+                    {{ title }}
+                  </a>
+                </div>
               </div>
             </div>
 
             <div class="sm:flex-1 mt-4 sm:mt-0">
               <h6 class="text-base font-medium text-white uppercase mb-2">
-                Documentación
+                {{ links2_title ?? "&nbsp;" }}
               </h6>
 
-              <div>
-                <a href="#" class="text-gray-400 py-1 block hover:underline">
-                  LINK 2
-                </a>
-
-                <!--
-
-                @forelse(MenuHelper::getApiRoutesDocs() as $idx => $ele)
+              <div v-if="links2">
                 <a
-                  href=""
-                  class="text-gray-400 py-1 block hover:underline ??? ? 'underline' : ''"
+                  v-for="(link, title) of links2"
+                  :key="title"
+                  :href="link"
+                  class="text-gray-400 py-1 block hover:underline"
                 >
-                  
+                  {{ title }}
                 </a>
-                @empty
-                <p class="text-gray-400">WIP (Coming soon)</p>
-                @endforelse
-                -->
               </div>
             </div>
           </div>
@@ -300,7 +297,7 @@
           <a
             href="https://fryntiz.es"
             target="_blank"
-            class="background-blue text-white hover:bg-indigo-700 rounded py-2 px-6 md:px-12 transition-colors duration-300"
+            class="background-primary text-white hover:bg-indigo-700 rounded py-2 px-6 md:px-12 transition-colors duration-300"
           >
             Explorar
           </a>
@@ -317,20 +314,20 @@
             </p>
           </div>
 
-          <!--
           <div class="md:flex-1 md:px-4 text-center md:text-right">
             <a
-              href="#"
+              v-if="terms"
+              :href="terms"
               class="py-2 px-4 text-white inline-block hover:underline"
               >Terms of Service</a
             >
             <a
-              href="#"
+              v-if="policy"
+              :href="policy"
               class="py-2 px-4 text-white inline-block hover:underline"
               >Privacy Policy</a
             >
           </div>
-          -->
         </div>
       </div>
     </div>
@@ -343,7 +340,45 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "Footer",
 
-  setup() {
+  props: {
+    links1_title: {
+      type: String,
+      default: null,
+    },
+
+    links1: {
+      type: Object,
+      default: undefined,
+    },
+
+    links2_title: {
+      type: String,
+      default: null,
+    },
+
+    links2: {
+      type: Object,
+      default: undefined,
+    },
+
+    policy: {
+      type: String,
+      default: null,
+    },
+
+    terms: {
+      type: String,
+      default: null,
+    },
+
+    technologies: {
+      type: Array,
+      default: () => ["vue", "tailwind"],
+    },
+  },
+
+  setup(props) {
+    console.log(props.links1);
     //
   },
 });

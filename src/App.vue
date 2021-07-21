@@ -12,7 +12,12 @@
 
   <router-view />
 
-  <Footer />
+  <Footer
+    :links1_title="links1_title"
+    :links1="links1"
+    :links2_title="links2_title"
+    :links2="links2"
+  />
 </template>
 
 <script lang="ts">
@@ -27,6 +32,27 @@ export default defineComponent({
     Navbar,
     Alert,
     Footer,
+  },
+
+  setup() {
+    const links1_title = "Mis Plataformas";
+    const links1 = {
+      "My API": "https://api.fryntiz.dev",
+      Curriculum: "https://curriculum.fryntiz.dev",
+      "La Guía Linux": "https://laguialinux.es",
+    };
+
+    const links2_title = "Recursos";
+    const links2 = {
+      Gitlab: "https://gitlab.com/fryntiz/www.fryntiz.es",
+    };
+
+    return {
+      links1_title,
+      links1,
+      links2_title,
+      links2,
+    };
   },
 });
 </script>
