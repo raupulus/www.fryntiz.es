@@ -1,7 +1,7 @@
 <template>
   <div class="page page-home">
     <!-- Slide -->
-    <section class="slide bg-white">
+    <section class="slide bg-white my-3">
       <div class="container items-center max-w-6xl mx-auto">
         <div class="flex flex-wrap items-center">
           <div class="w-full">
@@ -26,11 +26,11 @@
     <!-- Habilidades -->
     <Skills />
 
-    <!-- Enlace a redes sociales -->
-    <SocialLinks />
-
     <!-- Enlaces a recursos mios interesantes -->
     <HomeLinks />
+
+    <!-- Enlace a redes sociales -->
+    <SocialLinks />
   </div>
 </template>
 
