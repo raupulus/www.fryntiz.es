@@ -40,7 +40,7 @@
             </h2>
 
             <p class="mb-2 text-lg font-normal text-purple-100 opacity-100">
-              La información disponible hoy día es inmensa
+              Formación constante
               <br />
               Poder ser autodidacta es maravilloso
             </p>
@@ -64,7 +64,7 @@
               >Backend</a
             >
             <h2 class="mb-5 text-5xl font-bold">
-              <a href="#_">Lógica API</a>
+              <a href="#_">Lógica API REST</a>
             </h2>
             <p class="mb-2 text-lg font-normal text-blue-100 opacity-100">
               Especilizándome en apis
@@ -93,9 +93,9 @@
               <a href="#_">Libertad Digital</a>
             </h2>
             <p class="mb-2 text-lg font-normal opacity-100 text-yellow-50">
-              Desarrollo publicando en repositorios mis proyectos
+              Desarrollo publicando mis proyectos
               <br />
-              Desde 2001 con software libre cuando es posible
+              Desde 2001 con software libre
             </p>
           </div>
         </div>
