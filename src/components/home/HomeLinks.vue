@@ -1,5 +1,4 @@
 <template>
-  <!-- Bg orange -->
   <section
     class="max-w-screen-lg background-gray shadow-2xl rounded-lg mx-auto text-center py-12 mt-4"
   >
@@ -10,12 +9,16 @@
     </h2>
     <div class="mt-8 flex justify-center">
       <div class="inline-flex rounded-md bg-white shadow">
-        <a href="#" class="text-gray-700 font-bold py-2 px-6"> Visitar </a>
+        <a
+          href="https://curriculum.fryntiz.es"
+          class="text-gray-700 font-bold py-2 px-6"
+        >
+          Visitar
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Bg indigo -->
   <section
     class="max-w-screen-lg background-blue shadow-2xl rounded-lg mx-auto text-center py-12 mt-4"
   >
@@ -26,12 +29,16 @@
     </h2>
     <div class="mt-8 flex justify-center">
       <div class="inline-flex rounded-md bg-white shadow">
-        <a href="#" class="text-gray-700 font-bold py-2 px-6"> Visitar </a>
+        <a
+          href="https://api.fryntiz.dev"
+          class="text-gray-700 font-bold py-2 px-6"
+        >
+          Visitar
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Bg white -->
   <section
     class="max-w-screen-lg background-yellow shadow-2xl rounded-lg mx-auto text-center py-12 mt-4"
   >
@@ -41,8 +48,8 @@
       Contacto
     </h2>
     <div class="mt-8 flex justify-center">
-      <div class="inline-flex rounded-md bg-blue-500 shadow">
-        <a href="#" class="text-gray-200 font-bold py-2 px-6"> Visitar </a>
+      <div class="inline-flex rounded-md bg-white shadow">
+        <a href="#" class="text-gray-700 font-bold py-2 px-6"> Visitar </a>
       </div>
     </div>
   </section>
