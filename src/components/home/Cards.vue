@@ -32,15 +32,17 @@
             <a
               href="#_"
               class="inline-block text-xs font-semibold absolute top-0 -mt-3.5 rounded-full px-4 py-2 uppercase text-purple-500 bg-white"
-              >Curioso</a
+              >Autodidacta</a
             >
+
             <h2 class="mb-5 text-5xl font-bold">
-              <a href="#_">Palabra1 Palabra2</a>
+              <a href="#_">Estudiar Practicar</a>
             </h2>
+
             <p class="mb-2 text-lg font-normal text-purple-100 opacity-100">
-              Primera línea de la descripción.
+              La información disponible hoy día es inmensa
               <br />
-              Segunda línea de la descripción
+              Poder ser autodidacta es maravilloso
             </p>
           </div>
         </div>
@@ -62,12 +64,12 @@
               >Backend</a
             >
             <h2 class="mb-5 text-5xl font-bold">
-              <a href="#_">Palabra1 Palabra2</a>
+              <a href="#_">Lógica API</a>
             </h2>
             <p class="mb-2 text-lg font-normal text-blue-100 opacity-100">
-              Primera línea de la descripción.
+              Especilizándome en apis
               <br />
-              Segunda línea de la descripción
+              Destreza creando lógica y estructuras
             </p>
           </div>
         </div>
@@ -88,12 +90,12 @@
               >Open Source</a
             >
             <h2 class="mb-5 text-5xl font-bold">
-              <a href="#_">Palabra1 Palabra2</a>
+              <a href="#_">Libertad Digital</a>
             </h2>
             <p class="mb-2 text-lg font-normal opacity-100 text-yellow-50">
-              Primera línea de la descripción.
+              Desarrollo publicando en repositorios mis proyectos
               <br />
-              Segunda línea de la descripción
+              Desde 2001 con software libre cuando es posible
             </p>
           </div>
         </div>
