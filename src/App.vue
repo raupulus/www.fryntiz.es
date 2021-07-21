@@ -1,28 +1,29 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="pt-8">
     <Navbar />
   </div>
 
-  <Alert open="false" 
-         title="Título del Alert"
-         message="Mensaje de prueba"
-         type="danger" />
+  <Alert
+    open="false"
+    title="Título del Alert"
+    message="Mensaje de prueba"
+    type="danger"
+  />
 
-  <router-view/>
+  <router-view />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import Navbar from '@/components/Navbar.vue';
-import Alert from '@/components/Alert.vue';
+import { defineComponent } from "vue";
+import Navbar from "@/components/Navbar.vue";
+import Alert from "@/components/Alert.vue";
 
 export default defineComponent({
-    name: 'App',
-    components: {
-      Navbar,
-      Alert
-    }
-  
+  name: "App",
+  components: {
+    Navbar,
+    Alert,
+  },
 });
 </script>
 
@@ -36,5 +37,4 @@ export default defineComponent({
 #nav {
   margin-bottom: 100px;
 }
-
 </style>
