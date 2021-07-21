@@ -1,30 +1,53 @@
 <template>
-  <section
-    class="flex items-center justify-center py-10 text-white bg-white sm:py-16 md:py-24 lg:py-32"
-  >
-    <div class="flex flex-col bg-center bg-cover bg-no-repeat">
+  <section class="flex items-center justify-center text-white bg-white">
+    <div class="flex flex-col bg-center bg-cover bg-no-repeat my-20">
       <div
-        class="grid place-items-center mx-auto p-20 sm:my-auto bg-white rounded-3xl space-y-10"
+        class="grid place-items-center mx-auto my-3 bg-white rounded-3xl space-y-10"
       >
         <h1 class="text-5xl font-semibold text-blue-500">Redes Sociales</h1>
         <div class="flex items-center justify-center space-x-3">
-          <button
-            class="bg-blue-500 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+          <!-- Telegram -->
+          <a
+            href="https://t.me/FryntizOpenDev"
+            target="_blank"
+            class="background-gray px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
           >
             <svg
+              xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5 fill-current"
               role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+              viewBox="0 0 240 240"
             >
-              <path
-                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="46"
+                  x2="29"
+                  y1="11"
+                  y2="52"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#2aabee" offset="0" />
+                  <stop stop-color="#229ed9" offset="1" />
+                </linearGradient>
+              </defs>
+              <g transform="scale(3.47)">
+                <circle cy="34.6" cx="34.6" r="34.6" fill="url(#a)" />
+                <path
+                  d="M47.8 20.5s3.6-1.4 3.3 2c-.1 1.4-1 6.3-1.7 11.6L47 49.8s-.2 2.3-2 2.7c-1.8.4-4.5-1.4-5-1.8-.4-.3-7.5-4.8-10-7-.7-.6-1.5-1.8.1-3.2l10.5-10c1.2-1.2 2.4-4-2.6-.6l-14 9.5s-1.6 1-4.6.1l-6.5-2s-2.4-1.5 1.7-3c10-4.7 22.3-9.5 33.2-14z"
+                  fill="#fff"
+                />
+              </g>
             </svg>
+
             <span>Telegram</span>
-          </button>
-          <button
-            class="bg-blue-300 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+          </a>
+
+          <!-- Twitter -->
+          <a
+            href="https://twitter.com/fryntiz"
+            target="_blank"
+            class="background-blue px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
           >
             <svg
               class="w-5 h-5 fill-current"
@@ -37,38 +60,52 @@
               />
             </svg>
             <span>Twitter</span>
-          </button>
-          <button
-            class="bg-red-500 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+          </a>
+
+          <!-- Gitlab -->
+          <a
+            href="https://gitlab.com/fryntiz"
+            target="_blank"
+            class="background-yellow px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
           >
             <svg
               class="w-5 h-5 fill-current"
               role="img"
-              viewBox="0 0 24 24"
+              viewBox="0 0 256 236"
               xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMinYMin meet"
             >
               <path
-                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"
+                d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z"
+                fill="#E24329"
+              />
+              <path
+                d="M128.075 236.074L80.97 91.104H14.956l113.119 144.97z"
+                fill="#FC6D26"
+              />
+              <path
+                d="M14.956 91.104L.642 135.16a9.752 9.752 0 0 0 3.542 10.903l123.891 90.012-113.12-144.97z"
+                fill="#FCA326"
+              />
+              <path
+                d="M14.956 91.105H80.97L52.601 3.79c-1.46-4.493-7.816-4.492-9.275 0l-28.37 87.315z"
+                fill="#E24329"
+              />
+              <path
+                d="M128.075 236.074l47.104-144.97h66.015l-113.12 144.97z"
+                fill="#FC6D26"
+              />
+              <path
+                d="M241.194 91.104l14.314 44.056a9.752 9.752 0 0 1-3.543 10.903l-123.89 90.012 113.119-144.97z"
+                fill="#FCA326"
+              />
+              <path
+                d="M241.194 91.105h-66.015l28.37-87.315c1.46-4.493 7.816-4.492 9.275 0l28.37 87.315z"
+                fill="#E24329"
               />
             </svg>
             <span>Gitlab</span>
-          </button>
-          <button
-            class="bg-pink-600 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
-          >
-            <svg
-              class="w-5 h-5 fill-current"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Github</title>
-              <path
-                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"
-              />
-            </svg>
-            <span>Pinterest</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -106,4 +143,15 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+.background-blue {
+  background-color: $blue;
+}
+
+.background-gray {
+  background-color: $gray;
+}
+
+.background-yellow {
+  background-color: $yellow;
+}
 </style>
