@@ -67,7 +67,6 @@ export default defineComponent({
       Jobs: "/jobs",
       Collaborations: "/collaborations",
       Hobbies: "/hobbies",
-      Repositories: "/repositories",
       Services: "/services",
       About: "/about",
       Contac: "/contact",

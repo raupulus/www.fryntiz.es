@@ -377,8 +377,7 @@ export default defineComponent({
     },
   },
 
-  setup(props) {
-    console.log(props.links1);
+  setup() {
     //
   },
 });
