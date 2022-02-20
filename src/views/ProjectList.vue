@@ -8,84 +8,72 @@
       "
     >
       <div
-        class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50"
+        class="w-full flex items-center h-full w-full bg-gray-900 bg-opacity-50"
       >
-        <div class="text-center">
+        <div class="w-full text-center">
           <h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">
-            Mis <span class="underline text-blue-400">Proyectos</span>
+            Mis <span class="color-warning">Proyectos</span>
           </h1>
-          <button
-            class="mt-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
-          >
-            Nombre categoría actual
-          </button>
 
-          <p class="my-3">
-            <input type="text" name="search" />
-            <button
-              class="ml-2 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+          <div class="text-center mt-2 mb-1">
+            <span
+              class="color-primary background-warning rounded text-1xl font-semibold uppercase md:text-2xl p-3"
             >
-              Buscar
-            </button>
+              {{ currentCategory.name }}
+            </span>
+          </div>
 
-            <button
-              class="ml-2 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
-            >
-              Limpiar
-            </button>
-          </p>
+          <div class="my-3">
+            <div>
+              <form>
+                <input type="text" name="search" />
+                <button
+                  class="ml-2 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                >
+                  Buscar
+                </button>
 
-          <nav
-            class="w-full py-4 border-t border-b bg-gray-100"
-            x-data="{ open: false }"
-          >
-            <div class="block sm:hidden">
-              <a
-                href="#"
-                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
-                @click="open = !open"
-              >
-                Topics
-                <i
-                  :class="open ? 'fa-chevron-down' : 'fa-chevron-up'"
-                  class="fas ml-2"
-                ></i>
-              </a>
+                <button
+                  class="ml-2 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                >
+                  Limpiar
+                </button>
+              </form>
             </div>
-            <div
-              :class="open ? 'block' : 'hidden'"
-              class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
-            >
-              <div
-                class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2"
-              >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Laravel</a
-                >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >PHP</a
-                >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Python</a
-                >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Vuejs</a
-                >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Javascript</a
-                >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Raspberry</a
-                >
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Arduino</a
-                >
+          </div>
 
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
-                  >Todos</a
+          <nav class="w-9/10">
+            <swiper
+              :slidesPerView="5"
+              :spaceBetween="0"
+              :slidesPerGroup="5"
+              :loop="true"
+              :navigation="true"
+              class="m-5 cursor-move"
+            >
+              <swiper-slide
+                v-for="category in categories"
+                :key="category.slug"
+                class="background-primary p-2"
+              >
+                <button
+                  class="color-warning background-secondary color-secondary-hover background-warning-hover p-2 rounded font-bold"
                 >
-              </div>
-            </div>
+                  {{ category.name }}
+                </button>
+              </swiper-slide>
+
+              <!--
+              <swiper-slide class="background-warning">Slide 2</swiper-slide
+              ><swiper-slide class="background-warning">Slide 3</swiper-slide
+              ><swiper-slide class="background-warning">Slide 4</swiper-slide
+              ><swiper-slide class="background-warning">Slide 5</swiper-slide
+              ><swiper-slide class="background-warning">Slide 6</swiper-slide
+              ><swiper-slide class="background-warning">Slide 7</swiper-slide
+              ><swiper-slide class="background-warning">Slide 8</swiper-slide
+              ><swiper-slide class="background-warning">Slide 9</swiper-slide>
+              -->
+            </swiper>
           </nav>
         </div>
       </div>
@@ -121,13 +109,26 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import ElementList from "@/components/ElementList.vue";
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+
+import SwiperCore, { Navigation, A11y } from "swiper";
+
+SwiperCore.use([Navigation, A11y]);
 
 export default defineComponent({
   name: "ProjectList",
   components: {
     ElementList,
+    Swiper,
+    SwiperSlide,
   },
 
   setup() {
@@ -228,18 +229,90 @@ export default defineComponent({
         id: 6,
         title: "Título 6",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa..",
+        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
+        tags: ["Angular", "typescript"],
+        links: [
+          {
+            type: "linkedin",
+            name: "Linkedin",
+            url: "https://linkedin.com/xxx",
+          },
+        ],
+      },
+
+      {
+        id: 7,
+        title: "Título 7",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa..",
         image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
         tags: ["Angular", "typescript"],
       },
     ];
 
+    const categories = [
+      {
+        slug: "all",
+        name: "Todos",
+      },
+
+      {
+        slug: "laravel",
+        name: "Laravel",
+      },
+
+      {
+        slug: "php",
+        name: "PHP",
+      },
+
+      {
+        slug: "python",
+        name: "Python",
+      },
+
+      {
+        slug: "vuejs",
+        name: "VueJS",
+      },
+      {
+        slug: "javascript",
+        name: "Javascript",
+      },
+      {
+        slug: "Raspberry",
+        name: "raspberry",
+      },
+      {
+        slug: "arduino",
+        name: "Arduino",
+      },
+    ];
+
+    const filter = ref("");
+
+    const currentCategory = ref({});
+
+    if (categories && categories.length) {
+      currentCategory.value = categories[0];
+    }
+
     return {
       datas,
+      categories,
+      filter,
+      currentCategory,
     };
   },
 });
 </script>
 
 <style scoped lang="scss">
+/*
+.swiper-button-prev,
+.swiper-button-next {
+  color: $warning !important;
+}
+*/
 </style>

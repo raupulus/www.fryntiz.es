@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+  <section class="w-full md:w-2/3 flex flex-wrap content-between px-3">
     <ProjectCard v-for="data in datas" :data="data" :key="data.id" />
   </section>
 </template>
