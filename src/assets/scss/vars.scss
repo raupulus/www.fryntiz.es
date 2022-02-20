@@ -37,10 +37,75 @@ $background-success: #212529;
 .color-primary {
   color: $primary;
 }
+.color-primary-hover:hover {
+  color: $primary;
+}
+
 .background-primary {
   background-color: $primary;
 }
+.background-primary-hover:hover {
+  background-color: $primary;
+}
 
+/*
 .background-primary:hover {
   background-color: $primary-hover;
+}
+*/
+
+.color-secondary {
+  color: $secondary;
+}
+.color-secondary-hover:hover {
+  color: $secondary;
+}
+
+.background-secondary {
+  background-color: $secondary;
+}
+.background-secondary-hover:hover {
+  background-color: $secondary;
+}
+
+.color-success {
+  color: $success;
+}
+.color-success-hover:hover {
+  color: $success;
+}
+
+.background-success {
+  background-color: $success;
+}
+.background-success-hover:hover {
+  background-color: $success;
+}
+
+.color-warning {
+  color: $warning;
+}
+.color-warning-hover:hover {
+  color: $warning;
+}
+
+.background-warning {
+  background-color: $warning;
+}
+.background-warning-hover:hover {
+  background-color: $warning;
+}
+
+.color-danger {
+  color: $danger;
+}
+.color-danger-hover:hover {
+  color: $danger;
+}
+
+.background-danger {
+  background-color: $danger;
+}
+.background-danger-hover:hover {
+  background-color: $danger;
 }
