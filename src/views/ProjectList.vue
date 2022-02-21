@@ -17,7 +17,16 @@
 
           <div class="text-center mt-2 mb-1">
             <span
-              class="color-primary background-warning rounded text-1xl font-semibold uppercase md:text-2xl p-3"
+              class="
+                color-primary
+                background-warning
+                rounded
+                text-1xl
+                font-semibold
+                uppercase
+                md:text-2xl
+                p-3
+              "
             >
               {{ currentCategory.name }}
             </span>
@@ -28,13 +37,35 @@
               <form>
                 <input type="text" name="search" />
                 <button
-                  class="ml-2 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                  class="
+                    ml-2
+                    px-4
+                    py-2
+                    bg-blue-600
+                    text-white text-sm
+                    uppercase
+                    font-medium
+                    rounded
+                    hover:bg-blue-500
+                    focus:outline-none focus:bg-blue-500
+                  "
                 >
                   Buscar
                 </button>
 
                 <button
-                  class="ml-2 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                  class="
+                    ml-2
+                    px-4
+                    py-2
+                    bg-blue-600
+                    text-white text-sm
+                    uppercase
+                    font-medium
+                    rounded
+                    hover:bg-blue-500
+                    focus:outline-none focus:bg-blue-500
+                  "
                 >
                   Limpiar
                 </button>
@@ -57,7 +88,15 @@
                 class="background-primary p-2"
               >
                 <button
-                  class="color-warning background-secondary color-secondary-hover background-warning-hover p-2 rounded font-bold"
+                  class="
+                    color-warning
+                    background-secondary
+                    color-secondary-hover
+                    background-warning-hover
+                    p-2
+                    rounded
+                    font-bold
+                  "
                 >
                   {{ category.name }}
                 </button>
@@ -95,7 +134,22 @@
         </p>
         <a
           href="#"
-          class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4"
+          class="
+            w-full
+            bg-blue-800
+            text-white
+            font-bold
+            text-sm
+            uppercase
+            rounded
+            hover:bg-blue-700
+            flex
+            items-center
+            justify-center
+            px-2
+            py-3
+            mt-4
+          "
         >
           ?¿?¿
         </a>
@@ -120,8 +174,13 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 
 import SwiperCore, { Navigation, A11y } from "swiper";
+import { useStore } from "vuex";
+import { computed } from "vue";
 
 SwiperCore.use([Navigation, A11y]);
+
+// Import vuex map
+import { mapState, mapActions } from "vuex";
 
 export default defineComponent({
   name: "ProjectList",
@@ -132,6 +191,12 @@ export default defineComponent({
   },
 
   setup() {
+    const store = useStore();
+
+    const projects = store.state.projects;
+
+    console.log("11111111", projects, projects.isLoading, "2222222222");
+
     const datas = [
       {
         id: 1,
