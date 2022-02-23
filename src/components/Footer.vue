@@ -21,7 +21,12 @@
             </svg>
           </h4>
 
-          <p class="text-white text-3xl mb-4 text-center">+</p>
+          <p
+            v-if="technologies.length"
+            class="text-white text-3xl mb-4 text-center"
+          >
+            +
+          </p>
 
           <div class="text-center">
             <span
@@ -297,7 +302,17 @@
           <a
             href="https://fryntiz.es"
             target="_blank"
-            class="background-primary text-white hover:bg-indigo-700 rounded py-2 px-6 md:px-12 transition-colors duration-300"
+            class="
+              background-primary
+              text-white
+              hover:bg-indigo-700
+              rounded
+              py-2
+              px-6
+              md:px-12
+              transition-colors
+              duration-300
+            "
           >
             Explorar
           </a>
@@ -335,7 +350,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
+import { mapActions, useStore } from "vuex";
 
 export default defineComponent({
   name: "Footer",
@@ -371,14 +387,28 @@ export default defineComponent({
       default: null,
     },
 
+    /*
     technologies: {
       type: Array,
       default: () => ["vue", "tailwind"],
     },
+    */
   },
 
   setup() {
-    //
+    const store = useStore();
+    const platforms = computed(() => store.state.site.platforms);
+    console.log(platforms);
+
+    //...mapGetters('site', {platforms: platforms})
+    const fetchApi = () => store.dispatch("site/fetchApi");
+
+    fetchApi();
+
+    return {
+      platforms: store.state.site.platforms,
+      technologies: store.state.site.technologies,
+    };
   },
 });
 </script>
