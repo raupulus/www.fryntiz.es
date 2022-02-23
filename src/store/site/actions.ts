@@ -1,12 +1,18 @@
 import { Commit } from "vuex";
+import { siteInfo } from '@/apis';
 
 export const fetchApi = async ({ commit }: { commit: Commit }): Promise<boolean> => {
-    commit('appendInfo',['vue', 'tailwind']);
+    
+    const resp = await siteInfo();
+
+    console.log(resp);
+    
+    commit('appendInfo', ['vue', 'tailwind']);
 
 
     /*
     if (state.gists.length === 0) {
-                 return axios.get('https//api.github.com/gists')
+                 return axios.get('.env obtener API')
                      .then(response => response.data)
                      .then(gists => context.commit(ADD_GISTS, gists);
             }

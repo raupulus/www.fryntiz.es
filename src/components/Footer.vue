@@ -351,7 +351,7 @@
 
 <script lang="ts">
 import { computed, defineComponent } from "vue";
-import { mapActions, useStore } from "vuex";
+import { useStore } from "vuex";
 
 export default defineComponent({
   name: "Footer",
@@ -397,17 +397,13 @@ export default defineComponent({
 
   setup() {
     const store = useStore();
-    const platforms = computed(() => store.state.site.platforms);
-    console.log(platforms);
-
-    //...mapGetters('site', {platforms: platforms})
-    const fetchApi = () => store.dispatch("site/fetchApi");
+    let fetchApi = () => store.dispatch("site/fetchApi");
 
     fetchApi();
 
     return {
-      platforms: store.state.site.platforms,
-      technologies: store.state.site.technologies,
+      platforms: computed(() => store.state.site.platforms),
+      technologies: computed(() => store.state.site.technologies),
     };
   },
 });
