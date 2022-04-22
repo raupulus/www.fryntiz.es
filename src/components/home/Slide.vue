@@ -106,8 +106,8 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .swiper-container {
-  width: 940px;
-  height: 350px;
+  max-width: 940px;
+  max-height: 350px;
   z-index: 0;
 }
 
