@@ -1,9 +1,25 @@
 <template>
   <section
-    class="max-w-screen-lg background-gray shadow-2xl rounded-lg mx-auto text-center py-12 mt-4"
+    class="
+      max-w-screen-lg
+      background-gray
+      shadow-2xl
+      rounded-lg
+      mx-auto
+      text-center
+      py-12
+      mt-4
+    "
   >
     <h2
-      class="text-3xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10"
+      class="
+        text-3xl
+        leading-9
+        font-bold
+        tracking-tight
+        text-white
+        sm:text-4xl sm:leading-10
+      "
     >
       Curriculum
     </h2>
@@ -20,10 +36,26 @@
   </section>
 
   <section
-    class="max-w-screen-lg background-blue shadow-2xl rounded-lg mx-auto text-center py-12 mt-4"
+    class="
+      max-w-screen-lg
+      background-blue
+      shadow-2xl
+      rounded-lg
+      mx-auto
+      text-center
+      py-12
+      mt-4
+    "
   >
     <h2
-      class="text-3xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10"
+      class="
+        text-3xl
+        leading-9
+        font-bold
+        tracking-tight
+        text-white
+        sm:text-4xl sm:leading-10
+      "
     >
       Api
     </h2>
@@ -40,16 +72,34 @@
   </section>
 
   <section
-    class="max-w-screen-lg background-yellow shadow-2xl rounded-lg mx-auto text-center py-12 mt-4"
+    class="
+      max-w-screen-lg
+      background-yellow
+      shadow-2xl
+      rounded-lg
+      mx-auto
+      text-center
+      py-12
+      mt-4
+    "
   >
     <h2
-      class="text-3xl leading-9 font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-10"
+      class="
+        text-3xl
+        leading-9
+        font-bold
+        tracking-tight
+        text-gray-800
+        sm:text-4xl sm:leading-10
+      "
     >
       Contacto
     </h2>
     <div class="mt-8 flex justify-center">
       <div class="inline-flex rounded-md bg-white shadow">
-        <a href="#" class="text-gray-700 font-bold py-2 px-6"> Visitar </a>
+        <router-link to="/contact" class="text-gray-700 font-bold py-2 px-6">
+          Contactar
+        </router-link>
       </div>
     </div>
   </section>
