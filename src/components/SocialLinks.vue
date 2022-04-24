@@ -1,13 +1,19 @@
 <template>
   <section class="bg-white py-20">
     <div class="container px-8 mx-auto sm:px-12 lg:px-20">
-      <!--
-        <h1
-          class="text-sm font-bold tracking-wide text-center text-gray-800 uppercase mb-7"
-        >
-          Tecnologías Preferidas
-        </h1>
-        -->
+      <h1
+        class="
+          text-xl
+          font-bold
+          tracking-wide
+          text-center text-gray-800
+          uppercase
+          mb-7
+        "
+      >
+        Redes Sociales
+      </h1>
+
       <div class="flex grid items-center justify-center grid-cols-12 gap-y-8">
         <div
           class="
