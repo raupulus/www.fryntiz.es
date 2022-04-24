@@ -8,16 +8,7 @@
           Tecnologías Preferidas
         </h1>
         -->
-      <div
-        class="
-          flex
-          grid
-          items-center
-          justify-center
-          grid-cols-4 grid-cols-12
-          gap-y-8
-        "
-      >
+      <div class="flex grid items-center justify-center grid-cols-12 gap-y-8">
         <div
           class="
             flex
@@ -26,13 +17,15 @@
             col-span-6
             sm:col-span-4
             md:col-span-3
-            xl:col-span-2
+            xl:col-span-3
           "
         >
+          <!-- Linkedin -->
           <a
             href="https://www.linkedin.com/in/raulcaropastorino/"
             target="_blank"
             class="
+              min-width-button
               background-blue
               px-4
               py-2
@@ -93,7 +86,7 @@
             col-span-6
             sm:col-span-4
             md:col-span-3
-            xl:col-span-2
+            xl:col-span-3
           "
         >
           <!-- Telegram -->
@@ -101,6 +94,7 @@
             href="https://t.me/FryntizOpenDev"
             target="_blank"
             class="
+              min-width-button
               background-gray
               px-4
               py-2
@@ -151,7 +145,7 @@
             col-span-6
             sm:col-span-4
             md:col-span-3
-            xl:col-span-2
+            xl:col-span-3
           "
         >
           <!-- Twitter -->
@@ -159,6 +153,7 @@
             href="https://twitter.com/fryntiz"
             target="_blank"
             class="
+              min-width-button
               background-blue
               px-4
               py-2
@@ -191,7 +186,7 @@
             col-span-6
             sm:col-span-4
             md:col-span-3
-            xl:col-span-2
+            xl:col-span-3
           "
         >
           <!-- Gitlab -->
@@ -199,6 +194,7 @@
             href="https://gitlab.com/fryntiz"
             target="_blank"
             class="
+              min-width-button
               background-yellow
               px-4
               py-2
@@ -257,8 +253,8 @@
             justify-center
             col-span-6
             sm:col-span-4
-            md:col-span-6
-            xl:col-span-2
+            md:col-span-3
+            xl:col-span-3
           "
         >
           <!-- GitHub -->
@@ -266,6 +262,7 @@
             href="https://github.com/fryntiz"
             target="_blank"
             class="
+              min-width-button
               background-gray
               px-4
               py-2
@@ -324,8 +321,8 @@
             justify-center
             col-span-6
             sm:col-span-4
-            md:col-span-6
-            xl:col-span-2
+            md:col-span-3
+            xl:col-span-3
           "
         >
           <!-- Facebook -->
@@ -333,6 +330,7 @@
             href="https://www.facebook.com/raupulus"
             target="_blank"
             class="
+              min-width-button
               background-blue
               px-4
               py-2
@@ -391,8 +389,8 @@
             justify-center
             col-span-6
             sm:col-span-4
-            md:col-span-6
-            xl:col-span-2
+            md:col-span-3
+            xl:col-span-3
           "
         >
           <!-- Instagram -->
@@ -400,6 +398,7 @@
             href="https://www.instagram.com/raupulus/"
             target="_blank"
             class="
+              min-width-button
               bg-pink-600
               px-4
               py-2
@@ -496,5 +495,9 @@ export default defineComponent({
 
 .background-yellow {
   background-color: $yellow;
+}
+
+.min-width-button {
+  min-width: 140px;
 }
 </style>
