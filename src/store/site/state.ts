@@ -2,6 +2,9 @@
 
 export default () => ({
     message: '',
+    name: 'Fryntiz',
+    version: 1.0,
+    author: 'Raúl Caro Pastorino',
     platforms: [
         {
             name: "My Api",
@@ -26,5 +29,13 @@ export default () => ({
             icon: ""
         }
     ], 
-    technologies: ["vue"]
+    pages: [
+        {
+
+        title: 'Link1',
+        url: 'http://example.es'
+    
+        }
+    ],
+    technologies: ["vue", "tailwind"]
 })

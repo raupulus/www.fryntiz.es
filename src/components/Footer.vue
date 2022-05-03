@@ -258,18 +258,18 @@
           <div class="sm:flex">
             <div class="sm:flex-1">
               <h6 class="text-base font-medium text-white uppercase mb-2">
-                {{ links1_title ?? "&nbsp;" }}
+                {{ platforms ? platforms.title : "" }}
               </h6>
 
               <div>
-                <div v-if="links1">
+                <div v-if="platforms">
                   <a
-                    v-for="(link, title) of links1"
-                    :key="title"
-                    :href="link"
+                    v-for="platform of platforms.elements"
+                    :key="platform.slug"
+                    :href="platform.url"
                     class="text-gray-400 py-1 block hover:underline"
                   >
-                    {{ title }}
+                    {{ platform.name }}
                   </a>
                 </div>
               </div>
@@ -277,18 +277,20 @@
 
             <div class="sm:flex-1 mt-4 sm:mt-0">
               <h6 class="text-base font-medium text-white uppercase mb-2">
-                {{ links2_title ?? "&nbsp;" }}
+                Recursos
               </h6>
 
-              <div v-if="links2">
-                <a
-                  v-for="(link, title) of links2"
-                  :key="title"
-                  :href="link"
-                  class="text-gray-400 py-1 block hover:underline"
-                >
-                  {{ title }}
-                </a>
+              <div>
+                <div v-if="resources">
+                  <a
+                    v-for="resource of resources.elements"
+                    :key="resource.slug"
+                    :href="resource.url"
+                    class="text-gray-400 py-1 block hover:underline"
+                  >
+                    {{ resource.name }}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -355,28 +357,7 @@ import { useStore } from "vuex";
 
 export default defineComponent({
   name: "Footer",
-
   props: {
-    links1_title: {
-      type: String,
-      default: null,
-    },
-
-    links1: {
-      type: Object,
-      default: undefined,
-    },
-
-    links2_title: {
-      type: String,
-      default: null,
-    },
-
-    links2: {
-      type: Object,
-      default: undefined,
-    },
-
     policy: {
       type: String,
       default: null,
@@ -386,13 +367,6 @@ export default defineComponent({
       type: String,
       default: null,
     },
-
-    /*
-    technologies: {
-      type: Array,
-      default: () => ["vue", "tailwind"],
-    },
-    */
   },
 
   setup() {
@@ -404,6 +378,7 @@ export default defineComponent({
     return {
       platforms: computed(() => store.state.site.platforms),
       technologies: computed(() => store.state.site.technologies),
+      resources: computed(() => store.state.site.resources),
     };
   },
 });

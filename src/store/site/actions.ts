@@ -5,9 +5,9 @@ export const fetchApi = async ({ commit }: { commit: Commit }): Promise<boolean>
     
     const resp = await siteInfo();
 
-    console.log(resp);
+    console.log('test', resp);
     
-    commit('appendInfo', ['vue', 'tailwind']);
+    commit('appendInfo', resp);
 
 
     /*

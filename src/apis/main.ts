@@ -3,6 +3,7 @@
 import axios from 'axios';
 import type { SiteInfo } from '@/interfaces/siteInterfaces';
 
+//TOFIX: DInamizar desde environment cuando termine las pruebas
 const baseUrl = 'http://127.0.0.1:8000/api/v1';
 const accessToken = 'gffdg7sd8fg7sdfg7sdf';
 const language = 'es';
@@ -20,15 +21,14 @@ const instance = axios.create({
     headers: headers
 });
 
+/**
+ * Pide a la api los datos del sitio.
+ * 
+ * @returns
+ */
 export const siteInfo = async (): Promise<SiteInfo> => {
-    const url = 'platform/info';
+    const path = 'platform/fryntiz/info';
 
-    return await instance.post(url).then((response) => response.data);
-
-
-
-    /*
-    axios.post("https://reqres.in/api/articles", article, { headers })
-    .then(response => this.articleId = response.data.id);
-    */
+    return await instance.post(path).then((response) => response.data);
 }
+
