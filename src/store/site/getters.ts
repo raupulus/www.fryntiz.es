@@ -1,4 +1,4 @@
-import { SitePlatform } from '@/interfaces/siteInterfaces'
+import { SitePlatform } from '@/interfaces/siteInterface'
 
 
 export const platforms = (state:any): SitePlatform[] => {

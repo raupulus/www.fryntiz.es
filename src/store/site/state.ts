@@ -22,20 +22,7 @@ export default () => ({
             icon: ''
         }
     ],
-    resources: [
-        {
-            name: "Gitlab",
-            url: "https://gitlab.com/fryntiz/www.fryntiz.es",
-            icon: ""
-        }
-    ], 
-    pages: [
-        {
-
-        title: 'Link1',
-        url: 'http://example.es'
-    
-        }
-    ],
+    resources: [], 
+    pages: [],
     technologies: ["vue", "tailwind"]
 })

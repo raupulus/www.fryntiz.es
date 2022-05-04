@@ -15,7 +15,7 @@
             Mis <span class="color-warning">Proyectos</span>
           </h1>
 
-          <div class="text-center mt-2 mb-1">
+          <div class="text-center mt-2 mb-1" v-if="currentCategory">
             <span
               class="
                 color-primary
@@ -34,42 +34,40 @@
 
           <div class="my-3">
             <div>
-              <form>
-                <input type="text" name="search" />
-                <button
-                  class="
-                    ml-2
-                    px-4
-                    py-2
-                    bg-blue-600
-                    text-white text-sm
-                    uppercase
-                    font-medium
-                    rounded
-                    hover:bg-blue-500
-                    focus:outline-none focus:bg-blue-500
-                  "
-                >
-                  Buscar
-                </button>
+              <input type="text" name="search" />
+              <button
+                class="
+                  ml-2
+                  px-4
+                  py-2
+                  bg-blue-600
+                  text-white text-sm
+                  uppercase
+                  font-medium
+                  rounded
+                  hover:bg-blue-500
+                  focus:outline-none focus:bg-blue-500
+                "
+              >
+                Buscar
+              </button>
 
-                <button
-                  class="
-                    ml-2
-                    px-4
-                    py-2
-                    bg-blue-600
-                    text-white text-sm
-                    uppercase
-                    font-medium
-                    rounded
-                    hover:bg-blue-500
-                    focus:outline-none focus:bg-blue-500
-                  "
-                >
-                  Limpiar
-                </button>
-              </form>
+              <button
+                class="
+                  ml-2
+                  px-4
+                  py-2
+                  bg-blue-600
+                  text-white text-sm
+                  uppercase
+                  font-medium
+                  rounded
+                  hover:bg-blue-500
+                  focus:outline-none focus:bg-blue-500
+                "
+              >
+                Limpiar
+              </button>
             </div>
           </div>
 
@@ -88,6 +86,7 @@
                 class="background-primary p-2"
               >
                 <button
+                  v-on:click="changeCategory(category.slug)"
                   class="
                     color-warning
                     background-secondary
@@ -192,182 +191,24 @@ export default defineComponent({
 
   setup() {
     const store = useStore();
+    let fetchProjects = (category: string | null = null) =>
+      store.dispatch("projects/fetchProjects", { category });
+
+    fetchProjects(store.state.projects.currentCategorySlug);
 
     const projects = store.state.projects;
 
-    console.log("11111111", projects, projects.isLoading, "2222222222");
-
-    const datas = [
-      {
-        id: 1,
-        title: "Título? Poner sobre imagen?",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Laravel", "PHP"],
-        links: [
-          {
-            type: "twitter",
-            name: "Twitter",
-            url: "https://twitter.com/xxx",
-          },
-
-          {
-            type: "gitlab",
-            name: "Gitlab",
-            url: "https://gitlab.com/xxx",
-          },
-
-          {
-            type: "web",
-            name: "Web",
-            url: "https://web.com/xxx",
-          },
-        ],
-      },
-
-      {
-        id: 2,
-        title: "Título 2",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Python", "Django"],
-        links: [
-          {
-            type: "twitter",
-            name: "Twitter",
-            url: "https://twitter.com/xxx",
-          },
-        ],
-      },
-
-      {
-        id: 3,
-        title: "Título 3",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Vuejs", "Tailwind"],
-        links: [
-          {
-            type: "github",
-            name: "Github",
-            url: "https://github.com/xxx",
-          },
-        ],
-      },
-
-      {
-        id: 4,
-        title: "Título 4",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Angular", "typescript"],
-        links: [
-          {
-            type: "gitlab",
-            name: "Gitlab",
-            url: "https://gitlab.com/xxx",
-          },
-        ],
-      },
-
-      {
-        id: 5,
-        title: "Título 5",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Angular", "typescript"],
-        links: [
-          {
-            type: "web",
-            name: "Web",
-            url: "https://web.com/xxx",
-          },
-        ],
-      },
-
-      {
-        id: 6,
-        title: "Título 6",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Angular", "typescript"],
-        links: [
-          {
-            type: "linkedin",
-            name: "Linkedin",
-            url: "https://linkedin.com/xxx",
-          },
-        ],
-      },
-
-      {
-        id: 7,
-        title: "Título 7",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa..",
-        image: "https://source.unsplash.com/collection/1346951/1000x500?sig=1",
-        tags: ["Angular", "typescript"],
-      },
-    ];
-
-    const categories = [
-      {
-        slug: "all",
-        name: "Todos",
-      },
-
-      {
-        slug: "laravel",
-        name: "Laravel",
-      },
-
-      {
-        slug: "php",
-        name: "PHP",
-      },
-
-      {
-        slug: "python",
-        name: "Python",
-      },
-
-      {
-        slug: "vuejs",
-        name: "VueJS",
-      },
-      {
-        slug: "javascript",
-        name: "Javascript",
-      },
-      {
-        slug: "Raspberry",
-        name: "raspberry",
-      },
-      {
-        slug: "arduino",
-        name: "Arduino",
-      },
-    ];
-
     const filter = ref("");
 
-    const currentCategory = ref({});
-
-    if (categories && categories.length) {
-      currentCategory.value = categories[0];
-    }
-
     return {
-      datas,
-      categories,
+      datas: computed(() => store.state.projects.elements),
+      categories: computed(() => store.state.projects.categories),
+      currentCategorySlug: computed(
+        () => store.state.projects.currentCategorySlug
+      ),
       filter,
-      currentCategory,
+      currentCategory: computed(() => store.state.projects.currentCategory),
+      changeCategory: (category: string) => fetchProjects(category),
     };
   },
 });

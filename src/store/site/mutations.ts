@@ -1,4 +1,4 @@
-import { SiteInfo } from '../../interfaces/siteInterfaces';
+import { SiteInfo } from '../../interfaces/siteInterface';
 import { platforms, resources } from './getters';
 
 /**

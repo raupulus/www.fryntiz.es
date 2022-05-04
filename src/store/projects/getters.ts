@@ -1,4 +1,5 @@
+import { Projects } from '../../interfaces/projectInterface';
 
-export const test = (state:any) => {
-    //return state.count * state.count
+export const elements = (state:any): Projects => {
+    return state.elements;
 }

@@ -1,8 +1,10 @@
 
 
 export default () => ({
-    test: 1,
-    lastMutation: 'none',
+    elements: [],
+    categories: [],
+    currentCategorySlug: 'all',
+    currentCategory: null,
+    lastMutation: null,
     isLoading: false,
-    lastRandomInt: 0,
-})
+});

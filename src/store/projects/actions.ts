@@ -1,5 +1,11 @@
+import { getProjects } from "@/apis";
+import { Commit } from "vuex";
 
-export const test = async ({ commit }: any) => {
+export const fetchProjects = async ({ commit }: { commit: Commit }, params:any): Promise<boolean> => {
+    
+    const resp = await getProjects(params);
 
-    //console.log('test', commit);
+    commit('appendProjects', resp);
+
+    return true;
 }
