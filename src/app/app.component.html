@@ -4,6 +4,26 @@
 </header>
 
 <div id="generalbox" class="row">
+
+  <div id="message-deprecated" class="col-12">
+    <div class="alert alert-info" role="alert">
+      <p>
+        ¡Hola! Bienvenido a mi sitio personal
+
+      </p>
+
+      <p>
+        Este sitio web se ha quedado un poco desactualizado por falta de tiempo. Tengo más de 100 proyectos sobre linux, programación, iot... que puedes ver en mis repositorios
+        <a href="https://github.com/fryntiz" target="_blank">github</a>,
+        <a href="https://gitlab.com/fryntiz" target="_blank">gitlab</a> y
+        <a href="https://social.fryntiz.dev" target="_blank">mis redes</a>.
+      </p>
+      <p>
+        Esta versión de la web está hecha con angular 4 (actualizado a 6) y la nueva versión será con Nuxt (vue3) que será lanzada en los próximos meses cuando pueda dedicarle tiempo.
+      </p>
+    </div>
+  </div>
+
   <div id="boxcontent" class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
     <router-outlet></router-outlet>
   </div>
@@ -16,3 +36,14 @@
 <footer>
   <app-footer></app-footer>
 </footer>
+
+<style>
+  #message-deprecated {
+    font-size: 0.7rem;
+  }
+
+  #message-deprecated p {
+    margin: 2px 10px;
+    padding: 0;
+  }
+</style>
