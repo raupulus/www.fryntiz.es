@@ -1,12 +1,11 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from "./router";
+import store from "./store";
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import "@/assets/css/tailwind.css";
 
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+createApp(App)
+  .use(store)
+  .use(router)
+  .mount("#app");

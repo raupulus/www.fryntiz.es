@@ -1,0 +1,111 @@
+// Body
+$body-bg: #f8fafc;
+$text-color: #212529;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: rgb(0, 86, 179);
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e91456;
+$orange: #f6993f;
+$yellow: #fbbf24;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$black: #212529;
+$white: #f8f9fa;
+$gray: #212529;
+
+$primary: #0056b3;
+$secondary: #212529;
+$success: #38c172;
+$warning: #fbbf24;
+$danger: #e91456;
+
+$primary-hover: #fbbf24;
+
+$background-primary: #f8fafc;
+$background-secondary: #212529;
+$background-success: #212529;
+
+.color-primary {
+  color: $primary;
+}
+.color-primary-hover:hover {
+  color: $primary;
+}
+
+.background-primary {
+  background-color: $primary;
+}
+.background-primary-hover:hover {
+  background-color: $primary;
+}
+
+/*
+.background-primary:hover {
+  background-color: $primary-hover;
+}
+*/
+
+.color-secondary {
+  color: $secondary;
+}
+.color-secondary-hover:hover {
+  color: $secondary;
+}
+
+.background-secondary {
+  background-color: $secondary;
+}
+.background-secondary-hover:hover {
+  background-color: $secondary;
+}
+
+.color-success {
+  color: $success;
+}
+.color-success-hover:hover {
+  color: $success;
+}
+
+.background-success {
+  background-color: $success;
+}
+.background-success-hover:hover {
+  background-color: $success;
+}
+
+.color-warning {
+  color: $warning;
+}
+.color-warning-hover:hover {
+  color: $warning;
+}
+
+.background-warning {
+  background-color: $warning;
+}
+.background-warning-hover:hover {
+  background-color: $warning;
+}
+
+.color-danger {
+  color: $danger;
+}
+.color-danger-hover:hover {
+  color: $danger;
+}
+
+.background-danger {
+  background-color: $danger;
+}
+.background-danger-hover:hover {
+  background-color: $danger;
+}
